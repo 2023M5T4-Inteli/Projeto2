@@ -7,7 +7,7 @@
 
 # MVP de um protocolo em blockchain ethereum e uma aplicação web
 
-## (Nome do grupo)
+## CooverChain
 
 - <a href="https://www.linkedin.com/in/erictach/">Eric Tachdjian</a>
 - <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Furlan</a>
