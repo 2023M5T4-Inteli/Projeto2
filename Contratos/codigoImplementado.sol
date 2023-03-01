@@ -13,6 +13,7 @@ contract cooverContract {
     uint public numberusers; // Numero total de adeptos ao contrato
     bool public isActive; // Contrato está ativo ou inativo (true e false)
     uint public coverage; // Valor de cobertura do objeto assegurado
+    uint public contractBalance = 0;
 
 
     address[] private users;
