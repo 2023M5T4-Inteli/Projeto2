@@ -5,19 +5,24 @@ contract cooverContract {
  
     address owner; // Endereço do dono do contrato
     uint public creationDate; //data de criação
-    uint public monthly; // Valor mensal do seguro
-    uint public balance; // 
-    uint public maxUsers;
-    uint public minUsers;
+    uint public balance; // Saldo do contrato
+    uint public maxUsers; // Numero máximo de adeptos ao contrato
+    uint public minUsers; // Numero mínimo de adeptos ao contrato
     uint public numberusers; // Numero total de adeptos ao contrato
     bool public isActive; // Contrato está ativo ou inativo (true e false)
     uint public coverage; // Valor de cobertura do objeto assegurado
+    uint public saldoContrato; // Saldo do contrato
+    uint public totalContrato; // Total de saldo do contrato
+
+
     address[] private users;
     mapping (address => uint) public participants; // Endereço dos usuários e o preço pago por eles
     mapping (address => uint) public valorParticipants;
+
     struct Wallet {
-    address userWallet;
+        address userWallet;
     }
+
     Wallet[] public wallet;
 
     // Constructor é uma função que roda apenas uma vez na hora do deploy
@@ -34,7 +39,7 @@ contract cooverContract {
         owner = msg.sender; // Garante que aquele que fez o deploy é o dono do contrato
     }
 
-     // Verifica a viabilidade do contrato (FAZER USER STORY - vai ser um teste da user story 1)
+     // Verifica a viabilidade do contrato (FAZER USER STORY - vai ser um teste da user story 1) - algo a mais
     function viabilidadeContrato() public view returns (uint) {
         if (numberusers >= minUsers && block.timestamp <= creationDate && numberusers <= maxUsers) {
             return 1; // Contrato Ativo
@@ -46,28 +51,57 @@ contract cooverContract {
             revert("Erro ao verificar o contrato");
         }
     }
-
+    // valor de entrada no seguro 
     function pagamentoInicial() public payable{
         valorParticipants[msg.sender] += msg.value;
-         
+        
+    }
+
+    // Para o funcionamento do contrato, os usuário precisam depositar o saldo necessário para cobrir a idenização. Por tanto, essa função corresponde a uma regra de negócio essencial.
+    function depositarSaldo() public payable {
+        require(msg.value > 0, "O valor do deposito deve ser maior que zero.");
+        balance[msg.sender] += msg.value;
+        saldoContrato += msg.value;
+    }
+
+    // Função para retornar o saldo de um usuário.
+    function saldoUsuario(address usuario) public view returns (uint) {
+        return balance[usuario];
+    }
+
+    // Função para retornar o saldo total do contrato.
+    function saldoTotalContrato() public view returns (uint) {
+        return totalContrato;
+    }
+    
+    // Após a indenização, o usuário precisa repor a reserva para cobrir outras possíveis sinistralidade. Essa função corresponde a uma funcionalidade essencial para a manutenção do ecossistema contratual.
+    function reposicaoReserva(address usuario) public payable{
+        require(totalContrato == 0, "A reserva do contrato precisa ser reposta");
+        saldoContrato = balance[usuario];
+        totalContrato = msg.value;
+
     }
 
 
+    // 
     function join() public payable {
-        require(msg.value == monthly, "Valor incorreto");
         require(isActive == true, "Contrato inativo");
         require(participants[msg.sender] == 0, "Ja participante");
         participants[msg.sender] = msg.value;
         numberusers += 1;
     }
-
+    // mudança de saldo de acordo com a indenização  
     function changeBalance(address _mudanca, uint _value, string memory oper) public {
+        
         require(msg.sender == owner, "nao dono");
         require(keccak256(bytes(oper)) == keccak256(bytes("sub")) || keccak256(bytes(oper)) == keccak256(bytes("plus")), "so sub ou plus");
+
         if (keccak256(bytes(oper)) == keccak256(bytes("sub"))) {
+
             require(participants[_mudanca] >= _value, "Sem saldo suficiente");
             participants[_mudanca] -= _value;
             payable(owner).transfer(_value);
+
         } else if (keccak256(bytes(oper)) == keccak256(bytes("plus"))) {
             participants[_mudanca] += _value;
         }
