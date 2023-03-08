@@ -32,6 +32,7 @@ contract cooverContract{
     partValor[msg.sender] += msg.value;      
     }
 
+    //Utilizada para adicionar um usuário a lista númerica da quantidade de usuário dentro do contrato.
     function join() public payable {
         require(partContrato == true, "Contrato inativo");
         require(partImei[msg.sender] == 0, "Ja participante");
@@ -39,10 +40,12 @@ contract cooverContract{
         usuarios += 1;
     }
 
-    function getBalance() public view returns (uint) {
+    //Responsável por verificar o saldo de uma carteira
+    function getSaldo() public view returns (uint) {
         return partValor[msg.sender];
     }
 
+   //Função responsável por repor a reserva financeira do contato 
     function reposicaoReserva(address usuario) public payable{
         require(totalContrato == 0, "A reserva do contrato precisa ser reposta");
         saldoContrato = partValor[usuario];
@@ -50,6 +53,7 @@ contract cooverContract{
 
     }
 
+    //Mostra o saldo contido dentro do contrato
     function saldo_Contrato() public view returns (uint) {
         return address(this).balance; 
     }
@@ -67,5 +71,6 @@ contract cooverContract{
             partImei[_mudanca] += _value;
         }
     }
+
 
 }
