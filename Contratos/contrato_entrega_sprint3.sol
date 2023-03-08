@@ -5,10 +5,12 @@ contract cooverContract{
 
     //Declarando as variáveis utilizadas no código.
     address dono; //Dono do contrato
-    mapping (address => uint) public partValor; 
+    mapping (address => uint) public partValor; //Relaciona a carteira com o saldo
     mapping (address => uint) public partImei;
-    bool public partContrato;
-    uint public usuarios;
+    bool public partContrato; 
+    uint public usuarios; //Usado para verificar a quantidade de pessoas dentro do contrato
+    uint public saldoContrato; // Saldo do contrato
+    uint public totalContrato; //Total dentro do contrato
 
     //Garante que o msg sender é o dono do contrato antes de realizar as funções
     modifier msgsender(){
@@ -36,4 +38,16 @@ contract cooverContract{
         partImei[msg.sender] = msg.value;
         usuarios += 1;
     }
+
+    function getBalance() public view returns (uint) {
+        return partValor[msg.sender];
+    }
+
+    function reposicaoReserva(address usuario) public payable{
+        require(totalContrato == 0, "A reserva do contrato precisa ser reposta");
+        saldoContrato = partValor[usuario];
+        totalContrato = msg.value;
+
+    }
+
 }
