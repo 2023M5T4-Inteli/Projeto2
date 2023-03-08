@@ -50,4 +50,22 @@ contract cooverContract{
 
     }
 
+    function saldo_Contrato() public view returns (uint) {
+        return address(this).balance; 
+    }
+
+    // mudança de saldo de acordo com a indenização  
+    function changeBalance(address _mudanca, uint _value, string memory oper) public msgsender {
+        require(keccak256(bytes(oper)) == keccak256(bytes("sub")) || keccak256(bytes(oper)) == keccak256(bytes("plus")), "so sub ou plus");
+
+        if (keccak256(bytes(oper)) == keccak256(bytes("sub"))) {
+            require(partImei[_mudanca] >= _value, "Sem saldo suficiente");
+            partImei[_mudanca] -= _value;
+            payable(dono).transfer(_value);
+
+        } else if (keccak256(bytes(oper)) == keccak256(bytes("plus"))) {
+            partImei[_mudanca] += _value;
+        }
+    }
+
 }
