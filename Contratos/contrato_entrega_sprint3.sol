@@ -7,6 +7,8 @@ contract cooverContract{
     address dono; //Dono do contrato
     mapping (address => uint) public partValor; 
     mapping (address => uint) public partImei;
+    bool public partContrato;
+    uint public usuarios;
 
     //Garante que o msg sender é o dono do contrato antes de realizar as funções
     modifier msgsender(){
@@ -19,11 +21,19 @@ contract cooverContract{
             partImei[integrantes[i]] = imei[i];
         }
         dono = msg.sender;
+        partContrato = true;
     }
 
 
     //Função responsável pela entrada de um participante no contrato
     function pagamentoInicial() public payable{
     partValor[msg.sender] += msg.value;      
+    }
+
+    function join() public payable {
+        require(partContrato == true, "Contrato inativo");
+        require(partImei[msg.sender] == 0, "Ja participante");
+        partImei[msg.sender] = msg.value;
+        usuarios += 1;
     }
 }
