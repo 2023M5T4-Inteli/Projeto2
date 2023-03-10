@@ -11,7 +11,6 @@ contract cooverContract{
     uint public usuarios; //Usado para verificar a quantidade de pessoas dentro do contrato
     uint public saldoContrato; // Saldo do contrato
     uint public totalContrato; //Total dentro do contrato
-
     //Garante que o msg sender é o dono do contrato antes de realizar as funções
     modifier msgsender(){
         require(msg.sender == dono); _;
@@ -29,11 +28,11 @@ contract cooverContract{
 
     //Função responsável pela entrada de um participante no contrato
     function pagamentoInicial() public payable{
-    partValor[msg.sender] += msg.value;      
+        partValor[msg.sender] += msg.value;      
     }
 
     //Utilizada para adicionar um usuário a lista númerica da quantidade de usuário dentro do contrato.
-    function join() public payable {
+    function entrar() public payable {
         require(partContrato == true, "Contrato inativo");
         require(partImei[msg.sender] == 0, "Ja participante");
         partImei[msg.sender] = msg.value;
@@ -41,7 +40,7 @@ contract cooverContract{
     }
 
     //Responsável por verificar o saldo de uma carteira
-    function getSaldo() public view returns (uint) {
+    function obterSaldo() public view returns (uint) {
         return partValor[msg.sender];
     }
 
@@ -58,8 +57,8 @@ contract cooverContract{
         return address(this).balance; 
     }
 
-    // mudança de saldo de acordo com a indenização  
-    function changeBalance(address _mudanca, uint _value, string memory oper) public msgsender {
+    // mudança de saldo de acordo com a indenização.
+    function modificarSaldo(address _mudanca, uint _value, string memory oper) public msgsender {
         require(keccak256(bytes(oper)) == keccak256(bytes("sub")) || keccak256(bytes(oper)) == keccak256(bytes("plus")), "so sub ou plus");
 
         if (keccak256(bytes(oper)) == keccak256(bytes("sub"))) {
@@ -72,5 +71,12 @@ contract cooverContract{
         }
     }
 
+    //Função responsável pela ação de solicitar indenização.
+    function pedirIndenizacao(uint _value) public {
+        require(partContrato == true, "Contrato inativo");
+            partImei[msg.sender] -= _value;
+            totalContrato -= _value;
+            payable(msg.sender).transfer(_value);
+}
 
 }
