@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@sweetalert2/themes": "^5.0.15",
+    "sha256": "^0.2.0"
+  }
+}
