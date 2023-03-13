@@ -52,10 +52,13 @@ Contratos: todo o código fonte criado para o desenvolvimento do projeto, inclui
 
 O smart contract é um programa de computador auto-executável que automatiza e executa termos de contratos, sendo um dos pilares essencial para a implementação do projeto da Coover. Para sua implementação utilizou-se de requisitos de negócios, diagrama em blocos da solução e diagrama de sequências UML, tais documentos, podem ser acessados através da sua documentação e códigos, neste repositório, nos links abaixo. 
 
+OBS: O diagrama de implantação UML está localizado na documentação do Smart Contract, além de que, em conversa com o professor de programação foi explicado que a construção da documentação no README era para facilitar a formatação de documentos, visando isso, o grupo decidiu criar um arquivo para o diário de bordo e está disponível para maiores esclarecimentos.
+
  - <a href="https://github.com/2023M5T4-Inteli/Projeto2/tree/main/Contratos">📂 Contratos</a><br>
  
- - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V1_DocSmartContract.odt">📄 T4_G2_V1_DocSmartContract.odt</a><br>
- - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V1_DocSmartContract.pdf">📄 T4_G2_V1_DocSmartContract.pdf</a><br>
+ - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V2_DocSmartContract.odt">📄 T4_G2_V1_DocSmartContract.odt</a><br>
+ - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V2_DocSmartContract.pdf">📄 T4_G2_V1_DocSmartContract.pdf</a><br>
+ -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V1_DiárioDeBordoDeploy.pdf">📄T4_G2_V1_DiarioDeBordoDeploy.pdf</a><br>
 
 ## 💻 Execução dos projetos
 
@@ -69,7 +72,7 @@ Um guia para a execução desse projeto pode ser encontrado no conteúdo do docu
 * 0.2.0 - 24/03/2023
     * Quarta entrega - 
 * 0.1.1 - 10/03/2023
-    * Terceira entrega - 
+    * Terceira entrega - Deploy do Smart contract, finalizar a criação das funções do contrato e integração inicial do contrato com o front-end
 * 0.1.0 - 24/02/2023
     * Segunda entrega - Diagrama de blocos, primeira versão smart contract, wireframe das telas
 * 0.0.1 - 10/02/2023
