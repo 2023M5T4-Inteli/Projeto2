@@ -12,3 +12,62 @@ body{
 .alinhamentoUser{
     display: flex;
 }
+
+.inputFormatacao{
+    width: 30vw;
+    height: 6vh;
+    margin-left: 15vw;
+    border-radius: 8px;
+    padding-left: 7px;
+    border: none;
+    font-size: 0.7rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #303030;
+    color: #ffffff;
+}
+
+.inputTitulo{
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-left: 15vw;
+    margin-top: 2.5vh;
+}
+
+.imgDadosPessoais{
+    width: 12vw;
+    margin-left: 10vw;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+
+.textoInicial{
+    color: #ffffff;
+    margin-left: 15vw;
+    margin-top: 2.5vh;
+}
+
+.botaoDadosPessoais{
+    width: 30vw;
+    height: 6vh;
+    margin-left: 15vw;
+    border-radius: 8px;
+    padding-left: 7px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #00C171;
+    color: #ffffff;
+    margin-top: 2vw;
+}
+
+.imgSmartContract{
+    width: 50vw;
+}
+
+.imgSmartContract2{
+    width: 31.7vw;
+}
