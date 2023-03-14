@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00C171;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+header {
+    background-color: #00C171;
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: 13rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 100vw;
+}
+
+header .perfil-container {
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+header .perfil-container p {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #00C171;
+}
+
+header .perfil-container span {
+    margin-left: .7rem;
+    font-weight: 600;
+}
+
+.body-rounded {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #191919;
+    align-items: center;
+}
+
+.status-container {
+    display: flex;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
+    height: 6rem;
+    margin-top: -2rem;
+    border-radius: 18px;
+    background-color: #191919;
+    box-shadow: 0px 3px 39px rgba(0, 0, 0, 0.25);
+}
+
+#contratos-de-seguros-mutuos, #suporte-em-andamento, #suporte-em-aberto {
+    display: flex;
+    align-items: center;
+}
+
+.status-container .status-value {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.status-container .status-name {
+    font-size: 13px;
+    width: fit-content;
+    text-align: center;
+    margin-left: 8px;
+    line-height: 18px;
+}
+
+#dashboard {
+    width: 70vw;
+}
+
+#dashboard h2 {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+#dashboard .dashboard-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#dashboard .dashboard-botao {
+    display: flex;
+    align-items: center;
+    padding: .4rem .8rem;
+    background-color: #1C1B20;
+}
+
+.dashboard-titulo {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.dashboard-subtitulo {
+    font-size: 14px;
+}
+
+#dashboard .dashboard-icone {
+    width: 3rem;
+    height: 3rem;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.dashboard-titulo-subtitulo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    margin-left: 16px;
+    width: 75%;
+    height: 80%;
+}
+
+.chevron-right {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 1rem; height: 1rem;
+    transform: rotate(-45deg);
+}
+
+.sair {
+    background-color: #303030;
+    color: #FF6666;
+    padding: .8rem 6rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 429px) {
+    
+    header {
+        height: 30vh;
+    }
+
+    header .perfil-container {
+        padding: 2.5rem 0 0 3.5rem;
+    }
+
+    .body-rounded {
+        height: 70vh;
+    }
+
+    .status-container {
+        width: 85vw;
+        padding: .5rem;
+    }
+
+    #contratos-de-seguros-mutuos, #suporte-em-andamento, #suporte-em-aberto {
+    }
+
+    .status-container .status-value {
+        font-size: 2rem;
+    }
+
+    .status-container .status-name {
+        font-size: .85rem;
+    }
+
+    #dashboard .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contratos-de-seguros-mutuos, #suporte-em-andamento, #suporte-em-aberto {
+        flex-direction: column;
+    }
+
+    #dashboard .dashboard-icone {
+        border-radius: 1rem;
+    }
+
+    #dashboard .dashboard-titulo-subtitulo .dashboard-titulo {
+        font-size:  1rem;
+    }
+
+    #dashboard .dashboard-titulo-subtitulo .dashboard-subtitulo {
+        font-size: .8rem;
+        color: #BBBBBB;
+    }
+
+    .chevron-right {
+        height: .7rem;
+        width: .7rem;
+    }
+    
+}
