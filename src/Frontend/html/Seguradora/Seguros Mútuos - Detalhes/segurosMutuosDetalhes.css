@@ -1,0 +1,215 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    width: 15vw;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #09090A;
+}
+
+nav .logo {
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    align-self: center;
+    height: 4rem;
+}
+
+nav input {
+    width: 80%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #1F1F22;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    text-indent: 1.3rem;
+}
+
+nav input::placeholder {
+    color: #EFEFEF;
+    font-size: .8rem;
+}
+
+nav ul {
+    padding-top: 2rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li .sidebar-dashboard {
+    background-image: url(../../../img/sidebar-home.png);
+}
+
+nav ul li .sidebar-revenue {
+    background-image: url(../../../img/revenue.png);
+}
+
+nav ul li .sidebar-notifications {
+    background-image: url(../../../img/notifications.png);
+}
+
+nav ul li .sidebar-analytics {
+    background-image: url(../../../img/analytics.png);
+}
+
+nav ul li .sidebar-inventory {
+    background-image: url(../../../img/inventory.png);
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 80%;
+    font-size: .9rem;
+    text-indent: 2.3rem;
+    color: #EFEFEF;
+    text-decoration: none;
+    background-position: .3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .logout {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: .3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+}
+
+main {
+    width: 100%;
+    padding: 3rem;
+}
+
+main h1 {
+    font-size: 1.7rem;
+    color: #F2F2F2;
+    display: inline-flex;
+    align-items: center ;
+}
+
+main h1 img {
+    height: auto;
+    margin-left: 1rem;
+}
+
+main h2 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+main .info-container {
+    width: 100%;
+    margin-top: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .info-container .info-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+main .info-container .info-wrapper:last-child {
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+main .info-container label {
+    color: #fff;
+    font-size: .9rem;
+    margin-bottom: .7rem;
+}
+
+main .info-container select {
+    padding: .8rem;
+    border-radius: .3rem;
+    background-color: #303030;
+    color: #fff;
+    border: none;
+}
+
+main .info-container .info-value {
+    text-indent: 1.4rem;
+    border-radius: .3rem;
+    padding: .7rem;
+    background-color: #303030;
+    font-size: 1rem;
+}
+
+main .info-container .saldo-total {
+    padding: .9rem;
+    background-color: #303030;
+    font-size: 1rem;
+    border-radius: .4rem;
+}
+
+main .info-container .info-date {
+    display: inline-flex;
+    align-items: center;
+    font-size: .8rem;
+    padding: .8rem;
+    background-color: #303030;
+    border: none;
+    border-radius: .3rem;
+    font-style: italic;
+}
+
+main .info-container .info-date img {
+    margin-right: 1rem;
+}
+
+main button {
+    margin-top: 2rem;
+    padding: .8rem 1rem;
+}
+
+.background-image {
+    display: none;
+    height: 50vh;
+    justify-self: center;
+    align-self: center;
+    margin-right: 3rem;
+}
+
+@media (min-width: 1240px) {
+    main .info-container {
+        width: 60%;
+    }
+    .background-image {
+        display: block;
+    }
+}
+
+@media (max-width: 428px) {
+
+    nav {
+        display: none;
+    }
+
+}
