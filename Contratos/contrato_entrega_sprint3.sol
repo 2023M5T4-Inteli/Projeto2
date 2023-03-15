@@ -8,6 +8,7 @@ contract cooverContract{
     address dono; //Dono do contrato
     mapping (address => uint) public partValor; // Relaciona a carteira com o saldo
     mapping (address => uint) public partImei; // Relaciona a carteira com o IMEI do celular
+    mapping (address => uint256) public pedidos; //pedidos dos contratantes
     bool public partContrato; // Verifica se o contrato está ativo ou inativo
     uint public usuarios; // Usado para verificar a quantidade de pessoas dentro do contrato
     uint public saldoContrato; // Saldo do contrato
@@ -79,12 +80,15 @@ contract cooverContract{
     }
 
     //Função para que o usuário peça uma indenização
+    function pedirIndenizacao(uint256 quantidade) public{
+        require(quantidade > 0, "Valor invalido"); //garante que é um valor valido
+        pedidos[msg.sender] += quantidade;
+    }
 
-    function pedirIndenizacao(uint _value) public {
-        require(partContrato == true, "Contrato inativo"); // Verifica se o contrato está ativo
-            partImei[msg.sender] -= _value; // Verifica o IMEI 
-            totalContrato -= _value; // Verifica o valor total do contrato
-            payable(msg.sender).transfer(_value); // Transfere o valor
+    //Função para que um administrador possa aceitar um pedido de indenização
+    function aceitarIndenizacao(address contratantes) public {
+        payable(contratantes).transfer(pedidos[contratantes]); //
+        pedidos[contratantes] = 0;
 }
-
+    
 }
