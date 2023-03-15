@@ -12,7 +12,12 @@ nav {
     height: 100vh;
     background-color: #09090A;
 }
-
+input{
+    color: #F2F2F2;
+}
+::placeholder{
+    color: #F2F2F2;
+}
 nav .logo {
     background-image: url(../../../img/LogoCoover.svg);
     background-size: contain;
