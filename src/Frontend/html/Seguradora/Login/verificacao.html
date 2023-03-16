@@ -7,6 +7,11 @@
     <title>Login</title>
     <link rel="stylesheet" href="../../../style/style.css">
     <link rel="stylesheet" href="../../../html/Seguradora/Login/verificacao.css">
+    <script src="../../../html/Seguradora/Login/verificacao.js"></script>
+    <!-- SweetAlert2 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
 </head>
 <body>
     <main>  
@@ -23,7 +28,7 @@
             <input class="codigo-input" type="">
             <input class="codigo-input" type="">
         </div>
-        <button class="login">LOGIN</button>
+        <button onclick=confirmCreation() class="login">LOGIN</button>
         <a href=""> Não recebi o código</a>
 
         <script>
