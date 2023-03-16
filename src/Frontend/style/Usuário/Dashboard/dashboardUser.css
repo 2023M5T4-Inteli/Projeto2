@@ -148,3 +148,10 @@ body{
 .informacoesGrupo{
     display: flex;
 }
+
+.maisInformacoes{
+    text-decoration: none;
+    transition: none;
+    color: #F2F2F2;
+}
+
