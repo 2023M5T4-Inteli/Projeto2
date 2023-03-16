@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Indenização</title>
+    <link rel="stylesheet" href="../../../style/style.css">
+    <link rel="stylesheet" href="./novaIndenizacao.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <input type="text" placeholder="Search...">
+        <ul>
+            <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
+            <li><a href="" class="sidebar-revenue">Revenue</a></li>
+            <li><a href="" class="sidebar-notifications">Notifications</a></li>
+            <li><a href="" class="sidebar-analytics">Analytics</a></li>
+            <li><a href="" class="sidebar-inventory">Inventory</a></li>
+        </ul>
+        <button class="logout">Logout</button>
+    </nav>
+    <main>
+        <h1>Indenização<img src="../../../img/ethereum.png"/></h2>
+        <h2>Nova Indenização</h2>
+        <div class="info-container">
+
+            <div class="info-wrapper">
+                <p class="saldo-total">Selecione</p>
+            </div>
+
+            <div class="info-wrapper">
+                <label for="Grupos" class="Grupos">Grupos</label>
+                <select name="" id="">
+                    <option selected hidden value="">Selecione</option>
+                </select>
+            </div>
+        
+            <div class="info-grid">
+                <div class="info-wrapper">
+                    <label for="">Data do Ocorrido</label>
+                    <p class="info-value"></p>
+                </div>
+    
+                <div class="info-wrapper">
+                    <label for="">IMEI</label>
+                    <p class="info-value"></p>
+                </div>
+    
+                <div class="info-wrapper">
+                    <label for="">Descrição</label>
+                    <p class="info-date"></p>
+                </div>
+                
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <label for="file">Selecione Arquivo:</label>
+                    <input type="file" name="file" id="file">
+                    <input type="submit" value="Enviar">
+                  </form>                  
+
+                       
+        </div>
+
+        <button class="criar-grupo-button" onclick="confirmCreation()">Solicitar Sinistro</button>
+
+    </main>
+    <img class="background-image" src="../../../img/bg-2.png" alt="">
+</body>
+</html>

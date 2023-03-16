@@ -102,7 +102,7 @@ main {
 }
 
 main h1 {
-    font-size: 1.7rem;
+    font-size: rem;
     color: #F2F2F2;
     display: inline-flex;
     align-items: center ;
