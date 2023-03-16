@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 15vw;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #09090A;
+}
+
+nav .logo {
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    align-self: center;
+    height: 4rem;
+}
+
+nav input {
+    width: 80%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #1F1F22;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    text-indent: 1.3rem;
+}
+
+nav input::placeholder {
+    color: #EFEFEF;
+    font-size: .8rem;
+}
+
+nav ul {
+    padding-top: 2rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.sidebarInicio {
+    background-image: url(../../../img/sidebar-home.png);
+}
+
+.sidebarSolicitacoes {
+    background-image: url(../../../img/notifications.png);
+}
+
+.sidebarIndenizacoes{
+    background-image: url(../../../img/inventory.png);
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 80%;
+    font-size: .9rem;
+    text-indent: 2.3rem;
+    color: #EFEFEF;
+    text-decoration: none;
+    background-position: .3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.saida {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: 0.3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+    border: none;
+}
+
+.pesquisa{
+    color: #F2F2F2;
+}
+
+.seguros{
+    display: flex;
+    flex-direction:row;
+}
+
+.imgSeta{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 1vw;
+}
+
+.seguroMutuo{
+    display: inline-flex; 
+    align-items: flex-start;
+}
+
+.tituloSeguro{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    color: #F2F2F2;
+}
+
+.imgEthereum{
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.tituloGrupo{
+    color: #F2F2F2;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.linha1, .linha2, .linha3{
+    display: flex;
+}
+
+.tituloSaldo, .tituloParticipantes, .tituloSituacao, .tituloIndenizacao, .tituloSaida, .tituloCriacao, .tituloEntrantes, .tituloRenovacao{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #F2F2F2;
+}
+
+.cardSaldo, .cardSituacao{
+    margin-left: 1rem;
+    width: 18.7vw;
+    display: flex;
+    border: none;
+    background-color: #252525;
+    align-items: center;
+    text-decoration: none;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+.cardParticipantes, .cardIndenizacao, .cardSaida, .cardCriacao, .cardEntrantes, .cardRenovacao{
+    margin-left: 1rem;
+    width: 12vw;
+    display: flex;
+    border: none;
+    background-color: #252525;
+    align-items: center;
+    text-decoration: none;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+.cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto, .cardIndenizacaoTexto, .cardSaidaTexto, .cardCriacaoTexto, .cardEntrantesTexto, .cardParticipantesTexto, .cardRenovacaoTexto{
+    color: #9D9D9D;
+    margin-left: 0.5rem;
+}
+
+.descricaoIndenizacao, .descricaoSaida, .descricaoIndenizacao{
+    color: #9D9D9D;
+    margin-left: 1rem;
+    font-size: 0.7rem;
+}
+
+.imgCalendario{
+    width: 1.5vw;
+}
+
+.botaoSair{
+    background-color: #FF5D66;
+    border: none;
+    color: #F2F2F2;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 18vw;
+    height: 5vh;
+    margin-bottom: 3rem;
+    border-radius: 1vh;
+}
+
+.botaoRenovar{
+    background-color: #06266A;
+    border: none;
+    color: #F2F2F2;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 18vw;
+    margin-bottom: 3rem;
+    height: 5vh;
+    border-radius: 1vh;
+  
+}
+
+.teste{
+    display: flex;
+}
+
+.botaoRenovarLink, .botaoSairLink{
+    text-decoration: none;
+    transition: none;
+    color: #F2F2F2;
+}
