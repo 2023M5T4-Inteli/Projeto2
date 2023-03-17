@@ -35,13 +35,14 @@ main .inputs-wrapper {
 }
 
 main .inputs-wrapper .codigo-input {
-    width: 1.5rem;
+    width: 3rem;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
 
-    color: transparent;
-    height: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    height: 3rem;
     border-radius: 100%;
     background: transparent;
     border: none;
