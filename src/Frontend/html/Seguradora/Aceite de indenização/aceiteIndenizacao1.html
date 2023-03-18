@@ -32,34 +32,20 @@
         <div class="info-container">
 
             <div class="info-wrapper">
-                <p class="saldo-total">Celulares-Palmeiras</p>
+                <label for="descricao-ocorrido" class="descricao">Seguro Mutuo</label>
+                <p class="saldo-total">Seguro para celular</p>
             </div>
 
             <div class="info-wrapper">
-                <label for="situacao" class="descricao">Descrição</label>
-                <input name="" id="">
-                    Descrição do ocorrido...
-                </input>
+                <label for="">Imei</label>
+                <input class="info-date"></input>
             </div>
-        
-            <div class="info-grid">
-                <div class="info-wrapper">
-                    <label for="">Quant Min Usuários</label>
-                    <p class="info-value">50</p>
-                </div>
-    
-                <div class="info-wrapper">
-                    <label for="">Quant Max Usuários</label>
-                    <p class="info-value">50</p>
-                </div>
-    
-                <div class="info-wrapper">
-                    <label for="">Data Criação</label>
-                    <p class="info-date"><img src="../../../img/calendar.png"/>31 Agosto, 2023</p>
-                </div>
+
+                <label for="descricao-ocorrido" class="descricao">Descrição</label>
+                <input type="text" placeholder="Descrição do ocorrido..." id="descricao-ocorrido" class="input_descricao">           
                 
                 <div class="info-wrapper">
-                    <label for="">Data Renovação</label>
+                    <label for="">Data do Ocorrido</label>
                     <p class="info-date"><img src="../../../img/calendar.png"/>31 Agosto, 2023</p>
                 </div>
             </div>
@@ -67,7 +53,10 @@
                        
         </div>
 
-        <button class="criar-grupo-button" onclick="confirmCreation()">Criar Grupo</button>
+        <div class="aceitar-recusar-container">
+            <button class="aceitar-button">Aceitar</button>
+            <button class="recusar-button">Recusar</button>
+          </div>          
 
     </main>
     <img class="background-image" src="../../../img/bg-2.png" alt="">

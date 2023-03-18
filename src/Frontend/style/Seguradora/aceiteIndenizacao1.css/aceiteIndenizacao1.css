@@ -142,6 +142,56 @@ nav .logout {
     text-indent: 1.5rem;
 }
 
+.aceitar-recusar-container{
+    padding-top: 0.5rem;
+}
+
+.aceitar-button, .recusar-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .recusar-button {
+    background-color: #f44336;
+  }
+  
+  .aceitar-button:hover, .recusar-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .aceitar-button:active, .recusar-button:active {
+    background-color: #235625;
+  }
+  
+  
+
+input#id {
+    width: 100%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #303030;
+    color: #1F1F22;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
 main {
     width: 100%;
     padding: 3rem;
@@ -186,13 +236,13 @@ main .info-container .info-wrapper {
 }
 
 main .info-container .info-wrapper .descricao {
-    margin-top: 10px;
+    margin-top: -1rem;
 }
 
 main .info-container label {
     color: #fff;
     font-size: .9rem;
-    margin-bottom: .7rem;
+    margin-top: 1rem;
 }
 
 main .info-container select {
@@ -201,6 +251,13 @@ main .info-container select {
     background-color: #303030;
     color: #fff;
     border: none;
+}
+
+.input_descricao{
+    border: 0;
+    background-color: #303030;
+    color: #F2F2F2;
+    height: 100px;
 }
 
 main .info-container .info-value {
@@ -221,6 +278,7 @@ main .info-container .saldo-total {
 main .info-container .info-date {
     display: inline-flex;
     align-items: center;
+    color: #fff;
     font-size: .8rem;
     padding: .8rem;
     background-color: #303030;
