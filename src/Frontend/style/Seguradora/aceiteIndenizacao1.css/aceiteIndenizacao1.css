@@ -4,6 +4,50 @@ body {
     justify-content: space-around;
 }
 
+.swal2-actions {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}  
+
+main .criar-grupo-button {
+    width: 60%;
+}
+
+.sweet-alert-container * {
+    font-family: Roboto, sans-serif !important;
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    padding: 1rem 0;
+    width: 40%;
+    height: 75%;
+    border-radius: 28px;
+}
+
+.swal2-title.swal-title {
+    margin: .2rem 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.swal2-html-container {
+    font-size: 14px;
+    font-weight: 300;
+    color: #080808;
+}
+
+.swal2-actions .btn-primario {
+    width: 100%;
+}
+
+.swal2-actions .btn-secundario {
+    background-color: transparent;
+    color: #06266A;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 nav {
     width: 15vw;
     min-width: fit-content;
@@ -12,12 +56,7 @@ nav {
     height: 100vh;
     background-color: #09090A;
 }
-input{
-    color: #F2F2F2;
-}
-::placeholder{
-    color: #F2F2F2;
-}
+
 nav .logo {
     background-image: url(../../../img/LogoCoover.svg);
     background-size: contain;
@@ -103,6 +142,56 @@ nav .logout {
     text-indent: 1.5rem;
 }
 
+.aceitar-recusar-container{
+    padding-top: 0.5rem;
+}
+
+.aceitar-button, .recusar-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .recusar-button {
+    background-color: #f44336;
+  }
+  
+  .aceitar-button:hover, .recusar-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .aceitar-button:active, .recusar-button:active {
+    background-color: #235625;
+  }
+  
+  
+
+input#id {
+    width: 100%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #303030;
+    color: #1F1F22;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
 main {
     width: 100%;
     padding: 3rem;
@@ -129,9 +218,15 @@ main h2 {
 main .info-container {
     width: 100%;
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .info-grid {
     display: grid;
-    gap: 2rem;
+    margin-top: 15px;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 main .info-container .info-wrapper {
@@ -140,15 +235,14 @@ main .info-container .info-wrapper {
     width: 98%;
 }
 
-main .info-container .info-wrapper:last-child {
-    width: 100%;
-    grid-column: 1 / -1;
+main .info-container .info-wrapper .descricao {
+    margin-top: -1rem;
 }
 
 main .info-container label {
     color: #fff;
     font-size: .9rem;
-    margin-bottom: .7rem;
+    margin-top: 1rem;
 }
 
 main .info-container select {
@@ -157,6 +251,13 @@ main .info-container select {
     background-color: #303030;
     color: #fff;
     border: none;
+}
+
+.input_descricao{
+    border: 0;
+    background-color: #303030;
+    color: #F2F2F2;
+    height: 100px;
 }
 
 main .info-container .info-value {
@@ -177,6 +278,7 @@ main .info-container .saldo-total {
 main .info-container .info-date {
     display: inline-flex;
     align-items: center;
+    color: #fff;
     font-size: .8rem;
     padding: .8rem;
     background-color: #303030;

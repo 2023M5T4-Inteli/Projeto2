@@ -100,22 +100,27 @@ nav ul li a {
     color: #F2F2F2;
 }
 
-
 .imgSeta{
     margin-top: 3rem;
     margin-left: 3rem;
     width: 1vw;
 }
 
-.seguroMutuo{
+.indenizacao{
     display: inline-flex; 
     align-items: flex-start;
 }
 
-.tituloSeguro{
+.tituloIndenizacao{
     margin-top: 4rem;
     margin-left: 4rem;
     color: #F2F2F2;
+}
+
+.tituloSinistro{
+    color: #F2F2F2;
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
 
 .imgEthereum{
@@ -123,115 +128,112 @@ nav ul li a {
     margin-left: 2rem;
 }
 
-.tituloGrupo{
-    color: #F2F2F2;
-    margin-top: 2rem;
-    margin-left: 4rem;
-}
-
-.linha1, .linha2, .linha3{
-    display: flex;
-}
-
-.tituloIndenizacao, .tituloEntrantes, .tituloSaldo, .tituloSituacao{
-    margin-left: 3rem;
-    margin-top: 1rem;
-    color: #F2F2F2;
-}
-
-.tituloParticipantes, .tituloSaida, .tituloCriacao, .tituloRenovacao{
-    margin-left: 2rem;
-    margin-top: 1rem;
-    color: #F2F2F2;
-}
-
-.cardSaldo, .cardSituacao{
-    margin-left: 3rem;
-    width: 18.7vw;
-    display: flex;
-    border: none;
-    background-color: #252525;
-    align-items: center;
-    text-decoration: none;
-    height: 5vh;
-    border-radius: 1vh;
-}
-
-.cardIndenizacao, .cardEntrantes{
-    margin-left: 3rem;
-    width: 12vw;
-    display: flex;
-    border: none;
-    background-color: #252525;
-    align-items: center;
-    text-decoration: none;
-    height: 5vh;
-    border-radius: 1vh;
-
-}
-
-.cardParticipantes, .cardSaida, .cardCriacao, .cardRenovacao{
-    margin-left: 2rem;
-    width: 12vw;
-    display: flex;
-    border: none;
-    background-color: #252525;
-    align-items: center;
-    text-decoration: none;
-    height: 5vh;
-    border-radius: 1vh;
-}
-
-.cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto, .cardIndenizacaoTexto, .cardSaidaTexto, .cardCriacaoTexto, .cardEntrantesTexto, .cardParticipantesTexto, .cardRenovacaoTexto{
-    color: #9D9D9D;
-    margin-left: 0.5rem;
-}
-
-.descricaoIndenizacao, .descricaoSaida, .descricaoIndenizacao{
-    color: #9D9D9D;
-    margin-left: 3rem;
-    font-size: 0.7rem;
-}
-
-.imgCalendario{
-    width: 1.5vw;
-    margin-left: 0.5rem;
-}
-
-.botaoSair{
-    background-color: #FF5D66;
-    border: none;
-    color: #F2F2F2;
-    margin-left: 4rem;
-    margin-top: 1rem;
-    width: 18vw;
-    height: 5vh;
-    margin-bottom: 3rem;
-    border-radius: 1vh;
-}
-
-.botaoRenovar{
-    background-color: #06266A;
-    border: none;
-    color: #F2F2F2;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    width: 18vw;
-    margin-bottom: 3rem;
-    height: 5vh;
-    border-radius: 1vh;
-  
-}
-
 .pagina{
     display: flex;
 }
 
-.img{
-    margin-left: 4rem;
-    margin-top: 0rem;
+
+.card1{
+    margin-left: 3rem;
+    margin-top: 1.5rem;
 }
-.imgSeguro{
-    width: 30vw;
-    height: 100vh;
+
+.card2{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.cardDashboard{
+    display: flex;
+    border: none;
+    background-color: #1C1B20;
+    align-items: center;
+    text-decoration: none;
+    width: 35vw;
+    border-radius: 1vh;
+}
+
+.cardTitulo{
+    font-size: 1rem;
+}
+
+.cardTexto{
+    font-size: 0.8rem;
+}
+
+.imgBotaoUser{
+    height: 2rem;
+}
+
+.texto{
+    margin-left: 2rem;
+    width: 25vw;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.imgSetaEsquerda{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 1vw;
+}
+
+.linha1, .linha2, .linha3, .linha4{
+    display: flex;
+}
+
+.tituloWallet{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #F2F2F2;
+}
+
+.tituloWalletGrupo{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #F2F2F2;
+}
+
+.cardWallet{
+    margin-left: 3rem;
+    width: 40vw;
+    display: flex;
+    border: none;
+    background-color: #252525;
+    align-items: center;
+    text-decoration: none;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+.cardWalletTexto{
+    color: #9D9D9D;
+    margin-left: 0.5rem;
+}
+
+.tituloAndamento{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #F2F2F2;
+}
+
+
+.cardSinistro{
+    margin-left: 3rem;
+    width: 40vw;
+    display: flex;
+    border: none;
+    background-color: #252525;
+    align-items: center;
+    text-decoration: none;
+    height: 10vh;
+    border-radius: 1vh;
+}
+
+.cardTitulo{
+    color: #9D9D9D;
+    margin-left: 0.5rem;
 }

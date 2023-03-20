@@ -1,0 +1,376 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+nav {
+    width: 15vw;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #09090A;
+}
+
+
+
+nav .logo {
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    align-self: center;
+    height: 4rem;
+}
+nav input {
+    width: 80%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #1F1F22;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    text-indent: 1.3rem;
+}
+nav input::placeholder {
+    color: #EFEFEF;
+    font-size: .8rem;
+}
+nav ul {
+    padding-top: 2rem;
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li .sidebar-dashboard {
+    background-image: url(../../../img/sidebar-home.png);
+}
+nav ul li .sidebar-revenue {
+    background-image: url(../../../img/revenue.png);
+}
+nav ul li .sidebar-notifications {
+    background-image: url(../../../img/notifications.png);
+}
+nav ul li .sidebar-analytics {
+    background-image: url(../../../img/analytics.png);
+}
+nav ul li .sidebar-inventory {
+    background-image: url(../../../img/inventory.png);
+}
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 80%;
+    font-size: .9rem;
+    text-indent: 2.3rem;
+    color: #EFEFEF;
+    text-decoration: none;
+    background-position: .3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav .logout {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: .3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+}
+
+input{
+    color: #EFEFEF;
+}
+main h1 img {
+    height: auto;
+    margin-left: 1rem;
+}
+.background-image {
+    display: none;
+    height: 50vh;
+    justify-self: center;
+    align-self: center;
+    margin-right: 3rem;
+}
+main h2 {
+    color: #fff;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid #999;
+}
+main .participantes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.participantes .participante ::-webkit-meter-even-less-good-value {
+    background-image: url(../../../img/Frame\ 9.svg);
+    align-items: flex-end;
+    position: relative;
+    left: 20px;
+    display: inline-flex;
+}
+
+.participantes .participante:nth-child() {
+    background-color: #303030;
+    background-image: url(../../../img/imgSeta.svg);
+    background-repeat: no-repeat;
+    background-position: .10rem;
+    position: absolute;
+    left: 10rem;
+    bottom: 10rem;
+    background-color: transparent;
+    text-indent: 10.5rem;
+    
+
+    
+}
+.participantes .participante .id {
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.participantes .participante .endereco {
+    font-size: .9rem;
+}
+@media (min-width: 1024px) {
+    .background-image {
+        display: block;
+    }
+}
+@media (max-width: 428px) {
+    nav {
+        display: none;
+    }
+}body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    width: 15vw;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #09090A;
+}
+nav .logo {
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    align-self: center;
+    height: 4rem;
+}
+nav .id {
+    width: 80%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #1F1F22;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    text-indent: 1.3rem;
+}
+nav input::placeholder {
+    color: #EFEFEF;
+    font-size: .8rem;
+}
+nav ul {
+    padding-top: 2rem;
+}
+nav ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li .sidebar-dashboard {
+    background-image: url(../../../img/sidebar-home.png);
+}
+nav ul li .sidebar-revenue {
+    background-image: url(../../../img/revenue.png);
+}
+nav ul li .sidebar-notifications {
+    background-image: url(../../../img/notifications.png);
+}
+nav ul li .sidebar-analytics {
+    background-image: url(../../../img/analytics.png);
+}
+nav ul li .sidebar-inventory {
+    background-image: url(../../../img/inventory.png);
+}
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 80%;
+    font-size: .9rem;
+    text-indent: 2.3rem;
+    color: #EFEFEF;
+    text-decoration: none;
+    background-position: .3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav .logout {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: .3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+}
+main {
+    width: 100%;
+    padding: 3rem;
+}
+main h1 {
+    font-size: 1.0rem;
+    font-weight: 560;
+    color: #F2F2F2;
+    display: inline-flex;
+    align-items: center ;
+}
+main h1 img {
+    height: auto;
+    margin-left: 1rem;
+}
+.background-image {
+    display: none;
+    height: 50vh;
+    justify-self: center;
+    align-self: center;
+    margin-right: 3rem;
+}
+main h2 {
+    color: #fff;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-bottom: .1rem solid #999;
+}
+main .participantes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.participantes .participante {
+    padding: .8rem;
+    border-radius: .7rem;
+    margin: .3rem 0;
+}
+.participantes .participante {
+    background-color: #303030;
+    
+}
+.participantes .participante .id {
+    color: #fff;
+    font-weight: 600;
+    font-size: .9rem;
+    
+
+}
+.participantes .participante .endereco {
+    font-size: .9rem;
+    color: #9D9D9D;
+}
+@media (min-width: 1024px) {
+    .background-image {
+        display: block;
+    }
+}
+@media (max-width: 428px) {
+    nav {
+        display: none;
+    }
+}
+input{
+    padding: .8rem;
+    border-radius: .7rem;
+    margin: .3rem 0;;
+    background-color: #1F1F22;
+}
+.endereco::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+  }
+
+.card1{
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+}
+
+.cardDashboard{
+    display: flex;
+    border: none;
+    background-color: #1C1B20;
+    align-items: center;
+    text-decoration: none;
+    width: 35vw;
+    border-radius: 1vh;
+}
+
+.cardTitulo{
+    font-size: 1rem;
+}
+
+.texto{
+    margin-left: 2rem;
+    width: 25vw;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.cardTexto{
+    font-size: 0.8rem;
+}
+
+.imgBotaoUser{
+    height: 3rem;
+}
+
+.card2{
+    margin-top: 0.7rem;
+}
+
+.saida {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: 0.3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+    border: none;
+}
+
+.pesquisa{
+    color: #F2F2F2;
+}
