@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 15vw;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #09090A;
+}
+
+nav .logo {
+    background-image: url(../../../img/LogoCoover.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    align-self: center;
+    height: 4rem;
+}
+
+nav input {
+    width: 80%;
+    align-self: center;
+    margin-top: 1.5rem;
+    padding: .8rem;
+    border: none;
+    outline: none;
+    border-radius: .7rem;
+    background-color: #1F1F22;
+    background-image: url(../../../img/search.png);
+    background-repeat: no-repeat;
+    background-position: .3rem center;
+    text-indent: 1.3rem;
+}
+
+nav input::placeholder {
+    color: #EFEFEF;
+    font-size: .8rem;
+}
+
+nav ul {
+    padding-top: 2rem;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.sidebarInicio {
+    background-image: url(../../../img/sidebar-home.png);
+}
+
+.sidebarSolicitacoes {
+    background-image: url(../../../img/notifications.png);
+}
+
+.sidebarIndenizacoes{
+    background-image: url(../../../img/inventory.png);
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    margin: 1rem 0;
+    width: 80%;
+    font-size: .9rem;
+    text-indent: 2.3rem;
+    color: #EFEFEF;
+    text-decoration: none;
+    background-position: .3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.saida {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: 0.3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+    border: none;
+}
+
+.pesquisa{
+    color: #F2F2F2;
+}
+
+.alinhamentoTexto{
+    display: flex;
+    text-align: center;
+}
+
+.alinhamentoTextoTitulo{
+    display: flex;
+    align-items: center;
+}
+
+.textoTitulo{
+    color: #ffffff;
+}
+
+.imgSeta, .imgEthereum, .textoTitulo{
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+.titulo{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: 4vw;
+}
+
+.texto{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: 2vw;
+}
+
+.textoOBS{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+.imgSmartContract{
+    width: 29.4vw;
+    margin-left: 3vw;
+}
+
+#table-container {
+    height: 30vh; 
+    overflow-y: auto; 
+    margin-left: 3vw; 
+    width: 45vw; 
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th{
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+td, th {
+    border: none;
+    text-align: left;
+}
+
+thead{
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+}
+
+td{
+    color: #a7a7a7;
+}
+
+
+/* Remove a aparência padrão da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.table-container {
+    scrollbar-width: thin;
+    scrollbar-color: #535353 #8d8d8d;
+}
+ 
+.table-container ::-webkit-scrollbar-track {
+    background: #7e7e7e;
+}
+
+.table-container ::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 20px;
+    border: 3px solid #696969;
+}
+
+.table-container ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
