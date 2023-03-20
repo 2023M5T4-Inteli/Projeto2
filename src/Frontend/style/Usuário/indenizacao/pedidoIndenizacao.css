@@ -224,7 +224,6 @@ nav ul li a {
 .cardSinistro{
     margin-left: 3rem;
     width: 40vw;
-    display: flex;
     border: none;
     background-color: #252525;
     align-items: center;
@@ -236,4 +235,12 @@ nav ul li a {
 .cardTitulo{
     color: #9D9D9D;
     margin-left: 0.5rem;
+}
+
+.cardTexto{
+    color: #9D9D9D;
+}
+
+.seta{
+    display: flex;
 }
