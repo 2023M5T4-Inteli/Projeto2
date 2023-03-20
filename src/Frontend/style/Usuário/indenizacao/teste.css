@@ -12,6 +12,8 @@ nav {
     background-color: #09090A;
 }
 
+
+
 nav .logo {
     background-image: url(../../../img/LogoCoover.svg);
     background-size: contain;
@@ -85,17 +87,7 @@ nav .logout {
     background-color: transparent;
     text-indent: 1.5rem;
 }
-main {
-    width: 100%;
-    padding: 3rem;
-}
-main h1 {
-    font-size: 1.7rem;
-    font-weight: 700;
-    color: #F2F2F2;
-    display: inline-flex;
-    align-items: center ;
-}
+
 input{
     color: #EFEFEF;
 }
@@ -167,9 +159,7 @@ main .participantes {
     display: flex;
     justify-content: space-around;
 }
-a{
-    color: #F2F2F2;
-}
+
 nav {
     width: 15vw;
     min-width: fit-content;
@@ -331,8 +321,56 @@ input{
     margin-left: 5px;
   }
 
-.imgParticipantes{
+.card1{
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+}
+
+.cardDashboard{
+    display: flex;
+    border: none;
+    background-color: #1C1B20;
+    align-items: center;
+    text-decoration: none;
+    width: 35vw;
+    border-radius: 1vh;
+}
+
+.cardTitulo{
+    font-size: 1rem;
+}
+
+.texto{
+    margin-left: 2rem;
+    width: 25vw;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.cardTexto{
+    font-size: 0.8rem;
+}
+
+.imgBotaoUser{
     height: 3rem;
 }
 
-.participante
+.card2{
+    margin-top: 0.7rem;
+}
+
+.saida {
+    background-image: url(../../../img/logout.png);
+    background-repeat: no-repeat;
+    background-position: 0.3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    text-indent: 1.5rem;
+    border: none;
+}
+
+.pesquisa{
+    color: #F2F2F2;
+}
