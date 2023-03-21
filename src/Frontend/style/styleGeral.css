@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #19191D;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+
+    
+    .imgHome2{
+        margin-top: 15vh;
+        margin-left: 2vh;
+        width: 85vw;
+    }
+    
+    .logoCoover2{
+        margin-left: 10vw;
+        margin-left: 10vh;
+        width: 50vw;
+    }
+    
+    .textoHome{
+        margin-top: 10vw;
+        color: #ffffff;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .botaoUsuario{
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 3vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-left: 12vw;
+        width: 75vw;
+    }
+
+    .botaoSeguradora{
+        padding: 10px;
+        background-color: #3f31ff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 3vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-left: 12vw;
+        width: 75vw;
+    }
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+
+    .alinhamento2{
+        margin-right: 8vw;
+        margin-top: 15vw;
+    }
+
+    .alinhamento1{
+        margin-left: 8vw;
+    }
+    
+    .imgHome2{
+        margin-top: 15vh;
+        width: 35vw;
+    }
+    
+    .logoCoover2{
+        margin-left: 17vw;
+        width: 15vw;
+        margin-bottom: 3vw;
+    }
+    
+    .textoHome{
+        color: #ffffff;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    
+    .home{
+        display: flex;
+    }
+    
+    .botaoUsuario{
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 3vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-left: 10vw;
+        width: 30vw;
+    }
+
+    .botaoSeguradora{
+        padding: 10px;
+        background-color: #3f31ff;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 3vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-left: 10vw;
+        width: 30vw;
+    }
+
+}
+  
