@@ -1,69 +1,61 @@
-body {
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    width: 35vw;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-main h2 {
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-main p {
-    font-size: 1.1rem;
-    text-decoration: underline;
-    color: #C9C9C9;
-}
-
-main .inputs-wrapper {
-    display: flex;
-    width: 30vw;
-    justify-content: space-evenly;
-}
-
-main .inputs-wrapper .codigo-input {
-    width: 1.5rem;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-
-    color: transparent;
-    height: 1.5rem;
-    border-radius: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 1px solid #fff;
-}
-
-main .inputs-wrapper input:not(:empty) {
-    background-color: purple !important;
-}
-  
-
-main .login {
-    width: 100%;
+*{
     margin: 0;
-    padding: 1.3rem 0;
-    font-weight: 600;
-    letter-spacing: 1px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-main a {
-    color: #8B8B8B;
-    text-decoration: none;
-    font-size: .9rem;
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    display: flex;
+}
+
+.imgInicio{
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 40vw;
+    height: 80vh;
+}
+
+.logoTextoEntrada{
+    margin-top: 20vh;
+}
+
+.textoInicio{
+    color: #F2F2F2;
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.logoCoover{
+    margin-left: 17rem;
+    width: 15vw;
+    height: 15vh;
+}
+
+.logoMeta{
+    margin-left: 1.5rem;
+}
+
+.botaoMetamask{
+    padding: 10px;
+    background-color: #00C171;
+    color: #fff;
+    border: none;
+    display: flex;
+    border-radius: 8px;
+    margin-top: 5rem;
+    margin-left: 13rem;
+    width: 25vw;
+}
+
+.textoConectar{
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
 }

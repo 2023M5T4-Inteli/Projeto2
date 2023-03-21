@@ -9,62 +9,72 @@
     <link rel="stylesheet" href="./novaIndenizacao.css">
 </head>
 <body>
-    <nav>
-        <div class="logo"></div>
-        <input type="text" placeholder="Search...">
-        <ul>
-            <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
-            <li><a href="" class="sidebar-revenue">Revenue</a></li>
-            <li><a href="" class="sidebar-notifications">Notifications</a></li>
-            <li><a href="" class="sidebar-analytics">Analytics</a></li>
-            <li><a href="" class="sidebar-inventory">Inventory</a></li>
-        </ul>
-        <button class="logout">Logout</button>
-    </nav>
-    <main>
-        <h1>Indenização<img src="../../img/ethereum.png"/></h2>
-        <h2>Nova Indenização</h2>
-        <div class="info-container">
-
-            <div class="info-wrapper">
-                <p class="saldo-total">Selecione</p>
-            </div>
-
-            <div class="info-wrapper">
-                <label for="Grupos" class="Grupos">Grupos</label>
-                <select name="" id="">
-                    <option selected hidden value="">Selecione</option>
-                </select>
-            </div>
-        
-            <div class="info-grid">
-                <div class="info-wrapper">
-                    <label for="">Data do Ocorrido</label>
-                    <p class="info-value"></p>
+    <div class="alinhamentoUser">
+        <div>
+            <nav class="navbar">
+                <img class="logo" src="../../img/LogoCoover.svg">
+                <div class="pesquisa" >
+                    <img src="../../img/search.png">
+                    <input class="barraPesquisa" type="text" placeholder="Pesquisar...">
                 </div>
-    
-                <div class="info-wrapper">
-                    <label for="">IMEI</label>
-                    <p class="info-value"></p>
-                </div>
-    
-                <div class="info-wrapper">
-                    <label for="">Descrição</label>
-                    <p class="info-date"></p>
-                </div>
-                
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <label for="file">Selecione Arquivo:</label>
-                    <input type="file" name="file" id="file">
-                    <input type="submit" value="Enviar">
-                  </form>                  
-
-                       
+                <ul class="opcoesNavbar">
+                    <div class="sidebarInicio">
+                        <img class="imgSidebar" src="../../img/sidebar-home.png">
+                        <li><a href="./dashboardUser.html" class="textoSidebar">Página Inicial</a></li>
+                    </div>
+                    <div class="sidebarSolicitacoes">
+                        <img class="imgSidebar" src="../../img/notifications.png">
+                        <li><a href="../Solicitação Aprovada/solicitacaoAprovada.html" class="textoSidebar">Solicitações</a></li>
+                    </div>
+                    <div class="sidebarIndenizacoes">
+                        <img class="imgSidebar" src="../../img/inventory.png">
+                        <li><a href="../Pedido de indenização/pedidoIndenizacao.html" class="textoSidebar">Indenizações</a></li>
+                    </div>
+                </ul>
+                <button class="saida" id="saida">
+                    <img src="../../img/logout.png">
+                </button>
+            </nav>
         </div>
-
-        <button class="criar-grupo-button" onclick="confirmCreation()">Solicitar Sinistro</button>
-
-    </main>
-    <img class="background-image" src="../../img/bg-2.png" alt="">
+        <div>
+            <div class="indenizacao">
+                <a href="./pedidoIndenizacao.html"><img href class="imgSeta" src="../../img/imgSetaEsquerda.svg"></a>
+                <h1 class="tituloIndenizacao">Indenização</h1>
+                <img class="imgEthereum" src="../../img/ethereum.png">
+            </div>
+            <h2 class="textoNovaIndenizacao">Nova Indenização</h2>
+            <div class="cardIndenizacao">
+                <h4 class="gruposUser">Grupos</h4>
+                <select id="selecao" class="selecao" aria-label="Default select example">
+                    <option selected>Selecione</option>
+                    <option class="textoSeleciona" value="Grupo 1">Grupo 1</option>
+                    <option class="textoSeleciona" value="Grupo 2">Grupo 2</option>
+                    <option class="textoSeleciona" value="Grupo 3">Grupo 3</option>
+                </select>
+                <div class="informacoesOcorrido">
+                    <div class="dataOcorrido">
+                        <h4 class="textoDataOcorrido">Data do Ocorrido</h4>
+                        <input class="inputDataOcorrido" type="date">
+                    </div>
+                    <div class="imei">
+                        <h4 class="textoImei">IMEI</h4>
+                        <input class="inputImei" type="number">
+                    </div>
+                </div>
+                <div class="descricao">
+                    <h4 class="tituloDescricao">Descrição</h4>
+                    <form class="caixaArquivo" action="upload.php" method="post" enctype="multipart/form-data">
+                        <h5 class="textoArquivo">Selecione Arquivo:</h5>
+                        <input type="file" name="file" id="file" required placeholder="Selecione um arquivo">
+                        <button class="botaoEnviar" type="submit" value="Enviar">Enviar</button>
+                    </form>   
+                </div>   
+                <button class="botaoSolicitar" onclick="confirmCreation()">Solicitar Sinistro</button>
+            </div>
+        </div>  
+        <div class="img">
+            <img class="imgIndenizacao" src="../../img/bg-2.png">
+        </div>          
+    </div>   
 </body>
 </html>

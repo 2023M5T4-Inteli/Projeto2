@@ -13,7 +13,7 @@ body{
     display: flex;
 }
 
-.imgescolhaGrupo{
+.imgEscolhaGrupo{
     width: 12vw;
     margin-left: 10vw;
     margin-top: 6vh;
@@ -26,61 +26,8 @@ body{
     margin-top: 2.5vh;
 }
 
-
-.imgSmartContract{
-    width: 50vw;
-    margin-left: 10vw;
-    margin-top: 13vh;
-}
-
-.imgSmartContract2{
-    width: 29.3vw;
-}
-
-.informacaoIcon{
-    width: 1.5vw;
-    margin-left: 1vw;
-    cursor: pointer;
-} 
-
 .table{
     color: #ffffff;
-}
-
-.alinharBotao{
-    display: flex;
-}
-
-.botaoEntrarGrupo{
-    width: 19vw;
-    height: 6vh;
-    margin-left: 10vw;
-    border-radius: 8px;
-    padding-left: 7px;
-    border: none;
-    font-size: 1rem;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background-color: #00C171;
-    color: #ffffff;
-    margin-top: 2vw;
-}
-
-.botaoSolicitarGrupo{
-    width: 19vw;
-    height: 6vh;
-    margin-left: 1vw;
-    border-radius: 8px;
-    padding-left: 7px;
-    border: none;
-    font-size: 1rem;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background-color: #06266A;
-    color: #ffffff;
-    margin-top: 2vw;
 }
 
 #table-container {
@@ -143,4 +90,59 @@ td{
 
 .table-container ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
+}
+
+.informacaoIcon{
+    width: 1.5vw;
+    margin-left: 1vw;
+    cursor: pointer;
+} 
+
+
+
+
+.alinharBotao{
+    display: flex;
+}
+
+.botaoEntrarGrupo{
+    width: 19vw;
+    height: 6vh;
+    margin-left: 10vw;
+    border-radius: 8px;
+    padding-left: 7px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #00C171;
+    color: #ffffff;
+    margin-top: 2vw;
+}
+
+.botaoSolicitarGrupo{
+    width: 19vw;
+    height: 6vh;
+    margin-left: 1vw;
+    border-radius: 8px;
+    padding-left: 7px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background-color: #06266A;
+    color: #ffffff;
+    margin-top: 2vw;
+}
+
+.imgSmartContract{
+    width: 50vw;
+    margin-left: 10vw;
+    margin-top: 13vh;
+}
+
+.imgSmartContract2{
+    width: 29.3vw;
 }

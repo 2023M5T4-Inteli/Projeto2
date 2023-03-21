@@ -1,5 +1,6 @@
 const sairGrupo = document.querySelector('#sairGrupo');
 const renovarGrupo = document.querySelector('#renovarGrupo');
+const sairConta = document.querySelector('#saida');
 
 
 sairGrupo.addEventListener('click', () => {
@@ -48,4 +49,16 @@ renovarGrupo.addEventListener('click', () => {
             console.log(nomeGrupo)
         }
       })
+})
+
+sairConta.addEventListener('click', () => {
+    Swal.fire({
+        title: 'Deseja sair da sua conta?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#00C171',
+        cancelButtonColor: '#eb3737',
+        confirmButtonText: 'Confirmar',
+        cancelButtonText: 'Cancelar'
+    })
 })
