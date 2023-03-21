@@ -1,4 +1,3 @@
-//
 mudancaCards();
 // pega o elemento select
 var select = document.getElementById("selecao");
@@ -10,7 +9,7 @@ select.onchange = function() {
 
   // pega o valor selecionado
 function mudancaCards(valor){
-  // verifica se o valor selecionado é opcao2
+  // verifica se o valor selecionado é a opção
   if (valor == "Grupo 1") {
     // mostra os campos e o botão
     document.getElementById("informacoesGrupo").style.display = "flex";

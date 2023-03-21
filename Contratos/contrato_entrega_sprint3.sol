@@ -86,8 +86,8 @@ contract cooverContract{
     }
 
     //Função para que um administrador possa aceitar um pedido de indenização
-    function aceitarIndenizacao(address contratantes) public {
-        payable(contratantes).transfer(pedidos[contratantes]); //
+    function aceitarIndenizacao(address contratantes) public msgsender {
+        payable(contratantes).transfer(pedidos[contratantes]);
         pedidos[contratantes] = 0;
 }
     

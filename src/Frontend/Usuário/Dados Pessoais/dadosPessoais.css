@@ -13,6 +13,26 @@ body{
     display: flex;
 }
 
+.imgDadosPessoais{
+    width: 12vw;
+    margin-left: 10vw;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+}
+
+.textoInicial{
+    color: #ffffff;
+    margin-left: 15vw;
+    margin-top: 2.5vh;
+}
+
+.inputTitulo{
+    color: #ffffff;
+    font-size: 0.8rem;
+    margin-left: 15vw;
+    margin-top: 2.5vh;
+}
+
 .inputFormatacao{
     width: 30vw;
     height: 6vh;
@@ -26,26 +46,6 @@ body{
     outline: 0;
     background-color: #303030;
     color: #ffffff;
-}
-
-.inputTitulo{
-    color: #ffffff;
-    font-size: 0.8rem;
-    margin-left: 15vw;
-    margin-top: 2.5vh;
-}
-
-.imgDadosPessoais{
-    width: 12vw;
-    margin-left: 10vw;
-    margin-top: 6vh;
-    margin-bottom: 2vh;
-}
-
-.textoInicial{
-    color: #ffffff;
-    margin-left: 15vw;
-    margin-top: 2.5vh;
 }
 
 .botaoDadosPessoais{

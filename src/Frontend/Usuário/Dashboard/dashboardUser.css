@@ -13,12 +13,6 @@ body{
     display: flex;
 }
 
-.imgInicio{
-    width: 30vw;
-    height: 100vh;
-    margin-left: 15rem;
-}
-
 .titulo{
     color: #ffffff;
     font-size: 2.5rem;
@@ -26,12 +20,12 @@ body{
     margin-top: 3rem;
 }
 
-.card1{
+.primeiroCard{
     margin-left: 6rem;
     margin-top: 1.5rem;
 }
 
-.card2, .card3{
+.segundoCard, .terceiroCard{
     margin-left: 6rem;
     margin-top: 0.7rem;
 }
@@ -46,14 +40,6 @@ body{
     border-radius: 1vh;
 }
 
-.cardTitulo{
-    font-size: 1rem;
-}
-
-.cardTexto{
-    font-size: 0.8rem;
-}
-
 .imgBotaoUser{
     height: 3rem;
 }
@@ -64,6 +50,20 @@ body{
     text-align: left;
     color: #F2F2F2;
     margin-top: 0.7rem;
+}
+
+.cardTitulo{
+    font-size: 1rem;
+}
+
+.cardTexto{
+    font-size: 0.8rem;
+}
+
+
+
+.informacoesGrupo{
+    display: flex;
 }
 
 .gruposUser{
@@ -96,12 +96,6 @@ body{
     color: #F2F2F2;
 }
 
-.tituloParticipantes, .tituloSituacao{
-    margin-left: 1rem;
-    margin-top: 1rem;
-    color: #F2F2F2;
-}
-
 .cardSaldo{
     display: flex;
     border: none;
@@ -111,6 +105,12 @@ body{
     width: 15vw;
     margin-left: 6rem;
     border-radius: 1vh;
+}
+
+.tituloParticipantes, .tituloSituacao{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: #F2F2F2;
 }
 
 .cardParticipantes, .cardSituacao{
@@ -129,10 +129,6 @@ body{
     margin-left: 0.5rem;
 }
 
-.cardGrupo{
-    display: flex;
-}
-
 .botaoInformacao{
     background-color: #06266A;
     border: none;
@@ -145,13 +141,14 @@ body{
     border-radius: 1vh;
 }
 
-.informacoesGrupo{
-    display: flex;
-}
-
 .maisInformacoes{
     text-decoration: none;
     transition: none;
     color: #F2F2F2;
 }
 
+.imgInicio{
+    width: 30vw;
+    height: 100vh;
+    margin-left: 15rem;
+}
