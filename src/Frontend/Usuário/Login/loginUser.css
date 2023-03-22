@@ -84,7 +84,7 @@
     .imgInicio{
         margin-top: 5vh;
         margin-left: 2vw;
-        width: 60vw;
+        width: 40vw;
         height: 80vh;
     }
 
@@ -101,7 +101,7 @@
     }
 
     .logoCoover{
-        margin-left: 10rem;
+        margin-left: 15rem;
         width: 15vw;
         height: 15vh;
     }
@@ -118,7 +118,7 @@
         display: flex;
         border-radius: 8px;
         margin-top: 4rem;
-        margin-left: 5rem;
+        margin-left: 10rem;
         width: 25vw;
     }
 
