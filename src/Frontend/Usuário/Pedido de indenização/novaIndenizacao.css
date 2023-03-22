@@ -262,7 +262,7 @@
         margin-top: 22vw;
         background-color: transparent;
         border: none;
-        margin-top: 32.5rem;
+        margin-top: 11.2rem;
     }
 
 
@@ -295,7 +295,7 @@
     .textoNovaIndenizacao{
         color: #F2F2F2;
         margin-top: 2rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 
 
@@ -316,7 +316,7 @@
     .gruposUser{
         color: #F2F2F2; 
         margin-left: 3rem;
-        margin-top: 1rem;
+        margin-top: 0rem;
         font-weight: normal;
     }
 
@@ -390,13 +390,13 @@
         color: #F2F2F2;
         font-weight: normal;
         margin-left: 3rem;
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     .caixaArquivo{
         margin-left: 3rem;
         margin-top: 1rem;
-        padding: 2rem;
+        padding: 1rem;
         border: 1px solid #ccc;
         border-radius: 8px;
         width: 35vw;
@@ -406,15 +406,15 @@
         font-weight: normal;
         margin-left: 0rem;
         margin-top: 0rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .botaoEnviar{
         width: 10vw;
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 
     .botaoSolicitar{
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 35vw;
         margin-left: 3rem;
     }
