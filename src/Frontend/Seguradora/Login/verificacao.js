@@ -12,8 +12,7 @@ function confirmCreation() {
         }
     }).then((result) => {
         if (result.isConfirmed) {
-          // Ação confirmada pelo usuário
-          // Coloque o código que deve ser executado em caso de confirmação aqui
+          window.location.href = "../Dashboard/dashboardADM.html";
           console.log('confirmou')
         }
     })}

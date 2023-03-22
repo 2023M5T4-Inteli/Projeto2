@@ -1,195 +1,60 @@
-/* CSS para tela de verificação de PIN */
-
-
-/* Defina as propriedades da fonte */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-body{
-    background-color: #19191D;
-    font-family: 'Roboto', sans-serif;
+main {
+  width: 35vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-  /* Container */
-  .container {
-    height: 100vh;
-    background-color: #FFFFFF;
-  }
-  
-  /* Logotipo */
-  .logo {
-    margin-left: 35vw;
-    width: 28vw;
-    height: 20vh;
-    margin-top: 10rem;
-  }
-
-  
-  /* Conteúdo do cabeçalho */
-  .pin-header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  /* Campo de código de verificação */
-  .verification-code {
-    width: 100%;
-    height: 2.5rem;
-    border-radius: 0.25rem;
-    border: none;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Caixa de PIN */
-  .pin-box {
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 50rem;
-  }
-  .pin-box {
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 60rem;
-    display: flex;
-    flex-direction: row-reverse
+main h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
 }
-  .d{
-    display: flex;
-    flex-direction: column;
-  }
-  .pin-box2 {
-    display: flex;
-    flex-direction: column;
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 70rem;
-  }
-
-  .pin-box3 {
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    border-radius: 0.5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 80rem;
-  }
-
-  /* Botão de acesso de validação */
-  .validate-access {
-    margin-top: 10rem;
-    margin-left: 50rem;
-    width: 24%;
-    height: 6rem;
-    background-color: #02DE82;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Botão de acesso de validação em hover */
-  .validate-access:hover {
-    background-color: #E0A800;
-  }
-
-  .description1, .user-email-address, .pin-box, .dont-receive {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-
-  .description{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .user-email-address{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .pin-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    
-  }
-
-  .dont-receive{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .description1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-
-  
-  /* Descrição do campo
-
-
-  
-  
+main p {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: #C9C9C9;
+}
+main .inputs-wrapper {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+}
+main .inputs-wrapper .codigo-input {
+  width: 3rem;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  font-size: 2rem;
+  color: white;
+  height: 3rem;
+  border-radius: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+}
+main .inputs-wrapper input:not(:empty) {
+  background-color: purple !important;
+}
+main .login {
+  width: 100%;
+  margin: 0;
+  padding: 1.3rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main a {
+  color: #8B8B8B;
+  text-decoration: none;
+  font-size: .9rem;
+}
