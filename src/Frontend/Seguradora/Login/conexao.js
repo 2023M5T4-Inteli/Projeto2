@@ -43,6 +43,8 @@ document.getElementById('conectar').addEventListener('click', async () => {
       alert('Por favor, instale a carteira Metamask para se conectar.');
     }
   });
+
+
   function createHash() {
     const inputValue = document.getElementById('inputValue').value;
     const hash = CryptoJS.SHA256(inputValue);
@@ -55,18 +57,3 @@ document.getElementById('conectar').addEventListener('click', async () => {
   document.getElementById('continuar').addEventListener('click', async () => {
     window.location.href = "../html/home.html";
   });
-//   // Quando o botão "Desconectar" for clicado
-// document.getElementById('desconectar').addEventListener('click', async () => {
-//     try {
-//       // Desconectar da carteira Metamask
-//       alert('Desconectado com sucesso!');
-//       // Limpar os elementos HTML que exibem os dados da carteira
-//       const enderecoElemento = document.getElementById('endereco');
-//       enderecoElemento.textContent = '';
-//       const saldoElemento = document.getElementById('saldo');
-//       saldoElemento.textContent = '';
-//     } catch (error) {
-//       // O usuário não concedeu permissão ou algo deu errado
-//       console.error(error);
-//     }
-// });
