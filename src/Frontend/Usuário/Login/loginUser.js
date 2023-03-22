@@ -21,7 +21,7 @@ document.getElementById('conectar').addEventListener('click', async () => {
             icon: 'success',
             confirmButtonColor: '#00C171',
           }).then((result) => {
-            window.location.href = "../../../html/Usuário/Dados Pessoais/dadosPessoais.html";
+            window.location.href = "../Dados Pessoais/dadospessoais.html";
 
             // Exibir o endereço da carteira conectada
             
