@@ -1,73 +1,155 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 320px) and (max-width: 480px) { 
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .alinhamentoUser{
+        display: flex;
+    }
+    
+    .imgLogo{
+        width: 30vw;
+        margin-left: 35vw;
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+    }
+    
+    .textoInicial{
+        color: #ffffff;
+        margin-left: 10vw;
+        margin-top: 2.5vh;
+    }
+
+    .inputTitulo{
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-top: 2.5vh;
+        margin-left: 2.5rem;
+    }
+    
+    .inputFormatacao{
+        width: 80vw;
+        height: 6vh;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        margin-left: 2.5rem;
+        font-size: 0.7rem;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #303030;
+        color: #ffffff;
+    }
+    
+    .botaoDadosPessoais{
+        width: 80vw;
+        height: 6vh;
+        margin-left: 2.5rem;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        font-size: 1rem;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #00C171;
+        color: #ffffff;
+        margin-top: 7vw;
+    }
+    
+    .imgSmartContract2{
+        display: none;
+    }
+
 }
 
-body{
-    background-color: #19191D;
-    font-family: 'Roboto', sans-serif;
+
+
+@media (min-width: 1024px) and (max-width: 1920px) { 
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .alinhamentoUser{
+        display: flex;
+    }
+    
+    .imgLogo{
+        width: 20vw;
+        margin-left: 5rem;
+        margin-top: 8vh;
+        margin-bottom: 2vh;
+    }
+
+    
+    .textoInicial{
+        color: #ffffff;
+        margin-left: 3rem;
+        margin-top: 2.5vh;
+    }
+
+    .inputTitulo{
+        color: #ffffff;
+        font-size: 0.8rem;
+        margin-top: 2.5vh;
+        margin-left: 3rem;
+        display: flex;
+    }
+    
+    .inputFormatacao{
+        width: 45vw;
+        height: 6vh;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        margin-left: 2.5rem;
+        font-size: 0.7rem;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #303030;
+        color: #ffffff;
+    }
+    
+    .botaoDadosPessoais{
+        width: 45vw;
+        height: 6vh;
+        margin-left: 2.5rem;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        font-size: 1rem;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #00C171;
+        color: #ffffff;
+        margin-top: 3vw;
+    }
+    
+    .imgSmartContract2{
+        width: 40vw;
+        height: 100vh;
+        margin-left: 8rem;
+    }
+
 }
 
-.alinhamentoUser{
-    display: flex;
-}
 
-.imgDadosPessoais{
-    width: 12vw;
-    margin-left: 10vw;
-    margin-top: 6vh;
-    margin-bottom: 2vh;
-}
-
-.textoInicial{
-    color: #ffffff;
-    margin-left: 15vw;
-    margin-top: 2.5vh;
-}
-
-.inputTitulo{
-    color: #ffffff;
-    font-size: 0.8rem;
-    margin-left: 15vw;
-    margin-top: 2.5vh;
-}
-
-.inputFormatacao{
-    width: 30vw;
-    height: 6vh;
-    margin-left: 15vw;
-    border-radius: 8px;
-    padding-left: 7px;
-    border: none;
-    font-size: 0.7rem;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background-color: #303030;
-    color: #ffffff;
-}
-
-.botaoDadosPessoais{
-    width: 30vw;
-    height: 6vh;
-    margin-left: 15vw;
-    border-radius: 8px;
-    padding-left: 7px;
-    border: none;
-    font-size: 1rem;
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-    background-color: #00C171;
-    color: #ffffff;
-    margin-top: 2vw;
-}
-
-.imgSmartContract{
-    width: 50vw;
-}
-
-.imgSmartContract2{
-    width: 29.3vw;
-}

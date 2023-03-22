@@ -1,154 +1,319 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 320px) and (max-width: 480px) { 
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .alinhamentoUser{
+        display: flex;
+    }
+
+    .titulo{
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-top: 7rem;
+    }
+
+    .primeiroCard{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .segundoCard, .terceiroCard{
+        margin-left: 2rem;
+        margin-top: 0.7rem;
+    }
+
+    .cardDashboard{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        border-radius: 1vh;
+    }
+
+    .imgBotaoUser{
+        height: 3rem;
+    }
+
+    .texto{
+        margin-left: 2rem;
+        width: 50vw;
+        text-align: left;
+        color: #F2F2F2;
+        margin-top: 0.7rem;
+    }
+
+    .cardTitulo{
+        font-size: 1rem;
+    }
+
+    .cardTexto{
+        font-size: 0.6rem;
+    }
+
+
+
+
+    
+
+    .gruposUser{
+        color: #F2F2F2; 
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-top: 2.5rem;
+    }
+
+    .selecao{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        color: #F2F2F2;
+        margin-left: 2rem;
+        height: 5vh;
+        border-radius: 1vh;
+    }
+
+    .textoSeleciona{
+        color: #F2F2F2;
+    }
+
+
+    .tituloSaldo{
+        margin-left: 2rem;
+        margin-top: 1rem;
+        color: #F2F2F2;
+        font-size: 1rem;
+    }
+    
+
+    .cardSaldo{
+        border: none;
+        background-color: #252525;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        height: 6vh;
+        margin-left: 2rem;
+        border-radius: 1vh;
+    }
+
+    .tituloParticipantes, .tituloSituacao{
+        margin-left: 1rem;
+        margin-top: 1rem;
+        color: #F2F2F2;
+        display: flex;
+    }
+
+    .cardParticipantes, .cardSituacao{
+        margin-left: 1rem;
+        width: 30vw;
+        height: 6vh;
+        border: none;
+        background-color: #252525;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1vh;
+    }
+
+    .cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto{
+        color: #9D9D9D;
+        margin-left: 0.5rem;
+        padding-top: 0.75rem;
+    }
+
+    .botaoInformacao{
+        background-color: #06266A;
+        border: none;
+        color: #F2F2F2;
+        margin-left: 6rem;
+        margin-top: 1rem;
+        width: 35vw;
+        height: 5vh;
+        margin-bottom: 3rem;
+        border-radius: 1vh;
+    }
+
+    .maisInformacoes{
+        text-decoration: none;
+        transition: none;
+        color: #F2F2F2;
+    }
+
+    .imgInicio{
+        display: none;
+    }
+
 }
 
-body{
-    background-color: #19191D;
-    font-family: 'Roboto', sans-serif;
-}
+@media (min-width: 1024px) and (max-width: 1920px) { 
 
-.alinhamentoUser{
-    display: flex;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.titulo{
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-left: 6rem;
-    margin-top: 3rem;
-}
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
 
-.primeiroCard{
-    margin-left: 6rem;
-    margin-top: 1.5rem;
-}
+    .alinhamentoUser{
+        display: flex;
+    }
 
-.segundoCard, .terceiroCard{
-    margin-left: 6rem;
-    margin-top: 0.7rem;
-}
+    .titulo{
+        color: #ffffff;
+        font-size: 2.5rem;
+        margin-left: 6rem;
+        margin-top: 8rem;
+    }
 
-.cardDashboard{
-    display: flex;
-    border: none;
-    background-color: #1C1B20;
-    align-items: center;
-    text-decoration: none;
-    width: 35vw;
-    border-radius: 1vh;
-}
+    .primeiroCard{
+        margin-left: 6rem;
+        margin-top: 2.5rem;
+    }
 
-.imgBotaoUser{
-    height: 3rem;
-}
+    .segundoCard, .terceiroCard{
+        margin-left: 6rem;
+        margin-top: 1.2rem;
+    }
 
-.texto{
-    margin-left: 2rem;
-    width: 25vw;
-    text-align: left;
-    color: #F2F2F2;
-    margin-top: 0.7rem;
-}
+    .cardDashboard{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 35vw;
+        border-radius: 1vh;
+    }
 
-.cardTitulo{
-    font-size: 1rem;
-}
+    .imgBotaoUser{
+        height: 3rem;
+    }
 
-.cardTexto{
-    font-size: 0.8rem;
-}
+    .texto{
+        margin-left: 2rem;
+        width: 25vw;
+        text-align: left;
+        color: #F2F2F2;
+        margin-top: 0.7rem;
+    }
+
+    .cardTitulo{
+        font-size: 1.5rem;
+    }
+
+    .cardTexto{
+        font-size: 0.8rem;
+    }
 
 
 
-.informacoesGrupo{
-    display: flex;
-}
+    .informacoesGrupo{
+        display: flex;
+    }
 
-.gruposUser{
-    color: #F2F2F2; 
-    font-size: 1.5rem;
-    margin-left: 6rem;
-    margin-top: 1rem;
-}
+    .gruposUser{
+        color: #F2F2F2; 
+        font-size: 1.5rem;
+        margin-left: 6rem;
+        margin-top: 1rem;
+    }
 
-.selecao{
-    display: flex;
-    border: none;
-    background-color: #1C1B20;
-    align-items: center;
-    text-decoration: none;
-    width: 35vw;
-    color: #F2F2F2;
-    margin-left: 6rem;
-    height: 5vh;
-    border-radius: 1vh;
-}
+    .selecao{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 35vw;
+        color: #F2F2F2;
+        margin-left: 6rem;
+        height: 5vh;
+        border-radius: 1vh;
+    }
 
-.textoSeleciona{
-    color: #F2F2F2;
-}
+    .textoSeleciona{
+        color: #F2F2F2;
+    }
 
-.tituloSaldo{
-    margin-left: 6rem;
-    margin-top: 1rem;
-    color: #F2F2F2;
-}
+    .tituloSaldo{
+        margin-left: 6rem;
+        margin-top: 2rem;
+        color: #F2F2F2;
+    }
 
-.cardSaldo{
-    display: flex;
-    border: none;
-    background-color: #252525;
-    align-items: center;
-    text-decoration: none;
-    width: 15vw;
-    margin-left: 6rem;
-    border-radius: 1vh;
-}
+    .cardSaldo{
+        display: flex;
+        border: none;
+        background-color: #252525;
+        align-items: center;
+        text-decoration: none;
+        width: 15vw;
+        margin-left: 6rem;
+        border-radius: 1vh;
+    }
 
-.tituloParticipantes, .tituloSituacao{
-    margin-left: 1rem;
-    margin-top: 1rem;
-    color: #F2F2F2;
-}
+    .tituloParticipantes, .tituloSituacao{
+        margin-left: 1rem;
+        margin-top: 2rem;
+        color: #F2F2F2;
+    }
 
-.cardParticipantes, .cardSituacao{
-    margin-left: 1rem;
-    width: 8.75vw;
-    display: flex;
-    border: none;
-    background-color: #252525;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 1vh;
-}
+    .cardParticipantes, .cardSituacao{
+        margin-left: 1rem;
+        width: 8.75vw;
+        display: flex;
+        border: none;
+        background-color: #252525;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 1vh;
+    }
 
-.cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto{
-    color: #9D9D9D;
-    margin-left: 0.5rem;
-}
+    .cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto{
+        color: #9D9D9D;
+        margin-left: 0.5rem;
+    }
 
-.botaoInformacao{
-    background-color: #06266A;
-    border: none;
-    color: #F2F2F2;
-    margin-left: 6rem;
-    margin-top: 1rem;
-    width: 35vw;
-    height: 5vh;
-    margin-bottom: 3rem;
-    border-radius: 1vh;
-}
+    .botaoInformacao{
+        background-color: #06266A;
+        border: none;
+        color: #F2F2F2;
+        margin-left: 6rem;
+        margin-top: 2rem;
+        width: 35vw;
+        height: 5vh;
+        margin-bottom: 3rem;
+        border-radius: 1vh;
+    }
 
-.maisInformacoes{
-    text-decoration: none;
-    transition: none;
-    color: #F2F2F2;
-}
+    .maisInformacoes{
+        text-decoration: none;
+        transition: none;
+        color: #F2F2F2;
+    }
 
-.imgInicio{
-    width: 30vw;
-    height: 100vh;
-    margin-left: 15rem;
+    .imgInicio{
+        width: 30vw;
+        height: 100vh;
+        margin-left: 15rem;
+    }
+
 }

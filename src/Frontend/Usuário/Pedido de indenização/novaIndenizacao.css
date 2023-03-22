@@ -1,243 +1,444 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@media (min-width: 320px) and (max-width: 480px) { 
 
-body{
-    background-color: #19191D;
-    font-family: 'Roboto', sans-serif;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-.alinhamentoUser{
-    display: flex;
-}
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
 
-.navbar{
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    background-color: #09090A;
-}
+    .alinhamentoUser{
+        display: flex;
+    }
 
-.logo {
-    width: 10vw;
-}
-
-.pesquisa{
-    width: 13vw;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    padding: 0.8rem;
-    display: flex;
-    border: none;
-    outline: none;
-    border-radius: 8rem;
-    background-color: #1F1F22;
-}
-
-.barraPesquisa{
-    background-color: #1F1F22;
-    border: none;
-    text-indent: 1.3rem;
-    color: #EFEFEF;
-    font-size: .8rem;
-}
-
-.opcoesNavbar{
-    margin-top: 1.5rem;
-    padding-top: 2rem;
-    padding-left: 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-}
-
-.sidebarInicio, .sidebarSolicitacoes, .sidebarIndenizacoes{
-    display: flex;
-    margin-bottom: 1.2rem;
-}
-
-.imgSidebar{
-    margin-left: 1.5rem;
-}
-
-.textoSidebar{
-    margin-left: 1rem;
-    font-size: 1rem;
-    text-decoration: none;
-    color: #EFEFEF;
-
-}
-
-.saida {
-    margin-top: 22vw;
-    background-color: transparent;
-    border: none;
-}
+    .navbar{
+        display: none;
+    }
 
 
 
 
-.indenizacao{
-    display: inline-flex; 
-    align-items: flex-start;
-}
+    .indenizacao{
+        display: inline-flex; 
+        align-items: flex-start;
+    }
 
-.imgSeta{
-    margin-top: 3rem;
-    margin-left: 3rem;
-    width: 1vw;
-}
+    .imgSeta{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 5vw;
+    }
 
-.tituloIndenizacao{
-    margin-top: 4rem;
-    margin-left: 4rem;
-    color: #F2F2F2;
-}
+    .tituloIndenizacao{
+        margin-top: 4rem;
+        margin-left: 4rem;
+        color: #F2F2F2;
+    }
 
-.imgEthereum{
-    margin-top: 4rem;
-    margin-left: 2rem;
-}
+    .imgEthereum{
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
 
 
 
-.textoNovaIndenizacao{
-    color: #F2F2F2;
-    margin-top: 2rem;
-    margin-left: 5rem;
-}
+    .textoNovaIndenizacao{
+        color: #F2F2F2;
+        margin-top: 2rem;
+        margin-left: 3rem;
+    }
 
 
 
 
 
 
-.cardIndenizacao{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-}
+    .cardIndenizacao{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
 
-.informacoesGrupo{
-    display: flex;
-}
+    .informacoesGrupo{
+        display: flex;
+    }
 
-.gruposUser{
-    color: #F2F2F2; 
-    margin-left: 3rem;
-    margin-top: 1rem;
-    font-weight: normal;
-}
+    .gruposUser{
+        color: #F2F2F2; 
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-weight: normal;
+    }
 
-.selecao{
-    display: flex;
-    border: none;
-    background-color: #1F1F22;
-    align-items: center;
-    text-decoration: none;
-    width: 35vw;
-    color: #F2F2F2;
-    margin-left: 3rem;
-    margin-top: 0.5rem;
-    height: 8vh;
-    border-radius: 8px;    
-}
+    .selecao{
+        display: flex;
+        border: none;
+        background-color: #1F1F22;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        color: #F2F2F2;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
+        height: 5vh;
+        border-radius: 8px;    
+    }
 
-.textoSeleciona{
-    color: #F2F2F2;
-}
-
-
+    .textoSeleciona{
+        color: #F2F2F2;
+    }
 
 
-.informacoesOcorrido{
-    display: flex;
-}
 
-.dataOcorrido{
-    margin-left: 3rem;
-    margin-top: 1rem;
-}
 
-.textoDataOcorrido, .textoImei{
-    color: #F2F2F2;
-    font-weight: normal;
-}
+    .informacoesOcorrido{
+        display: flex;
+    }
 
-.inputDataOcorrido{
-    background-color: #1F1F22;
-    margin-top: 0.5rem;
-    border: none;
-    color: #F2F2F2;
-    border-radius: 8px;
-    height: 5vh;
+    .dataOcorrido{
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
 
-}
+    .textoDataOcorrido, .textoImei{
+        color: #F2F2F2;
+        font-weight: normal;
+    }
 
-.imei{
-    margin-top: 1rem;
-    margin-left: 3rem;
-}
+    .inputDataOcorrido{
+        background-color: #1F1F22;
+        margin-top: 0.5rem;
+        width: 35vw;
+        border: none;
+        color: #F2F2F2;
+        border-radius: 8px;
+        height: 5vh;
+    }
 
-.inputImei{
-    margin-left: 0rem;
-    border-radius: 8px;
-    background-color: #1F1F22;
-    margin-top: 0.5rem;
-    border: none;
-    color: #F2F2F2;
-    border-radius: 8px;
-    height: 5vh;
-    width: 20.5vw;
+    .imei{
+        margin-top: 1rem;
+        margin-left: 2.5rem;
+    }
+
+    .inputImei{
+        margin-left: 0rem;
+        border-radius: 8px;
+        background-color: #1F1F22;
+        margin-top: 0.5rem;
+        border: none;
+        color: #F2F2F2;
+        border-radius: 8px;
+        height: 5vh;
+        width: 35vw;
+    }
+
+
+
+
+    .tituloDescricao{
+        color: #F2F2F2;
+        font-weight: normal;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .caixaArquivo{
+        margin-left: 3rem;
+        margin-top: 1rem;
+        width: 80vw;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    .textoArquivo{
+        color: #F2F2F2;
+        font-weight: normal;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+    .botaoEnviar{
+        margin-top: 2rem;
+        width: 20vw;
+    }
+
+    .botaoSolicitar{
+        margin-top: 2rem;
+        width: 80vw;
+        margin-left: 3rem;
+    }
+
+
+    .imgIndenizacao{
+        display: none;
+    }
 }
 
 
 
+@media (min-width: 1024px) and (max-width: 1920px) { 
 
-.tituloDescricao{
-    color: #F2F2F2;
-    font-weight: normal;
-    margin-left: 3rem;
-    margin-top: 1.5rem;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .alinhamentoUser{
+        display: flex;
+    }
+
+    .navbar{
+        width: 15vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #09090A;
+    }
+
+    .logo {
+        width: 10vw;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    .pesquisa{
+        width: 13vw;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        padding: 0.8rem;
+        display: flex;
+        border: none;
+        outline: none;
+        border-radius: 8rem;
+        background-color: #1F1F22;
+    }
+
+    .barraPesquisa{
+        background-color: #1F1F22;
+        width: 10vw;
+        border: none;
+        text-indent: 1.3rem;
+        color: #EFEFEF;
+        font-size: .8rem;
+    }
+
+    .opcoesNavbar{
+        margin-top: 1.5rem;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .sidebarInicio, .sidebarSolicitacoes, .sidebarIndenizacoes{
+        display: flex;
+        margin-bottom: 1.2rem;
+    }
+
+    .imgSidebar{
+        margin-left: 1.5rem;
+    }
+
+    .textoSidebar{
+        margin-left: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #EFEFEF;
+
+    }
+
+    .saida {
+        margin-top: 22vw;
+        background-color: transparent;
+        border: none;
+        margin-top: 32.5rem;
+    }
+
+
+
+
+    .indenizacao{
+        display: inline-flex; 
+        align-items: flex-start;
+    }
+
+    .imgSeta{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 1vw;
+    }
+
+    .tituloIndenizacao{
+        margin-top: 4rem;
+        margin-left: 4rem;
+        color: #F2F2F2;
+    }
+
+    .imgEthereum{
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+
+
+
+    .textoNovaIndenizacao{
+        color: #F2F2F2;
+        margin-top: 2rem;
+        margin-left: 5rem;
+    }
+
+
+
+
+
+
+    .cardIndenizacao{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacoesGrupo{
+        display: flex;
+    }
+
+    .gruposUser{
+        color: #F2F2F2; 
+        margin-left: 3rem;
+        margin-top: 1rem;
+        font-weight: normal;
+    }
+
+    .selecao{
+        display: flex;
+        border: none;
+        background-color: #1F1F22;
+        align-items: center;
+        text-decoration: none;
+        width: 35vw;
+        color: #F2F2F2;
+        margin-left: 3rem;
+        margin-top: 0.5rem;
+        height: 6vh;
+        border-radius: 8px;    
+    }
+
+    .textoSeleciona{
+        color: #F2F2F2;
+    }
+
+
+
+
+    .informacoesOcorrido{
+        display: flex;
+    }
+
+    .dataOcorrido{
+        margin-left: 3rem;
+        margin-top: 1rem;
+    }
+
+    .textoDataOcorrido, .textoImei{
+        color: #F2F2F2;
+        font-weight: normal;
+    }
+
+    .inputDataOcorrido{
+        background-color: #1F1F22;
+        margin-top: 0.5rem;
+        border: none;
+        color: #F2F2F2;
+        border-radius: 8px;
+        height: 5vh;
+        width: 12vw;
+
+    }
+
+    .imei{
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+    .inputImei{
+        margin-left: 0rem;
+        border-radius: 8px;
+        background-color: #1F1F22;
+        margin-top: 0.5rem;
+        border: none;
+        color: #F2F2F2;
+        border-radius: 8px;
+        height: 5vh;
+        width: 19vw;
+    }
+
+
+
+
+    .tituloDescricao{
+        color: #F2F2F2;
+        font-weight: normal;
+        margin-left: 3rem;
+        margin-top: 1.5rem;
+    }
+
+    .caixaArquivo{
+        margin-left: 3rem;
+        margin-top: 1rem;
+        padding: 2rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        width: 35vw;
+    }
+    .textoArquivo{
+        color: #F2F2F2;
+        font-weight: normal;
+        margin-left: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+    }
+    .botaoEnviar{
+        width: 10vw;
+        margin-top: 5rem;
+    }
+
+    .botaoSolicitar{
+        margin-top: 2rem;
+        width: 35vw;
+        margin-left: 3rem;
+    }
+
+
+
+    .img{
+        margin-left: 4rem;
+        margin-top: 10rem;
+    }
+    .imgIndenizacao{
+        width: 30vw;
+        height: 60vh;
+    }
 }
 
-.caixaArquivo{
-    margin-left: 3rem;
-    margin-top: 1rem;
-    padding: 2rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-.textoArquivo{
-    color: #F2F2F2;
-    font-weight: normal;
-    margin-left: 0rem;
-    margin-top: 0rem;
-}
-.botaoEnviar{
-    width: 10vw;
-}
-
-.botaoSolicitar{
-    margin-top: 2rem;
-    width: 35vw;
-    margin-left: 3rem;
-}
 
 
 
-.img{
-    margin-left: 4rem;
-    margin-top: 3rem;
-}
-.imgIndenizacao{
-    width: 40vw;
-    height: 90vh;
-}
+  
 
+  
+
+  
 
 
   

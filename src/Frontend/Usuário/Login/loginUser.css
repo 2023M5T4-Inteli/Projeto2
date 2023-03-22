@@ -1,61 +1,132 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media (min-width: 320px) and (max-width: 480px) { 
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .imgInicio{
+        margin-top: 0.5rem;
+        margin-left: 5vw;
+        width: 90vw;
+    }
+
+    .logoTextoEntrada{
+        margin-top: 20vh;
+    }
+
+    .textoInicio{
+        color: #F2F2F2;
+        font-weight: normal;
+        font-size: 15px;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .logoCoover{
+        margin-left: 7rem;
+        margin-top: 1rem;
+        width: 40vw;
+        height: 15vh;
+        margin-bottom: 1rem;
+    }
+
+    .logoMeta{
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+    }
+
+    .botaoMetamask{
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        display: flex;
+        text-align:left;
+        border-radius: 8px;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        width: 80vw;
+    }
+
+    .textoConectar{
+        font-weight: normal;
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+        font-size: 18px;
+    }
 }
 
-body{
-    background-color: #19191D;
-    font-family: 'Roboto', sans-serif;
+@media (min-width: 1024px) and (max-width: 1920px) { 
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #19191D;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .login{
+        display: flex;
+    }
+
+    .imgInicio{
+        margin-top: 5vh;
+        margin-left: 2vw;
+        width: 60vw;
+        height: 80vh;
+    }
+
+    .logoTextoEntrada{
+        margin-top: 20vh;
+    }
+
+    .textoInicio{
+        color: #F2F2F2;
+        font-weight: normal;
+        font-size: 30px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .logoCoover{
+        margin-left: 10rem;
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .logoMeta{
+        margin-left: 0.5rem;
+    }
+
+    .botaoMetamask{
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        display: flex;
+        border-radius: 8px;
+        margin-top: 4rem;
+        margin-left: 5rem;
+        width: 25vw;
+    }
+
+    .textoConectar{
+        font-weight: normal;
+        margin-top: 1rem;
+        font-size: 20px;
+        margin-left: 0.5rem;
+    }
 }
 
-.login{
-    display: flex;
-}
-
-.imgInicio{
-    margin-top: 5vh;
-    margin-left: 5vw;
-    width: 40vw;
-    height: 80vh;
-}
-
-.logoTextoEntrada{
-    margin-top: 20vh;
-}
-
-.textoInicio{
-    color: #F2F2F2;
-    font-weight: normal;
-    font-size: 30px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.logoCoover{
-    margin-left: 17rem;
-    width: 15vw;
-    height: 15vh;
-}
-
-.logoMeta{
-    margin-left: 1.5rem;
-}
-
-.botaoMetamask{
-    padding: 10px;
-    background-color: #00C171;
-    color: #fff;
-    border: none;
-    display: flex;
-    border-radius: 8px;
-    margin-top: 5rem;
-    margin-left: 13rem;
-    width: 25vw;
-}
-
-.textoConectar{
-    font-weight: normal;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-}
