@@ -180,17 +180,17 @@
         color: #ffffff;
         font-size: 2.5rem;
         margin-left: 6rem;
-        margin-top: 3rem;
+        margin-top: 8rem;
     }
 
     .primeiroCard{
         margin-left: 6rem;
-        margin-top: 1.5rem;
+        margin-top: 2.5rem;
     }
 
     .segundoCard, .terceiroCard{
         margin-left: 6rem;
-        margin-top: 0.7rem;
+        margin-top: 1.2rem;
     }
 
     .cardDashboard{
@@ -216,7 +216,7 @@
     }
 
     .cardTitulo{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .cardTexto{
@@ -255,7 +255,7 @@
 
     .tituloSaldo{
         margin-left: 6rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         color: #F2F2F2;
     }
 
@@ -272,7 +272,7 @@
 
     .tituloParticipantes, .tituloSituacao{
         margin-left: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         color: #F2F2F2;
     }
 
@@ -297,7 +297,7 @@
         border: none;
         color: #F2F2F2;
         margin-left: 6rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 35vw;
         height: 5vh;
         margin-bottom: 3rem;

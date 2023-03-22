@@ -83,8 +83,8 @@
 
     .imgInicio{
         margin-top: 5vh;
-        margin-left: 5vw;
-        width: 40vw;
+        margin-left: 2vw;
+        width: 60vw;
         height: 80vh;
     }
 
@@ -96,18 +96,18 @@
         color: #F2F2F2;
         font-weight: normal;
         font-size: 30px;
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .logoCoover{
-        margin-left: 17rem;
+        margin-left: 10rem;
         width: 15vw;
         height: 15vh;
     }
 
     .logoMeta{
-        margin-left: 1.5rem;
+        margin-left: 0.5rem;
     }
 
     .botaoMetamask{
@@ -117,14 +117,15 @@
         border: none;
         display: flex;
         border-radius: 8px;
-        margin-top: 5rem;
-        margin-left: 13rem;
+        margin-top: 4rem;
+        margin-left: 5rem;
         width: 25vw;
     }
 
     .textoConectar{
         font-weight: normal;
         margin-top: 1rem;
+        font-size: 20px;
         margin-left: 0.5rem;
     }
 }

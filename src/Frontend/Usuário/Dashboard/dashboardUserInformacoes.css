@@ -230,13 +230,13 @@
 
     .navbar{
         width: 15vw;
-        display: flex;
         flex-direction: column;
         background-color: #09090A;
     }
 
     .logo {
         width: 10vw;
+        margin-top: 2rem;
     }
 
     .pesquisa{
@@ -256,6 +256,7 @@
         text-indent: 1.3rem;
         color: #EFEFEF;
         font-size: .8rem;
+        width: 10vw;
     }
 
     .opcoesNavbar{
@@ -286,9 +287,10 @@
     }
 
     .saida {
-        margin-top: 22vw;
+
         background-color: transparent;
         border: none;
+        margin-top: 32.5rem;
     }
 
 
@@ -323,7 +325,7 @@
 
     .tituloGrupo{
         color: #F2F2F2;
-        margin-top: 2rem;
+        margin-top: 5rem;
         margin-left: 4rem;
     }
 

@@ -164,7 +164,7 @@
         display: flex;
     }
 
-    .imgEscolhaGrupo{
+    .imgLogo{
         width: 12vw;
         margin-left: 10vw;
         margin-top: 6vh;
@@ -291,7 +291,7 @@
     .imgSmartContract{
         width: 50vw;
         margin-left: 10vw;
-        margin-top: 13vh;
+        margin-top: 13rem;
     }
 
     .imgSmartContract2{

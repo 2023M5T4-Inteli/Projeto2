@@ -15,32 +15,35 @@
         <div>
             <img class="imgLogo" src="../../img/LogoCoover.svg">
             <h3 class="textoInicial">Dados Pessoais</h3>
-            <div class="nomeCompleto">
-                <label class="inputTitulo">Nome Completo</label>
-                <input class="inputFormatacao" type="text" id="name" name="name" required placeholder="Nome completo">
+            <div class="input">
+                <div class="nomeCompleto">
+                    <label class="inputTitulo">Nome Completo</label>
+                    <input class="inputFormatacao" type="text" id="name" name="name" required placeholder="Nome completo">
+                </div>
+                <div>
+                    <label class="inputTitulo">E-mail</label>
+                    <input class="inputFormatacao" type="email" id="email" name="email" required placeholder="E-mail">
+                </div>
+                <div>
+                    <label class="inputTitulo">Modelo do Celular</label>
+                    <select class="inputFormatacao" name="modelo" id="modelo">
+                        <option value="selecione">Selecione</option>
+                        <option value="iphoneXR">Iphone XR</option>
+                        <option value="iphone12">Iphone 12</option>
+                        <option value="iphone14">Iphone 14</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="inputTitulo">Valor Celular (Atual)</label>
+                    <input class="inputFormatacao" type="number" id="valorCelular" name="valorCelular" required placeholder="Valor do Celular (R$)">
+                </div>
+                <div>
+                    <label class="inputTitulo">IMEI</label>
+                    <input class="inputFormatacao" type="number" id="imei" name="imei" required placeholder="IMEI do celular">
+                </div>
+                <button class="botaoDadosPessoais" type="submit">Salvar</button>
             </div>
-            <div>
-                <label class="inputTitulo">E-mail</label>
-                <input class="inputFormatacao" type="email" id="email" name="email" required placeholder="E-mail">
-            </div>
-            <div>
-                <label class="inputTitulo">Modelo do Celular</label>
-                <select class="inputFormatacao" name="modelo" id="modelo">
-                    <option value="selecione">Selecione</option>
-                    <option value="iphoneXR">Iphone XR</option>
-                    <option value="iphone12">Iphone 12</option>
-                    <option value="iphone14">Iphone 14</option>
-                  </select>
-            </div>
-            <div>
-                <label class="inputTitulo">Valor Celular (Atual)</label>
-                <input class="inputFormatacao" type="number" id="valorCelular" name="valorCelular" required placeholder="Valor do Celular (R$)">
-            </div>
-            <div>
-                <label class="inputTitulo">IMEI</label>
-                <input class="inputFormatacao" type="number" id="imei" name="imei" required placeholder="IMEI do celular">
-            </div>
-            <button class="botaoDadosPessoais" type="submit">Salvar</button>
+            
         </div>
         <div class="imgSmartContract" >
             <img class="imgSmartContract2" src="../../img/imgSmartContract2.png">
