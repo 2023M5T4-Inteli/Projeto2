@@ -45,36 +45,42 @@
             <h2 class="textoNovaIndenizacao">Nova Indenização</h2>
             <div class="cardIndenizacao">
                 <h4 class="gruposUser">Grupos</h4>
-                <select id="selecao" class="selecao" aria-label="Default select example">
+                <select id="selecaoGrupo" class="selecaoGrupo" aria-label="Default select example">
                     <option selected>Selecione</option>
-                    <option class="textoSeleciona" value="Grupo 1">Grupo 1</option>
-                    <option class="textoSeleciona" value="Grupo 2">Grupo 2</option>
-                    <option class="textoSeleciona" value="Grupo 3">Grupo 3</option>
+                    <option class="textoSelecionaGrupo" value="Grupo 1">Grupo 1</option>
+                    <option class="textoSelecionaGrupo" value="Grupo 2">Grupo 2</option>
+                    <option class="textoSelecionaGrupo" value="Grupo 3">Grupo 3</option>
                 </select>
                 <div class="informacoesOcorrido">
                     <div class="dataOcorrido">
                         <h4 class="textoDataOcorrido">Data do Ocorrido</h4>
                         <input class="inputDataOcorrido" type="date">
                     </div>
-                    <div class="imei">
-                        <h4 class="textoImei">IMEI</h4>
-                        <input class="inputImei" type="number">
+                    <div class="ocorrido"> 
+                        <h4 class="textoOcorrido">Motivo do pedido:</h4>
+                        <select id="selecaoOcorrido" class="selecaoOcorrido" aria-label="Default select example">
+                            <option selected>Selecione</option>
+                            <option class="textoSelecionaOcorrido" value="Roubo">Roubo</option>
+                            <option class="textoSelecionaOcorrido" value="Quebra">Quebra</option>
+                        </select>
                     </div>
+                    
                 </div>
                 <div class="descricao">
-                    <h4 class="tituloDescricao">Descrição</h4>
+                    <h4 class="tituloDescricao">Adicione aqui provas do ocorrido (BO, fotos...):</h4>
                     <form class="caixaArquivo" action="upload.php" method="post" enctype="multipart/form-data">
                         <h5 class="textoArquivo">Selecione Arquivo:</h5>
                         <input type="file" name="file" id="file" required placeholder="Selecione um arquivo">
                         <button class="botaoEnviar" type="submit" value="Enviar">Enviar</button>
                     </form>   
                 </div>   
-                <button class="botaoSolicitar" onclick="confirmCreation()">Solicitar Sinistro</button>
+                <button class="botaoSolicitar" id="botaoSolicitar">Solicitar Sinistro</button>
             </div>
         </div>  
         <div class="img">
             <img class="imgIndenizacao" src="../../img/bg-2.png">
         </div>          
-    </div>   
+    </div>  
+<script src="./novaindenizacao.js"></script> 
 </body>
 </html>

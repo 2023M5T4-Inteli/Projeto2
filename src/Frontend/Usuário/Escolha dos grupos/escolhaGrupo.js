@@ -1,5 +1,9 @@
 const entrarGrupo = document.querySelector('#entrarGrupo');
 const solicitarGrupo = document.querySelector('#solicitarGrupo');
+const informacaoIcon = document.querySelector('#informacaoIcon');
+const informacaoIconSeguro = document.querySelector('#informacaoIconSeguro');
+const informacaoIconImei = document.querySelector('#informacaoIconImei');
+
 
 entrarGrupo.addEventListener('click', () => {
     Swal.fire({
@@ -39,10 +43,22 @@ solicitarGrupo.addEventListener('click', () => {
                 icon: 'success',
                 title: 'Solicitação enviada com sucesso!',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 1500,
             })
             console.log(nomeGrupo)
+            
         }
     })
 });
 
+informacaoIcon.addEventListener('click', () => {
+  Swal.fire('O tipo de seguro está relacionado com o tipo de ocorrência que o contrato irá cobrir!')
+});
+
+informacaoIconSeguro.addEventListener('click', () => {
+  Swal.fire('O seguro mútuo é uma forma coletiva de seguro onde os próprios segurados contribuem financeiramente para cobrir eventualidades previstas, onde não possui uma instituição regulamentadora.')
+});
+
+informacaoIconImei.addEventListener('click', () => {
+  Swal.fire('IMEI significa "Identificação Internacional de Equipamento Móvel", e é um código numérico exclusivo atribuído a cada dispositivo móvel (como smartphones e tablets) que utiliza a tecnologia de rede celular. Descubra como encontrar o seu em: https://tecnoblog.net/responde/descobrir-imei-celular-roubado/')
+});

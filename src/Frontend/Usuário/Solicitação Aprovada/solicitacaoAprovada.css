@@ -69,29 +69,34 @@
         width: 80vw; 
     }
 
-    table {
-        border-collapse: collapse;
+    main table tbody .seguros-name p {
+        font-size: .9rem;
+        line-height: .4rem;
+        color: #BCBCBC;
     }
-
-    th{
-        color: #ffffff;
-        font-size: 1rem;
-        text-align: left;
+    
+    main table tbody .seguros-name p:first-child {
+        margin-top: 1rem;
+        font-size: .9rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: #fff;
     }
-
-    td, th {
-        border: none;
-        text-align: left;
+    
+    main table tbody .situacao {
+        font-size: .9rem;
+        font-weight: 600;
+        border-radius: 40px;
+        line-height: 1.8;
+        margin-top: 2rem;
+        border: 1px solid #02DE82;
+        color: #02DE82;
     }
-
-    thead{
-        position: sticky;
-        top: 0;
-        background-color: #1f1f1f;
-    }
-
-    td{
-        color: #a7a7a7;
+    
+    main table tbody tr .data-criacao, main table tbody tr .data-validade {
+        font-size: .8rem;
+        line-height: 2rem;
+        margin-top: 2rem;
     }
 
 
@@ -252,6 +257,31 @@
         margin-top: 10rem;
     }
 
+
+    
+    
+    .titulosTabela {
+        color: #F2F2F2;
+        font-weight: 700;
+    }
+    
+    .informacoesTabela {
+        line-height: 10.9;
+        text-align: center;
+        height: min-content;
+        line-height: 2rem
+    } 
+    
+    
+    
+    main table thead th:first-of-type, main table tbody tr td:first-of-type {
+        text-align: left;
+    }
+    
+    main table thead th:last-of-type, main table tbody tr td:last-child {
+        text-align: right;
+    }
+
     #table-container {
         height: 30vh; 
         overflow-y: auto; 
@@ -259,29 +289,44 @@
         width: 45vw; 
     }
 
-    table {
-        border-collapse: collapse;
+    .seguros-name {
+        font-size: .9rem;
+        line-height: .4rem;
+        color: #BCBCBC;
+    }
+    
+    .seguros-name{
+        margin-top: 1rem;
+        font-size: .9rem;
+        font-weight: 600;
+        line-height: 2rem;
+        color: #fff;
+    }
+    
+    .situacao {
+        font-size: .9rem;
+        font-weight: 600;
+        border-radius: 40px;
+        line-height: 1.8;
+        margin-top: 2rem;
+        border: 1px solid #02DE82;
+        color: #02DE82;
+    }
+    
+    .data-validade {
+        font-size: .8rem;
+        line-height: 2rem;
+        margin-top: 2rem;
     }
 
-    th{
-        color: #ffffff;
-        font-size: 1rem;
-        text-align: left;
+    .inativo {
+        color: #FF5E66 !important;
+        border-color: #FF5E66 !important;
     }
-
-    td, th {
-        border: none;
-        text-align: left;
-    }
-
-    thead{
-        position: sticky;
-        top: 0;
-        background-color: #1f1f1f;
-    }
-
-    td{
-        color: #a7a7a7;
+    
+    .em-progresso {
+        color: #FFD749 !important;
+        border-color: #FFD749 !important;
     }
 
 
