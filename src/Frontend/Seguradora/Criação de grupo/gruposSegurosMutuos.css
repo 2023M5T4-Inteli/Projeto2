@@ -4,48 +4,15 @@ body {
     justify-content: space-around;
 }
 
-.swal2-actions {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-}  
-
-main .criar-grupo-button {
-    width: 60%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.sweet-alert-container * {
-    font-family: Roboto, sans-serif !important;
-}
-
-.swal2-container.swal2-center>.swal2-popup {
-    padding: 1rem 0;
-    width: 40%;
-    height: 75%;
-    border-radius: 28px;
-}
-
-.swal2-title.swal-title {
-    margin: .2rem 0;
-    font-size: 16px;
-    color: #333;
-}
-
-.swal2-html-container {
-    font-size: 14px;
-    font-weight: 300;
-    color: #080808;
-}
-
-.swal2-actions .btn-primario {
-    width: 100%;
-}
-
-.swal2-actions .btn-secundario {
-    background-color: transparent;
-    color: #06266A;
-    font-weight: 600;
-    margin-top: 10px;
+body{
+    background-color: #19191D;
+    color: #fff;
 }
 
 nav {
@@ -142,108 +109,84 @@ nav .logout {
     text-indent: 1.5rem;
 }
 
-main {
-    width: 100%;
-    padding: 3rem;
+main{
+    width: 60vw;
 }
 
-main h1 {
-    font-size: 1.7rem;
-    color: #F2F2F2;
-    display: inline-flex;
-    align-items: center ;
+h2{
+    margin-top: 2vw;
+    margin-left: 8vw;
 }
 
-main h1 img {
-    height: auto;
-    margin-left: 1rem;
+.img{
+    width: 25vw;
 }
 
-main h2 {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-top: 4rem;
+.imagemPagina{
+    width: 20vw;
+    margin-right: 4vw;
+    margin-top: 10vw;
 }
 
-main .info-container {
-    width: 100%;
-    margin-top: 3rem;
+.alinhamentoPagina{
     display: flex;
-    flex-direction: column;
 }
 
-main .info-grid {
-    display: grid;
-    margin-top: 15px;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
 
-main .info-container .info-wrapper {
+.alinhamentoTitulo{
     display: flex;
-    flex-direction: column;
-    width: 98%;
+    margin-top: 3vw;
+    margin-left: 8vw;
 }
 
-main .info-container .info-wrapper .situacao {
-    margin-top: 10px;
+.titulos{
+    margin-left: 15vw;
 }
 
-main .info-container label {
-    color: #fff;
-    font-size: .9rem;
-    margin-bottom: .7rem;
-}
-
-main .info-container select {
+.inputUserQuant, .inputUserData{
+    width: 17vw;
+    border-radius: 8px;
     padding: .8rem;
-    border-radius: .3rem;
     background-color: #303030;
     color: #fff;
     border: none;
+    margin-left: 8vw;
 }
 
-main .info-container .info-value {
-    text-indent: 1.4rem;
-    border-radius: .3rem;
-    padding: .7rem;
-    background-color: #303030;
-    font-size: 1rem;
+.botaoCriarGrupo{
+    padding: 10px;
+    background-color: #00C171;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 5vh;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 8vw;
+    width: 20vw;
 }
 
-main .info-container .saldo-total {
-    padding: .9rem;
-    background-color: #303030;
-    font-size: 1rem;
-    border-radius: .4rem;
-}
-
-main .info-container .info-date {
-    display: inline-flex;
-    align-items: center;
-    font-size: .8rem;
+.input{
+    width: 42vw;
+    border-radius: 8px;
     padding: .8rem;
     background-color: #303030;
+    color: #fff;
     border: none;
-    border-radius: .3rem;
-    font-style: italic;
+    margin-left: 8vw;
 }
 
-main .info-container .info-date img {
-    margin-right: 1rem;
+.tituloInput{
+    margin-left: 8vw;
 }
 
-main button {
-    margin-top: 2rem;
-    padding: .8rem 1rem;
+.info{
+    margin-top: 2vw;
 }
 
-.background-image {
-    display: none;
-    height: 50vh;
-    justify-self: center;
-    align-self: center;
-    margin-right: 3rem;
+.voltar{
+    cursor: pointer;
 }
 
 @media (min-width: 1240px) {
@@ -253,12 +196,72 @@ main button {
     .background-image {
         display: block;
     }
+
+    .alinhamentoCelula{
+        display: flex;
+    }
+    
 }
 
 @media (max-width: 428px) {
 
     nav {
         display: none;
+    }
+
+    .img{
+        display: none;
+    }
+
+    main{
+        width: 90vw;
+    }
+    
+    h2{
+        margin-top: 15vw;
+        margin-left: 8vw;
+    }
+    
+    .alinhamentoTitulo{
+        display: flex;
+        margin-top: 10vw;
+        margin-left: 8vw;
+    }
+    
+    .titulos{
+        margin-left: 15vw;
+    }
+
+    .botaoCriarGrupo{
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 5vh;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin-left: 8vw;
+        width: 70vw;
+    }
+    
+    .input, .inputUserQuant, .inputUserData{
+        width: 70vw;
+        border-radius: 8px;
+        padding: .8rem;
+        background-color: #303030;
+        color: #fff;
+        border: none;
+        margin-left: 8vw;
+    }
+    
+    .tituloInput{
+        margin-left: 8vw;
+    }
+    
+    .info{
+        margin-top: 5vw;
     }
 
 }

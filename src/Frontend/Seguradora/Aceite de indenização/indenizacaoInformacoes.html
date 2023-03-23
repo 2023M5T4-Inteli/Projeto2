@@ -4,61 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Mart</title>
-    <!-- SweetAlert2 css -->
+    <title>Coover - Informações Indenização</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
-    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="../../style/style.css">
-    <link rel="stylesheet" href="./aceiteIndenizacao1.css">
-    <script src="./indenizacaoInformacoes.css"></script>
+    <link rel="stylesheet" href="./indenizacaoInformacoes.css">
 </head>
-<body>s
-    <nav>
-        <div class="logo"></div>
-        <input type="text" placeholder="Search...">
-        <ul>
-            <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
-            <li><a href="" class="sidebar-revenue">Revenue</a></li>
-            <li><a href="" class="sidebar-notifications">Notifications</a></li>
-            <li><a href="" class="sidebar-analytics">Analytics</a></li>
-            <li><a href="" class="sidebar-inventory">Inventory</a></li>
-        </ul>
-        <button class="logout">Logout</button>
-    </nav>
-    <main>
-        <h1>Aceites <img src="../../../img/ethereum.png"/></h2>
-        <h2>Informações Gerais</h2>
-        <div class="info-container">
+<body>
+    <div class="alinhamentoPagina">
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
+                <li><a href="" class="sidebar-revenue">Revenue</a></li>
+                <li><a href="" class="sidebar-notifications">Notifications</a></li>
+                <li><a href="" class="sidebar-analytics">Analytics</a></li>
+                <li><a href="" class="sidebar-inventory">Inventory</a></li>
+            </ul>
+            <button class="logout">Logout</button>
+        </nav>
+        <main>
 
-            <div class="info-wrapper">
-                <label for="descricao-ocorrido" class="descricao">Seguro Mutuo</label>
-                <p class="saldo-total">Seguro para celular</p>
+            <div class="alinhamentoTitulo">
+                <img src="../../img/imgSetaEsquerda.svg">
+                <h1 class="informacoesTitulo">Aceites</h2>
+                <img class="informacoesTitulo" src="../../../img/ethereum.png"/>
             </div>
+            
+            <div class="info-container">
+                <h2 class="titulo">Informações Gerais</h2>
 
-            <div class="info-wrapper">
-                <label for="">Imei</label>
-                <input class="info-date">
-            </div>
-
-                <label for="descricao-ocorrido" class="descricao">Descrição</label>
-                <input type="text" placeholder="Descrição do ocorrido..." id="descricao-ocorrido" class="input_descricao">           
-                
                 <div class="info-wrapper">
-                    <label for="">Data do Ocorrido</label>
-                    <p class="info-date"><img src="../../../img/calendar.png"/>31 Agosto, 2023</p>
+                    <p class="descricao" class="descricao">Seguro Mutuo</p>
+                    <p class="campo">Itaquera - Celulares 2</p>
+                </div>
+
+                <div class="alinhamento">
+                    <div class="info-wrapper">
+                        <p class="descricao">Imei</p>
+                        <p class="campo2">76543212345675</p>
+                    </div>
+                    <div class="info-wrapper">
+                        <p class="descricao">Data do Ocorrido</p>
+                        <p class="campo2">31 Agosto, 2023</p>
+                    </div>
+                </div>
+               
+                <div class="info-wrapper">
+                    <p class="descricao">Descrição</p>
+                    <p class="campoDescricao"></p>        
+                </div>
+               
+                <div class="info-wrapper botoes">
+                    <button  onclick=confirmCreation() class="aceitar-button">Aceitar</button>
+                    <button  class="recusar-button">Recusar</button>
                 </div>
             </div>
 
-                       
+        </main>
+
+        <div class="imgAlinhamento">
+            <img class="background-image" src="../../../img/bg-2.png" alt="">
         </div>
-
-        <div class="aceitar-recusar-container">
-            <button  onclick=confirmCreation() class="aceitar-button">Aceitar</button>
-            <button  class="recusar-button">Recusar</button>
-          </div>          
-
-    </main>
-    <img class="background-image" src="../../../img/bg-2.png" alt="">
+    </div>
 </body>
 </html>
