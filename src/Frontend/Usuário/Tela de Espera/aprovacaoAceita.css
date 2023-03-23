@@ -1,0 +1,107 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+
+
+    .alinhamentoUser{
+        display: flex;
+    }
+
+    .imgLogo{
+        width: 30vw;
+        margin-left: 9rem;
+        margin-top: 4rem;
+        margin-bottom: 2vh;
+    }
+
+    .textoInicial{
+        color: #ffffff;
+        margin-left: 8rem;
+        margin-top: 2rem;
+    }
+
+    .imgSmartContract2{
+        display: none;
+    }
+
+    .botaoProximo{
+        width: 12vw;
+        height: 10vh;
+        margin-left: 2rem;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        font-size: 1rem;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #06266A;
+        color: #ffffff;
+        margin-top: 8vw;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1920px) { 
+
+
+    .alinhamentoUser{
+        display: flex;
+    }
+
+    .imgLogo{
+        width: 20vw;
+        margin-left: 25vw;
+        margin-top: 15vh;
+        margin-bottom: 2vh;
+    }
+
+    .textoInicial{
+        color: #ffffff;
+        margin-left: 22vw;
+        margin-top: 8vh;
+    }
+
+    .descricao{
+        color: #ffffff;
+        margin-left: 14vw;
+        margin-top: 5vh;
+        margin-right: 8vw;
+    }
+
+    .imgSmartContract{
+        width: 50vw;
+        margin-top: 5rem;
+        margin-right: 5vw;
+    }
+
+    .imgSmartContract2{
+        width: 29.3vw;
+    }
+
+    .botaoConfirmar{
+        width: 12vw;
+        height: 10vh;
+        margin-left: 28vw;
+        border-radius: 8px;
+        padding-left: 7px;
+        border: none;
+        font-size: 20px;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        background-color: #00C171;
+        color: #ffffff;
+        margin-top: 3vw;
+    }
+}

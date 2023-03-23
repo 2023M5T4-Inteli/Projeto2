@@ -74,7 +74,7 @@
         font-weight: normal;
     }
 
-    .selecao{
+    .selecaoGrupo{
         display: flex;
         border: none;
         background-color: #1F1F22;
@@ -88,11 +88,26 @@
         border-radius: 8px;    
     }
 
-    .textoSeleciona{
+    .textoSelecionaGrupo{
         color: #F2F2F2;
     }
 
-
+    .selecaoOcorrido{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 80vw;
+        color: #F2F2F2;
+        margin-left: 2rem;
+        height: 5vh;
+        border-radius: 1vh;
+    }
+    
+    .textoSelecionaOcorrido{
+        color: #F2F2F2;
+    }
 
 
     .informacoesOcorrido{
@@ -320,7 +335,7 @@
         font-weight: normal;
     }
 
-    .selecao{
+    .selecaoGrupo{
         display: flex;
         border: none;
         background-color: #1F1F22;
@@ -334,7 +349,7 @@
         border-radius: 8px;    
     }
 
-    .textoSeleciona{
+    .textoSelecionaGrupo{
         color: #F2F2F2;
     }
 
@@ -350,7 +365,7 @@
         margin-top: 1rem;
     }
 
-    .textoDataOcorrido, .textoImei{
+    .textoDataOcorrido, .textoOcorrido{
         color: #F2F2F2;
         font-weight: normal;
     }
@@ -366,31 +381,35 @@
 
     }
 
-    .imei{
-        margin-top: 1rem;
+    .ocorrido{
         margin-left: 3rem;
+        margin-top: 1rem;
     }
 
-    .inputImei{
-        margin-left: 0rem;
-        border-radius: 8px;
-        background-color: #1F1F22;
-        margin-top: 0.5rem;
+
+    .selecaoOcorrido{
+        display: flex;
         border: none;
+        background-color: #1F1F22;
+        align-items: center;
+        text-decoration: none;
+        width: 19.2vw;
         color: #F2F2F2;
-        border-radius: 8px;
+        margin-top: 0.5rem;
         height: 5vh;
-        width: 19vw;
+        border-radius: 1vh;
     }
-
-
+    
+    .textoSelecionaOcorrido{
+        color: #F2F2F2;
+    }
 
 
     .tituloDescricao{
         color: #F2F2F2;
         font-weight: normal;
         margin-left: 3rem;
-        margin-top: 0.5rem;
+        margin-top: 0.7rem;
     }
 
     .caixaArquivo{
