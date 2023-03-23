@@ -4,8 +4,14 @@ body {
     justify-content: space-around;
 }
 
+.alinhamentoPagina{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 nav {
-    width: 15vw;
+    width: 20vw;
     min-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -103,104 +109,177 @@ nav .logout {
     text-indent: 1.5rem;
 }
 
-main {
-    width: 100%;
-    padding: 3rem;
+.voltar{
+    cursor: pointer;
 }
 
-main h1 {
-    font-size: 1.7rem;
-    color: #F2F2F2;
-    display: inline-flex;
-    align-items: center ;
+@media (min-width: 320px) and (max-width: 480px) { 
+
+    .imgData{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .info-wrapper{
+        margin-top: 5vw;
+    }
+    
+    main {
+        width: 100vw;
+        padding: 3rem;
+    }
+    
+    main h1 {
+        font-size: 1.7rem;
+        color: #F2F2F2;
+        display: inline-flex;
+        align-items: center ;
+    }
+    
+    main h2 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-top: 2rem;
+    }
+
+    
+    main .saldo-total {
+        padding: .9rem;
+        background-color: #303030;
+        font-size: 1rem;
+        border-radius: .4rem;
+        width: 70vw;
+    }
+    
+    main button {
+        margin-top: 2rem;
+        padding: .8rem 1rem;
+        width: 70vw;
+        font-weight: bold;
+    }
+    
+    .background-image {
+        display: none;
+    }
+
+    label{
+        color: #fff;
+    }
+    
+
 }
 
-main h1 img {
-    height: auto;
-    margin-left: 1rem;
+
+@media (min-width: 1024px) and (max-width: 1920px) { 
+
+    .imgData{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    
+    main {
+        width: 50vw;
+        padding: 3rem;
+    }
+    
+    main h1 {
+        font-size: 1.7rem;
+        color: #F2F2F2;
+        display: inline-flex;
+        align-items: center ;
+    }
+    
+    main h1 img {
+        height: auto;
+        margin-left: 1rem;
+    }
+    
+    main h2 {
+        font-size: 1.3rem;
+        color: #fff;
+        margin-top: 2rem;
+    }
+    
+    main .info-container {
+        width: 100%;
+        margin-top: 1rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    main .info-container .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    
+    main .info-container .info-wrapper:last-child {
+        width: 100%;
+        grid-column: 1 / -1;
+    }
+    
+    main .info-container label {
+        color: #fff;
+        font-size: .9rem;
+        margin-bottom: .7rem;
+    }
+    
+    main .info-container select {
+        padding: .8rem;
+        border-radius: .3rem;
+        background-color: #303030;
+        color: #fff;
+        border: none;
+    }
+    
+    main .info-container .info-value {
+        text-indent: 1.4rem;
+        border-radius: .3rem;
+        padding: .7rem;
+        background-color: #303030;
+        font-size: 1rem;
+    }
+    
+    main .info-container .saldo-total {
+        padding: .9rem;
+        background-color: #303030;
+        font-size: 1rem;
+        border-radius: .4rem;
+        width: 20vw;
+    }
+    
+    main .info-container .info-date {
+        display: inline-flex;
+        align-items: center;
+        font-size: .8rem;
+        padding: .8rem;
+        background-color: #303030;
+        border: none;
+        border-radius: .3rem;
+        font-style: italic;
+    }
+    
+    main .info-container .info-date img {
+        margin-right: 1rem;
+    }
+    
+    main button {
+        margin-top: 2rem;
+        padding: .8rem 1rem;
+    }
+    
+    .background-image {
+        display: none;
+        height: 50vh;
+        justify-self: center;
+        align-self: center;
+        margin-right: 3rem;
+        width: 40vw;
+    }
+    
 }
 
-main h2 {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-top: 4rem;
-}
-
-main .info-container {
-    width: 100%;
-    margin-top: 3rem;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-}
-
-main .info-container .info-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-}
-
-main .info-container .info-wrapper:last-child {
-    width: 100%;
-    grid-column: 1 / -1;
-}
-
-main .info-container label {
-    color: #fff;
-    font-size: .9rem;
-    margin-bottom: .7rem;
-}
-
-main .info-container select {
-    padding: .8rem;
-    border-radius: .3rem;
-    background-color: #303030;
-    color: #fff;
-    border: none;
-}
-
-main .info-container .info-value {
-    text-indent: 1.4rem;
-    border-radius: .3rem;
-    padding: .7rem;
-    background-color: #303030;
-    font-size: 1rem;
-}
-
-main .info-container .saldo-total {
-    padding: .9rem;
-    background-color: #303030;
-    font-size: 1rem;
-    border-radius: .4rem;
-}
-
-main .info-container .info-date {
-    display: inline-flex;
-    align-items: center;
-    font-size: .8rem;
-    padding: .8rem;
-    background-color: #303030;
-    border: none;
-    border-radius: .3rem;
-    font-style: italic;
-}
-
-main .info-container .info-date img {
-    margin-right: 1rem;
-}
-
-main button {
-    margin-top: 2rem;
-    padding: .8rem 1rem;
-}
-
-.background-image {
-    display: none;
-    height: 50vh;
-    justify-self: center;
-    align-self: center;
-    margin-right: 3rem;
-}
 
 @media (min-width: 1240px) {
     main .info-container {

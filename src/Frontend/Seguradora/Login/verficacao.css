@@ -1,60 +1,141 @@
-body {
-  height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main {
-  width: 35vw;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-main h2 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.3rem;
-  text-align: center;
-}
-main p {
-  font-size: 1.1rem;
-  text-decoration: underline;
-  color: #C9C9C9;
-}
-main .inputs-wrapper {
-  display: flex;
-  width: 30vw;
-  justify-content: space-evenly;
-}
-main .inputs-wrapper .codigo-input {
-  width: 3rem;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  font-size: 2rem;
-  color: white;
-  height: 3rem;
-  border-radius: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border: 1px solid #fff;
-}
-main .inputs-wrapper input:not(:empty) {
-  background-color: purple !important;
-}
-main .login {
-  width: 100%;
+*{
   margin: 0;
-  padding: 1.3rem 0;
-  font-weight: 600;
-  letter-spacing: 1px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-main a {
-  color: #8B8B8B;
-  text-decoration: none;
-  font-size: .9rem;
+
+body{
+  background-color: #19191D;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+
+  .logoCoover{
+    width: 50vw;
+    margin-top: 25vh;
+    margin-left: 24vw;
+  }
+
+  .textoInformacao{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .email{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  .inputs{
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 3vw;
+  }
+
+  .codigoInput{
+    width: 14vw;
+    margin-top: 5vw;
+    height: 15vw;
+    border-radius: 8px;
+    background-color: #19191D;
+    border: 1px solid #fff;
+    margin-right: 1vw;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .botaoLogin{
+    padding: 10px;
+    background-color: #00C171;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 3vh;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 10vw;
+    width: 80vw;
+  }
+
+  .codigoNaoChegou{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .alinhamento{
+    text-align: center;
+  }
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1920px) {
+
+  .logoCoover{
+    width: 20vw;
+    margin-top: 10vh;
+    margin-left: 40vw;
+  }
+
+  .textoInformacao{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .email{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+  .inputs{
+    display: flex;
+    margin-left: 33vw;
+    margin-right: 3vw;
+  }
+
+  .codigoInput{
+    width: 5vw;
+    margin-top: 5vw;
+    height: 5vw;
+    border-radius: 8px;
+    background-color: #19191D;
+    border: 1px solid #fff;
+    margin-right: 1vw;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .botaoLogin{
+    padding: 10px;
+    background-color: #00C171;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 3vh;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-left: 33vw;
+    width: 35vw;
+    margin-top: 4vw;
+  }
+
+  .codigoNaoChegou{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #fff;
+  }
+
+  .alinhamento{
+    text-align: center;
+  }
 }

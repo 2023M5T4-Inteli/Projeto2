@@ -11,7 +11,6 @@
 <body>
     <nav>
         <div class="logo"></div>
-        <input type="text" placeholder="Search...">
         <ul>
             <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
             <li><a href="" class="sidebar-revenue">Revenue</a></li>
@@ -22,41 +21,42 @@
         <button class="logout">Logout</button>
     </nav>
     <main>
-        <h1>Shopping Mart<img src="../../img/ethereum.png"/></h2>
+        <div class="alinhamentoPagina">
+            <img class="voltar" src="../../img/imgSetaEsquerda.svg"/>
+            <h1>Nome Grupo</h2>
+            <img src="../../img/ethereum.png"/>
+        </div>
         <h2>Informações Gerais</h2>
         <div class="info-container">
-
             <div class="info-wrapper">
-                <label for="situacao">Situação</label>
-                <select name="" id="">
-                    <option selected hidden value="">Selecione</option>
-                </select>
+                <label>Situação</label>
+                <p class="saldo-total">Ativo</p>
             </div>
             
             <div class="info-wrapper">
-                <label for="">Quant Usuários</label>
-                <input class="info-value" placeholder="Colocar quantidade" input="info-value">
+                <label>Quant Usuários</label>
+                <p class="saldo-total">20</p>
             </div>
 
             <div class="info-wrapper">
-                <label for="">Data Criação</label>
-                <p class="info-date"><img src="../../img/calendar.png"/>31 Agosto, 2023</p>
+                <label>Data Criação</label>
+                <p class="saldo-total"><img class="imgData" src="../../img/calendar.png"/> 31 Agosto, 2023</p>
             </div>
             
             <div class="info-wrapper">
-                <label for="">Data Renovação</label>
-                <p class="info-date"><img src="../../img/calendar.png"/>31 Agosto, 2023</p>
+                <label>Data Renovação</label>
+                <p class="saldo-total"><img class="imgData" src="../../img/calendar.png"/> 31 Agosto, 2023</p>
             </div>
 
             <div class="info-wrapper">
-                <label for="">Saldo Total</label>
+                <label>Saldo Total</label>
                 <p class="saldo-total">R$ 80.000,00</p>
             </div>            
         </div>
 
-        <button>Visualizar participantes</button>
+        <button class="button">Visualizar Participantes</button>
 
     </main>
-    <img class="background-image" src="../../img/background-seguro.png" alt="">
+    <img class="background-image" src="../../img/imgHome2.svg" alt="">
 </body>
 </html>

@@ -9,86 +9,113 @@
     <link rel="stylesheet" href="./segurosMutuosVisualizacao.css">
 </head>
 <body>
-    <nav>
-        <div class="logo"></div>
-        <input type="text" placeholder="Search...">
-        <ul>
-            <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
-            <li><a href="" class="sidebar-revenue">Revenue</a></li>
-            <li><a href="" class="sidebar-notifications">Notifications</a></li>
-            <li><a href="" class="sidebar-analytics">Analytics</a></li>
-            <li><a href="" class="sidebar-inventory">Inventory</a></li>
-        </ul>
-        <button class="logout">Logout</button>
-    </nav>
-    <main>
-        <h1>Seguros Mútuos <img src="../../img/ethereum.png"/></h1>
-        <div class="input-filter-wrapper">
-            <input placeholder="Pesquise um contrato" />
-            <select name="" id="">
-                <option selected hidden value="">Selecione</option>
-                <option value="">Ativo</option>
-                <option value="">Inativo</option>
-                <option value="">Em progresso</option>
-            </select>
-        </div>
-        <h2 class="mobile-titulo">Seguros Mútuos - Celulares</h2>
-        <table>
-            <thead>
-                <th>Seguros</th>
-                <th>Situação</th>
-                <th>Data Criação</th>
-                <th>Data Validade</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="seguros-name">
-                        <p>Shopping Mart</p>
-                        <p>Grocery Shopping</p>
-                    </td>
-                    <td><p class="situacao">Ativo</p></td>
-                    <td><p class="data-criacao">31 Outubro 2023</p></td>
-                    <td><p class="data-validade">31 Outubro 2023</p></td>
-                </tr>
-                <tr>
-                    <td class="seguros-name">
-                        <p>Shopping Mart</p>
-                        <p>Grocery Shopping</p>
-                    </td>
-                    <td><p class="situacao inativo">Inativo</p></td>
-                    <td><p class="data-criacao">31 Outubro 2023</p></td>
-                    <td><p class="data-validade">31 Outubro 2023</p></td>
-                </tr>
-                <tr>
-                    <td class="seguros-name">
-                        <p>Shopping Mart</p>
-                        <p>Grocery Shopping</p>
-                    </td>
-                    <td><p class="situacao">Ativo</p></td>
-                    <td><p class="data-criacao">31 Outubro 2023</p></td>
-                    <td><p class="data-validade">31 Outubro 2023</p></td>
-                </tr>
-                <tr>
-                    <td class="seguros-name">
-                        <p>Shopping Mart</p>
-                        <p>Grocery Shopping</p>
-                    </td>
-                    <td><p class="situacao em-progresso">Em progresso</p></td>
-                    <td><p class="data-criacao">31 Outubro 2023</p></td>
-                    <td><p class="data-validade">31 Outubro 2023</p></td>
-                </tr>
-                <tr>
-                    <td class="seguros-name">
-                        <p>Shopping Mart</p>
-                        <p>Grocery Shopping</p>
-                    </td>
-                    <td><p class="situacao">Ativo</p></td>
-                    <td><p class="data-criacao">31 Outubro 2023</p></td>
-                    <td><p class="data-validade">31 Outubro 2023</p></td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-    <img class="background-image" src="../../img/seguros-bg.png" alt="">
+    <div class="alinhamentoPage">
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
+                <li><a href="" class="sidebar-revenue">Revenue</a></li>
+                <li><a href="" class="sidebar-notifications">Notifications</a></li>
+                <li><a href="" class="sidebar-analytics">Analytics</a></li>
+                <li><a href="" class="sidebar-inventory">Inventory</a></li>
+            </ul>
+            <button class="logout">Logout</button>
+        </nav>
+        <main>
+            <div class="alinhamento">
+                <img class="voltar" src="../../img/imgSetaEsquerda.svg">
+                <p>Seguros Mútuos</p>
+                <img src="../../img/ethereum.png"/>
+            </div>
+            
+            <div class="input-filter-wrapper">
+                <input placeholder="Pesquise um contrato" />
+                <select name="" id="">
+                    <option selected value="">Selecione</option>
+                    <option value="">Ativo</option>
+                    <option value="">Inativo</option>
+                    <option value="">Em progresso</option>
+                </select>
+            </div>
+            <h2 class="mobile-titulo">Seguros Mútuos - Celulares</h2>
+            <div class="alinhamentoTabela">
+                <table>
+                    <thead>
+                        <th>Seguros</th>
+                        <th>Situação</th>
+                        <th>Data Criação</th>
+                        <th>Data Validade</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao">Ativo</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao inativo">Inativo</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao">Ativo</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao em-progresso">Em progresso</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao em-progresso">Em progresso</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao em-progresso">Em progresso</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                        <tr>
+                            <td class="seguros-name">
+                                <p>Shopping Mart</p>
+                                <p>Grocery Shopping</p>
+                            </td>
+                            <td><p class="situacao em-progresso">Em progresso</p></td>
+                            <td><p class="data-criacao">31 Outubro 2023</p></td>
+                            <td><p class="data-validade">31 Outubro 2023</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <img class="background-image" src="../../img/seguros-bg.png" alt="">
+    </div>
+    
 </body>
 </html>
