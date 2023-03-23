@@ -17,9 +17,15 @@ entrarGrupo.addEventListener('click', () => {
         cancelButtonText: 'Cancelar'
       }).then((result) => {
         if (result.isConfirmed) {
-          console.log("ok")
+            Swal.fire({
+                icon: 'success',
+                title: 'Sua solicitação foi enviada para a Coover!',
+                showConfirmButton: false,
+                timer: 3000
+            })
+            window.location.href = '../Tela de Espera/esperaAprovacao.html';
         }
-    })
+      })
 });
 
 solicitarGrupo.addEventListener('click', () => {
@@ -36,19 +42,17 @@ solicitarGrupo.addEventListener('click', () => {
         confirmButtonText: 'Solicitar',
         cancelButtonText: 'Cancelar',
         showLoaderOnConfirm: true
-        }).then((result) => {
-        if (result.isConfirmed) {
-            var nomeGrupo = result.value;
-            Swal.fire({
-                icon: 'success',
-                title: 'Solicitação enviada com sucesso!',
-                showConfirmButton: false,
-                timer: 1500,
-            })
-            console.log(nomeGrupo)
-            
-        }
-    })
+      }).then((result) => {
+          if (result.isConfirmed) {
+              Swal.fire({
+                  icon: 'success',
+                  title: 'Sua solicitação foi enviada para a Coover!',
+                  showConfirmButton: false,
+                  timer: 3000
+              })
+              window.location.href = '../Tela de Espera/esperaAprovacao.html';
+          }
+      })
 });
 
 informacaoIcon.addEventListener('click', () => {

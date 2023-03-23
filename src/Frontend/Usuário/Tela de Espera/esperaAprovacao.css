@@ -18,26 +18,38 @@ body{
     }
 
     .imgLogo{
-        width: 30vw;
-        margin-left: 9rem;
-        margin-top: 4rem;
+        width: 60vw;
+        margin-left: 5rem;
+        margin-top: 10rem;
         margin-bottom: 2vh;
     }
 
     .textoInicial{
         color: #ffffff;
-        margin-left: 8rem;
-        margin-top: 2rem;
+        margin-left: 4rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+        text-align: center;
     }
+
+    .descricao{
+        color: #ffffff;
+        margin-left: 14vw;
+        margin-top: 5vh;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+        text-align: center;
+    }
+
 
     .imgSmartContract2{
         display: none;
     }
 
     .botaoProximo{
-        width: 12vw;
-        height: 10vh;
-        margin-left: 2rem;
+        width: 55vw;
+        height: 6vh;
+        margin-left: 5rem;
         border-radius: 8px;
         padding-left: 7px;
         border: none;
@@ -45,9 +57,10 @@ body{
         box-shadow: 0 0 0 0;
         border: 0 none;
         outline: 0;
-        background-color: #06266A;
         color: #ffffff;
-        margin-top: 8vw;
+        margin-top: 25vw;
+        background-color: #06266A;
+        
     }
 }
 

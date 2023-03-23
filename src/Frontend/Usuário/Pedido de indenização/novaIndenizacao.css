@@ -1,15 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (min-width: 320px) and (max-width: 480px) { 
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color: #19191D;
-        font-family: 'Roboto', sans-serif;
-    }
 
     .alinhamentoUser{
         display: flex;
@@ -18,7 +19,6 @@
     .navbar{
         display: none;
     }
-
 
 
 
@@ -197,16 +197,6 @@
 
 @media (min-width: 1024px) and (max-width: 1920px) { 
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color: #19191D;
-        font-family: 'Roboto', sans-serif;
-    }
 
     .alinhamentoUser{
         display: flex;

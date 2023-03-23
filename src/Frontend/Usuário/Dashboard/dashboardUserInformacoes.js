@@ -90,7 +90,7 @@ mudancaCards();
     } else {
       if (valor == "Grupo 1") {
         // mostra os campos e o botão
-        document.getElementById("linha1").style.display = "flex";
+        document.getElementById("maisInformacoes").style.display = "block";
         document.getElementById("botao").style.display = "block";
       } else {
         // oculta os campos e o botão
