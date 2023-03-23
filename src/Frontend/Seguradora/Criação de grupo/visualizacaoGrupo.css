@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: space-around;
 }
+
 nav {
     width: 15vw;
     min-width: fit-content;
@@ -84,10 +85,12 @@ nav .logout {
     background-color: transparent;
     text-indent: 1.5rem;
 }
+
+
 main {
-    width: 100%;
-    padding: 3rem;
+    width: 60vw;
 }
+
 main h1 {
     font-size: 1.7rem;
     font-weight: 700;
@@ -95,172 +98,100 @@ main h1 {
     display: inline-flex;
     align-items: center ;
 }
+
 input{
     color: #EFEFEF;
 }
+
 main h1 img {
     height: auto;
     margin-left: 1rem;
 }
-.background-image {
+
+.imgPagina {
     display: none;
     height: 50vh;
     justify-self: center;
     align-self: center;
     margin-right: 3rem;
+    margin-top: 15vw;
 }
-main h2 {
-    color: #fff;
-    margin-top: 3rem;
-    font-size: 1.3rem;
-    padding: 1rem 0;
-    border-bottom: .1rem solid #999;
+
+.img{
+    width: 25vw;
 }
-main .participantes {
-    margin-top: 1rem;
+
+.voltar{
+    cursor: pointer;
+}
+
+.alinhamentoCelulaTitulo{
+    margin-top: 3vw;
+    margin-left: 5vw;
     display: flex;
-    flex-direction: column;
 }
-.participantes .participante {
-    padding: .8rem;
-    border-radius: .7rem;
-    margin: .3rem 0;
+
+.alinhamentoTitulo{
+    margin-left: 10vw;
 }
-.participantes .participante:nth-child(even) {
-    background-color: #303030;
+
+/* Remove a aparência padrão da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
 }
-.participantes .participante .id {
-    color: #fff;
-    font-weight: 600;
-    font-size: .9rem;
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
-.participantes .participante .endereco {
-    font-size: .9rem;
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
 }
-@media (min-width: 1024px) {
-    .background-image {
-        display: block;
-    }
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
-@media (max-width: 428px) {
-    nav {
-        display: none;
-    }
-}body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: space-around;
+
+.table-container {
+    scrollbar-width: thin;
+    scrollbar-color: #535353 #8d8d8d;
 }
-nav {
-    width: 15vw;
-    min-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #09090A;
+
+.table-container ::-webkit-scrollbar-track {
+    background: #7e7e7e;
 }
-nav .logo {
-    background-image: url(../../../img/LogoCoover.svg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 50%;
-    align-self: center;
-    height: 4rem;
+
+.table-container ::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 20px;
+    border: 3px solid #696969;
 }
-nav input {
-    width: 80%;
-    align-self: center;
-    margin-top: 1.5rem;
-    padding: .8rem;
-    border: none;
-    outline: none;
-    border-radius: .7rem;
-    background-color: #1F1F22;
-    background-image: url(../../../img/search.png);
-    background-repeat: no-repeat;
-    background-position: .3rem center;
-    text-indent: 1.3rem;
+
+.table-container ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
-nav input::placeholder {
-    color: #EFEFEF;
-    font-size: .8rem;
+
+.alinhamentoCorpoPagina{
+    margin-left: 5vw;
+    margin-top: 3vw;
+    overflow: auto;
+    height: 25vw;
+    width: 45vw;
 }
-nav ul {
-    padding-top: 2rem;
+
+.participante{
+    width: 40vw;
 }
-nav ul li {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-nav ul li .sidebar-dashboard {
-    background-image: url(../../../img/sidebar-home.png);
-}
-nav ul li .sidebar-revenue {
-    background-image: url(../../../img/revenue.png);
-}
-nav ul li .sidebar-notifications {
-    background-image: url(../../../img/notifications.png);
-}
-nav ul li .sidebar-analytics {
-    background-image: url(../../../img/analytics.png);
-}
-nav ul li .sidebar-inventory {
-    background-image: url(../../../img/inventory.png);
-}
-nav ul li a {
-    display: inline-flex;
-    align-items: center;
-    margin: 1rem 0;
-    width: 80%;
-    font-size: .9rem;
-    text-indent: 2.3rem;
-    color: #EFEFEF;
-    text-decoration: none;
-    background-position: .3rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-nav .logout {
-    background-image: url(../../../img/logout.png);
-    background-repeat: no-repeat;
-    background-position: .3rem;
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    background-color: transparent;
-    text-indent: 1.5rem;
-}
-main {
-    width: 100%;
-    padding: 3rem;
-}
-main h1 {
-    font-size: 1.7rem;
-    font-weight: 700;
+
+.textoIntroducaoPagina{
+    font-size: 1.5vw;
+    width: 40vw;
+    text-align: center;
     color: #F2F2F2;
-    display: inline-flex;
-    align-items: center ;
+    margin-left: 5vw;
+    margin-top: 3vw;
 }
-main h1 img {
-    height: auto;
-    margin-left: 1rem;
-}
-.background-image {
-    display: none;
-    height: 50vh;
-    justify-self: center;
-    align-self: center;
-    margin-right: 3rem;
-}
-main h2 {
-    color: #fff;
-    margin-top: 3rem;
-    font-size: 1.3rem;
-    padding: 1rem 0;
-    border-bottom: .1rem solid #999;
-}
+
 main .participantes {
     margin-top: 1rem;
     display: flex;
@@ -281,15 +212,58 @@ main .participantes {
 }
 .participantes .participante .endereco {
     font-size: .9rem;
-    color: #9D9D9D;
 }
+
 @media (min-width: 1024px) {
-    .background-image {
+    .imgPagina {
         display: block;
     }
 }
 @media (max-width: 428px) {
+
     nav {
         display: none;
+    }
+    .img{
+        display: none;
+    }
+
+    main{
+        width: 90vw;
+    }
+    
+    .alinhamentoCelulaTitulo{
+        margin-top: 15vw;
+        margin-left: 4vw;
+        display: flex;
+    }
+    
+    .alinhamentoTitulo{
+        margin-left: 8vw;
+    }
+    
+    main h1 {
+        height: auto;
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .alinhamentoCorpoPagina{
+        margin-left: 10vw;
+        height: 100%;
+        width: 80vw;
+    }
+    
+    .participante{
+        width: 70vw;
+    }
+    
+    .textoIntroducaoPagina{
+        font-size: 0.8rem;
+        width: 80vw;
+        text-align: center;
+        color: #F2F2F2;
+        margin-left: 5vw;
+        margin-top: 8vw;
     }
 }

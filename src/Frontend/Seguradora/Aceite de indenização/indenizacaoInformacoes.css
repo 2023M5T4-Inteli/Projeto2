@@ -1,52 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-around;
+    background-color: #19191D;
 }
 
-.swal2-actions {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1rem;
-}  
-
-main .criar-grupo-button {
-    width: 60%;
-}
-
-.sweet-alert-container * {
-    font-family: Roboto, sans-serif !important;
-}
-
-.swal2-container.swal2-center>.swal2-popup {
-    padding: 1rem 0;
-    width: 40%;
-    height: 75%;
-    border-radius: 28px;
-}
-
-.swal2-title.swal-title {
-    margin: .2rem 0;
-    font-size: 16px;
-    color: #333;
-}
-
-.swal2-html-container {
-    font-size: 14px;
-    font-weight: 300;
-    color: #080808;
-}
-
-.swal2-actions .btn-primario {
-    width: 100%;
-}
-
-.swal2-actions .btn-secundario {
-    background-color: transparent;
-    color: #06266A;
-    font-weight: 600;
-    margin-top: 10px;
-}
 
 nav {
     width: 15vw;
@@ -142,174 +106,125 @@ nav .logout {
     text-indent: 1.5rem;
 }
 
-.aceitar-recusar-container{
-    padding-top: 0.5rem;
+main{
+    width: 60vw;
 }
 
-.aceitar-button, .recusar-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    flex: 1;
-  }
-  
-  .recusar-button {
-    background-color: #f44336;
-  }
-  
-  .aceitar-button:hover, .recusar-button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .aceitar-button:active, .recusar-button:active {
-    background-color: #235625;
-  }
-  
-  
-
-input#id {
-    width: 100%;
-    align-self: center;
-    margin-top: 1.5rem;
-    padding: .8rem;
-    border: none;
-    outline: none;
-    border-radius: .7rem;
-    background-color: #303030;
-    color: #1F1F22;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.5;
-    box-sizing: border-box;
-}
-
-
-main {
-    width: 100%;
-    padding: 3rem;
-}
-
-main h1 {
-    font-size: 1.7rem;
-    color: #F2F2F2;
-    display: inline-flex;
-    align-items: center ;
-}
-
-main h1 img {
-    height: auto;
-    margin-left: 1rem;
-}
-
-main h2 {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-top: 4rem;
-}
-
-main .info-container {
-    width: 100%;
-    margin-top: 3rem;
+.alinhamentoPagina{
     display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 
-main .info-grid {
-    display: grid;
-    margin-top: 15px;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-main .info-container .info-wrapper {
+.alinhamentoTitulo{
+    margin-left: 8vw;
+    margin-top: 5vw;
     display: flex;
-    flex-direction: column;
-    width: 98%;
-}
-
-main .info-container .info-wrapper .descricao {
-    margin-top: -1rem;
-}
-
-main .info-container label {
     color: #fff;
-    font-size: .9rem;
-    margin-top: 1rem;
 }
 
-main .info-container select {
-    padding: .8rem;
-    border-radius: .3rem;
-    background-color: #303030;
+.informacoesTitulo{
+    margin-left: 8vw;
+}
+
+
+
+.info-container{
+    margin-left: 8vw;
+}
+
+.titulo{
     color: #fff;
-    border: none;
+    margin-top: 4vw;
 }
 
-.input_descricao{
-    border: 0;
-    background-color: #303030;
-    color: #F2F2F2;
-    height: 100px;
+.imgAlinhamento{
+    margin-right: 10vw;
+    margin-top: 7vw;
 }
 
-main .info-container .info-value {
-    text-indent: 1.4rem;
-    border-radius: .3rem;
-    padding: .7rem;
-    background-color: #303030;
+
+.descricao{
+    color: #fff;
+    margin-top: 1vw;
     font-size: 1rem;
+    margin-bottom: 0.5vw;
 }
 
-main .info-container .saldo-total {
-    padding: .9rem;
-    background-color: #303030;
-    font-size: 1rem;
-    border-radius: .4rem;
+.campoDescricao{
+    padding: 3vw;
+    background-color: #282829;
+    border-radius: 8px;
 }
 
-main .info-container .info-date {
-    display: inline-flex;
-    align-items: center;
+.campo2{
     color: #fff;
-    font-size: .8rem;
-    padding: .8rem;
-    background-color: #303030;
-    border: none;
-    border-radius: .3rem;
-    font-style: italic;
+    font-size: 0.8rem;
+    background-color: #282829;
+    padding: 0.8vw;
+    border-radius: 8px;
+    width: 13.3vw;
 }
 
-main .info-container .info-date img {
-    margin-right: 1rem;
+
+.campo{
+    color: #fff;
+    font-size: 0.8rem;
+    background-color: #282829;
+    padding: 0.8vw;
+    border-radius: 8px;
 }
 
-main button {
-    margin-top: 2rem;
-    padding: .8rem 1rem;
+.info-wrapper{
+    margin-right: 1.5vw;
+}
+
+.botoes{
+    display: flex;
+    margin-top: 2vw;
 }
 
 .background-image {
+    
     display: none;
-    height: 50vh;
+    height: 70vh;
     justify-self: center;
     align-self: center;
     margin-right: 3rem;
+}
+
+.aceitar-button{
+    background-color: #00C171;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-right: 1rem;
+    cursor: pointer;
+    width: 15vw;
+}
+
+.recusar-button{
+    background-color: #f53e3e;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 15vw;
 }
 
 @media (min-width: 1240px) {
     main .info-container {
         width: 60%;
     }
+
     .background-image {
         display: block;
+    }
+
+    .alinhamento{
+        display: flex;
     }
 }
 
@@ -318,5 +233,88 @@ main button {
     nav {
         display: none;
     }
+
+    main{
+        width: 90vw;
+    }
+
+    .alinhamentoTitulo{
+        margin-left: 10vw;
+        margin-top: 15vw;
+        display: flex;
+        color: #fff;
+    }
+
+    .informacoesTitulo{
+        margin-left: 17vw;
+    }
+
+    .info-container{
+        margin-left: 10vw;
+    }
+
+    .titulo{
+        color: #fff;
+        margin-top: 10vw;
+    }
+
+    .descricao{
+        color: #fff;
+        margin-top: 5vw;
+        font-size: 1rem;
+        margin-bottom: 0.5vw;
+    }
+
+    .campoDescricao{
+        padding: 15vw;
+        background-color: #282829;
+        border-radius: 8px;
+        width: 80vw;
+    }
+
+    .campo2{
+        color: #fff;
+        font-size: 0.8rem;
+        background-color: #282829;
+        padding: 3vw;
+        border-radius: 8px;
+        width: 80vw;
+    }
+
+    .campo{
+        color: #fff;
+        font-size: 0.8rem;
+        background-color: #282829;
+        padding: 3vw;
+        border-radius: 8px;
+        width: 80vw;
+    }
+
+    .botoes{
+        display: flex;
+        margin-top: 5vw;
+    }
+
+    .aceitar-button{
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-right: 1rem;
+        cursor: pointer;
+        width: 37.5vw;
+    }
+
+    .recusar-button{
+        background-color: #f53e3e;
+        color: #fff;
+        border: none;
+        padding: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 37.5vw;
+    }
+
 
 }

@@ -1,5 +1,15 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
     font-family: 'Roboto', sans-serif;
+}
+
+.alinhamentoPage{
     display: flex;
 }
 
@@ -108,9 +118,20 @@ main h1 {
     align-items: center ;
 }
 
+.alinhamento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.voltar{
+    cursor: pointer;
+}
+
 main h1 img {
     height: auto;
     margin-left: 1rem;
+    justify-content: space-between;
 }
 
 main .input-filter-wrapper {
@@ -151,6 +172,7 @@ main .input-filter-wrapper select {
 .mobile-titulo {
     font-size: 1.2rem;
     display: none;
+    color: #fff;
 }
 
 main table {
@@ -170,6 +192,7 @@ main table tbody tr td {
     text-align: center;
     height: min-content;
     line-height: 2rem;
+    cursor: pointer;
 }
 
 main table thead th:first-of-type, main table tbody tr td:first-of-type {
@@ -231,9 +254,30 @@ main table tbody tr .data-criacao, main table tbody tr .data-validade {
     .background-image {
         display: flex;
     }
+    
+    .alinhamentoTabela{
+        height: 300px; 
+        overflow-x: auto;
+    }
+
+    thead {
+        position: absolute;
+        top: 0;
+        background-color: #222222;
+    }
+    
+    /* Define uma margem superior para o conteúdo da tabela */
+    tbody {
+        margin-top: 30px;
+    }
+    
+    /* Define a altura da linha de título */
+    th {
+        height: 30px; 
+    }
 }
 
-@media (max-width: 429px) {
+@media (min-width: 320px) and (max-width: 429px) {
 
     .mobile-titulo {
         display: block;
@@ -273,4 +317,58 @@ main table tbody tr .data-criacao, main table tbody tr .data-validade {
     main table tbody {
         width: 100%;
     }
+}
+
+#table-container {
+    height: 60vh; 
+    overflow-y: auto; 
+    margin-left: 1rem; 
+    margin-top: 1.5rem;
+    width: 90vw;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead{
+    position: sticky;
+    top: 0;
+}
+
+/* Remove a aparência padrão da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.table-container {
+    scrollbar-width: thin;
+    scrollbar-color: #535353 #8d8d8d;
+}
+
+.table-container ::-webkit-scrollbar-track {
+    background: #7e7e7e;
+}
+
+.table-container ::-webkit-scrollbar-thumb {
+    background-color: #373737;
+    border-radius: 20px;
+    border: 3px solid #696969;
+}
+
+.table-container ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }

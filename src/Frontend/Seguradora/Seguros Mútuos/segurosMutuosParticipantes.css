@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    width: 15vw;
+    width: 25vw;
     min-width: fit-content;
     display: flex;
     flex-direction: column;
@@ -138,6 +138,15 @@ main .participantes {
     flex-direction: column;
 }
 
+.alinhamentoPagina{
+    display: flex;
+    justify-content: space-between;
+}	
+
+.voltar{
+    cursor: pointer;
+}
+
 .participantes .participante {
     padding: .8rem;
     border-radius: .7rem;
@@ -158,9 +167,18 @@ main .participantes {
     font-size: .9rem;
 }
 
+.participante{
+    cursor: pointer;
+}
+
 @media (min-width: 1024px) {
     .background-image {
         display: block;
+    }
+
+    .alinhamentoTabela{
+        height: 330px; 
+        overflow-x: auto;
     }
 }
 

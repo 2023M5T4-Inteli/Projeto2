@@ -8,35 +8,34 @@
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="./verficacao.css">
     <script src="../../../html/Seguradora/Login/verificacao.js"></script>
-    <!-- SweetAlert2 css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
-    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
 </head>
 <body>
-    <main>
-        <img src="../../../img/LogoCoover.svg"/>
-        <h2>Digite o código de seis dígitos que
-            enviamos para o seu e-mail cadastrado.
-        </h2>
+    <section>
+        <img class="logoCoover" src="../../../img/LogoCoover.svg"/>
+        <p class="textoInformacao">Digite o código de seis dígitos que enviamos para o seu e-mail cadastrado.</p>
         <p class="email">henri.harari@gmail.com</p>
-        <div class="inputs-wrapper">
-            <input type="number" class="codigo-input" type="">
-            <input type="number" class="codigo-input" type="">
-            <input type="number" class="codigo-input" type="">
-            <input type="number" class="codigo-input" type="">
-            <input type="number" class="codigo-input" type="">
-            <input type="number" class="codigo-input" type="">
+
+        <div class="inputs">
+            <input type="number" class="codigoInput">
+            <input type="number" class="codigoInput">
+            <input type="number" class="codigoInput">
+            <input type="number" class="codigoInput">
+            <input type="number" class="codigoInput">
+            <input type="number" class="codigoInput">
         </div>
-        <button onclick=confirmCreation() class="login">LOGIN</button>
-        <a href="#" onclick="alert('Switch ativado!')">Não recebi meu código    </a>
+
+        <button class="botaoLogin" onclick=confirmCreation() class="login">LOGIN</button>
+        <p class="alinhamento"><a class="codigoNaoChegou" onclick="alert('Switch ativado!')">Não recebi meu código</a></p>
+
         <script>
             const inputs = document.querySelectorAll('input')
             inputs.forEach((input) => {
                 console.log(input.value)
             })
         </script>
-    </main>
+    </section>
 </body>
 <script src="./verificacao.js"></script>
 </html>

@@ -4,72 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Mart</title>
-    <!-- SweetAlert2 css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.css">
-    <!-- SweetAlert2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.5/dist/sweetalert2.min.js"></script>
-    <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="./gruposSegurosMutuos.css">
-    <script src="./gruposSeguroMutuos.js"></script>
+    <title>Coover - Grupos</title>
 </head>
 <body>
-    <nav>
-        <div class="logo"></div>
-        <input type="text" placeholder="Search...">
-        <ul>
-            <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
-            <li><a href="" class="sidebar-revenue">Revenue</a></li>
-            <li><a href="" class="sidebar-notifications">Notifications</a></li>
-            <li><a href="" class="sidebar-analytics">Analytics</a></li>
-            <li><a href="" class="sidebar-inventory">Inventory</a></li>
-        </ul>
-        <button class="logout">Logout</button>
-    </nav>
-    <main>
-        <h1>Grupos - Seguro Mútuo<img src="../../img/ethereum.png"/></h2>
-        <h2>Informações Gerais</h2>
-        <div class="info-container">
-
-            <div class="info-wrapper">
-                <p class="saldo-total">Celulares-Palmeiras</p>
+    <div class="alinhamentoPagina">
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="" class="sidebar-dashboard">Dashboard</a></li>
+                <li><a href="" class="sidebar-revenue">Revenue</a></li>
+                <li><a href="" class="sidebar-notifications">Notifications</a></li>
+                <li><a href="" class="sidebar-analytics">Analytics</a></li>
+                <li><a href="" class="sidebar-inventory">Inventory</a></li>
+            </ul>
+            <button class="logout">Logout</button>
+        </nav>
+        <main>
+            <div class="alinhamentoTitulo">
+                <img class="voltar" src="../../img/imgSetaEsquerda.svg">
+                <h1 class="titulos">Grupos</h2>
+                <img class="titulos" src="../../img/ethereum.png"/>
             </div>
-
-            <div class="info-wrapper">
-                <label for="situacao" class="situacao">Situação</label>
-                <select name="" id="">
-                    <option selected hidden value="">Selecione</option>
-                </select>
-            </div>
-        
-            <div class="info-grid">
-                <div class="info-wrapper">
-                    <label for="">Quant Min Usuários</label>
-                    <p class="info-value">50</p>
-                </div>
     
-                <div class="info-wrapper">
-                    <label for="">Quant Max Usuários</label>
-                    <p class="info-value">50</p>
-                </div>
+            <h2>Informações Gerais</h2>
     
-                <div class="info-wrapper">
-                    <label for="">Data Criação</label>
-                    <p class="info-date"><img src="../../img/calendar.png"/>31 Agosto, 2023</p>
+            <div class="info-container">
+    
+                <div class="info">
+                    <label class="tituloInput">Nome do Grupo</label>
+                    <input type="text" class="input">
                 </div>
                 
-                <div class="info-wrapper">
-                    <label for="">Data Renovação</label>
-                    <p class="info-date"><img src="../../img/calendar.png"/>31 Agosto, 2023</p>
+                <div class="info">
+                    <label class="tituloInput">Situação</label>
+                    <select class="input">
+                        <option selected value="">Selecione</option>
+                        <option value="">Ativo</option>
+                        <option value="">Em progresso</option>
+                    </select>
                 </div>
+            
+                <div class="alinhamentoCelula">
+                    <div class="info">
+                        <label class="tituloInput">Minimo Usuários</label>
+                        <input type="number" class="inputUserQuant">
+                    </div>
+        
+                    <div class="info">
+                        <label class="tituloInput">Máximo Usuários</label>
+                        <input type="number" class="inputUserQuant">
+                    </div>
+                
+                </div>
+        
+                <div class="alinhamentoCelula">
+                    <div class="info">
+                        <label class="tituloInput">Data Criação</label>
+                        <input type="date" class="inputUserData">
+                    </div>
+                    
+                    <div class="info">
+                        <label class="tituloInput">Data Renovação</label>
+                        <input type="date" class="inputUserData">
+                    </div>
+                </div>
+    
+                           
             </div>
-
-                       
+    
+            <button class="botaoCriarGrupo" onclick="confirmCreation()">Criar Grupo</button>
+    
+        </main>
+        <div class="img">
+            <img class="imagemPagina" src="../../img/bg-2.png" alt="">
         </div>
-
-        <button class="criar-grupo-button" onclick="confirmCreation()">Criar Grupo</button>
-
-    </main>
-    <img class="background-image" src="../../img/bg-2.png" alt="">
+    </div>
+    
 </body>
+<script src="./gruposSeguroMutuos.js"></script>
 </html>
