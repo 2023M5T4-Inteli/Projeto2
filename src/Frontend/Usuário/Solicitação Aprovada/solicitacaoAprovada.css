@@ -16,6 +16,9 @@
         display: none;
     }
 
+
+
+
     .alinhamentoTexto{
         display: flex;
         text-align: center;
@@ -28,54 +31,95 @@
 
     .textoTitulo{
         color: #ffffff;
+        margin-top: 3.5rem;
+        margin-left: 2rem;
     }
 
-    .imgSeta, .imgEthereum, .textoTitulo{
-        margin-left: 3rem;
-        margin-top: 3rem;
+    .imgSeta, .imgEthereum{
+        margin-left: 2rem;
+        margin-top: 2vw;
     }
 
     .titulo{
         color: #ffffff;
         text-align: left;
-        margin-left: 2rem;
-        margin-top: 3rem;
+        margin-left: 3.5rem;
+        margin-top: 2rem;
     }
 
     .texto{
         color: #ffffff;
-        text-align: left;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 2vw;
     }
 
     .textoOBS{
         color: #ffffff;
-        text-align: left;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-top: 1vw;
     }
 
     .imgSmartContract{
         display: none;
     }
 
-    #table-container {
-        height: 40vh; 
-        overflow-y: auto; 
-        margin-left: 2rem; 
-        width: 80vw; 
-    }
 
-    main table tbody .seguros-name p {
-        font-size: .9rem;
+    
+    
+    .titulosTabela {
+        color: #F2F2F2;
+        font-weight: 700;
+    }
+    
+    .informacoesTabela {
+        line-height: 10.9;
+        text-align: center;
+        height: min-content;
+        line-height: 2rem
+    } 
+    
+    
+    
+
+    table {
+        width: 85vw;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    table thead th {
+        color: #F2F2F2;
+        font-weight: 700;
+    }
+    
+    table tbody tr {
+        line-height: 10.9;
+    } 
+    
+    table tbody tr td {
+        text-align: center;
+        height: min-content;
+        line-height: 2rem;
+        cursor: pointer;
+    }
+    
+    table thead th:first-of-type, table tbody tr td:first-of-type {
+        text-align: left;
+    }
+    
+    table thead th:last-of-type, table tbody tr td:last-child {
+        text-align: right;
+    }
+    
+    table tbody .seguros-name p {
+        font-size: 9px;
         line-height: .4rem;
         color: #BCBCBC;
     }
     
-    main table tbody .seguros-name p:first-child {
+    table tbody .seguros-name p:first-child {
         margin-top: 1rem;
         font-size: .9rem;
         font-weight: 600;
@@ -83,7 +127,7 @@
         color: #fff;
     }
     
-    main table tbody .situacao {
+    table tbody .situacao {
         font-size: .9rem;
         font-weight: 600;
         border-radius: 40px;
@@ -93,30 +137,66 @@
         color: #02DE82;
     }
     
-    main table tbody tr .data-criacao, main table tbody tr .data-validade {
+    table tbody tr .data-criacao, table tbody tr .data-validade {
         font-size: .8rem;
         line-height: 2rem;
         margin-top: 2rem;
+        color: #fff;
+    }
+    
+    .background-image {
+        display: none;
+        height: 45vh;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .inativo {
+        color: #FF5E66 !important;
+        border-color: #FF5E66 !important;
+    }
+    
+    .em-progresso {
+        color: #FFD749 !important;
+        border-color: #FFD749 !important;
     }
 
 
+    #table-container {
+        height: 60vh; 
+        overflow-y: auto; 
+        margin-left: 1rem; 
+        margin-top: 1.5rem;
+        width: 90vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    thead{
+        position: sticky;
+        top: 0;
+    }
+    
     /* Remove a aparência padrão da barra de rolagem */
     ::-webkit-scrollbar {
         width: 8px;
     }
-
+    
     ::-webkit-scrollbar-track {
         background-color: #f1f1f1;
     }
-
+    
     ::-webkit-scrollbar-thumb {
         background-color: #888;
     }
-
+    
     ::-webkit-scrollbar-thumb:hover {
         background-color: #555;
     }
-
+    
     .table-container {
         scrollbar-width: thin;
         scrollbar-color: #535353 #8d8d8d;
@@ -125,16 +205,17 @@
     .table-container ::-webkit-scrollbar-track {
         background: #7e7e7e;
     }
-
+    
     .table-container ::-webkit-scrollbar-thumb {
         background-color: #373737;
         border-radius: 20px;
         border: 3px solid #696969;
     }
-
+    
     .table-container ::-webkit-scrollbar-thumb:hover {
         background-color: #555;
     }
+
 
 }
 
@@ -205,7 +286,7 @@
         margin-top: 22vw;
         background-color: transparent;
         border: none;
-        margin-top: 32.5rem;
+        margin-top: 10.5rem;
     }
 
 
@@ -222,9 +303,11 @@
 
     .textoTitulo{
         color: #ffffff;
+        margin-top: 3rem;
+        margin-left: 2rem;
     }
 
-    .imgSeta, .imgEthereum, .textoTitulo{
+    .imgSeta, .imgEthereum{
         margin-left: 3vw;
         margin-top: 2vw;
     }
@@ -251,9 +334,9 @@
     }
 
     .imgSmartContract{
-        width: 35vw;
-        height: 70vh;
-        margin-left: 0vw;
+        width: 25vw;
+        height: 60vh;
+        margin-left: 5vw;
         margin-top: 10rem;
     }
 
@@ -274,20 +357,43 @@
     
     
     
-    
-    
-  
 
-    .tabela {
-        height: 30vh; 
-        overflow-y: auto; 
-        margin-left: 3vw; 
-        width: 45vw; 
+    table {
+        width: 50vw;
+        margin-left: 2rem;
     }
-
     
+    table thead th {
+        color: #F2F2F2;
+        font-weight: 700;
+    }
     
-    .nomeSeguros{
+    table tbody tr {
+        line-height: 10.9;
+    } 
+    
+    table tbody tr td {
+        text-align: center;
+        height: min-content;
+        line-height: 2rem;
+        cursor: pointer;
+    }
+    
+    table thead th:first-of-type, table tbody tr td:first-of-type {
+        text-align: left;
+    }
+    
+    table thead th:last-of-type, table tbody tr td:last-child {
+        text-align: right;
+    }
+    
+    table tbody .seguros-name p {
+        font-size: .9rem;
+        line-height: .4rem;
+        color: #BCBCBC;
+    }
+    
+    table tbody .seguros-name p:first-child {
         margin-top: 1rem;
         font-size: .9rem;
         font-weight: 600;
@@ -295,7 +401,7 @@
         color: #fff;
     }
     
-    .situacaoStatusPositivo {
+    table tbody .situacao {
         font-size: .9rem;
         font-weight: 600;
         border-radius: 40px;
@@ -305,13 +411,21 @@
         color: #02DE82;
     }
     
-    .data-validade {
+    table tbody tr .data-criacao, table tbody tr .data-validade {
         font-size: .8rem;
         line-height: 2rem;
         margin-top: 2rem;
+        color: #fff;
     }
-
-    .situacaoStatusNegativo {
+    
+    .background-image {
+        display: none;
+        height: 45vh;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .inativo {
         color: #FF5E66 !important;
         border-color: #FF5E66 !important;
     }
@@ -322,23 +436,41 @@
     }
 
 
+    #table-container {
+        height: 60vh; 
+        overflow-y: auto; 
+        margin-left: 1rem; 
+        margin-top: 1.5rem;
+        width: 90vw;
+        margin-bottom: 1.5rem;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    thead{
+        position: sticky;
+        top: 0;
+    }
+    
     /* Remove a aparência padrão da barra de rolagem */
     ::-webkit-scrollbar {
         width: 8px;
     }
-
+    
     ::-webkit-scrollbar-track {
         background-color: #f1f1f1;
     }
-
+    
     ::-webkit-scrollbar-thumb {
         background-color: #888;
     }
-
+    
     ::-webkit-scrollbar-thumb:hover {
         background-color: #555;
     }
-
+    
     .table-container {
         scrollbar-width: thin;
         scrollbar-color: #535353 #8d8d8d;
@@ -347,17 +479,16 @@
     .table-container ::-webkit-scrollbar-track {
         background: #7e7e7e;
     }
-
+    
     .table-container ::-webkit-scrollbar-thumb {
         background-color: #373737;
         border-radius: 20px;
         border: 3px solid #696969;
     }
-
+    
     .table-container ::-webkit-scrollbar-thumb:hover {
         background-color: #555;
     }
-
 
     
 
