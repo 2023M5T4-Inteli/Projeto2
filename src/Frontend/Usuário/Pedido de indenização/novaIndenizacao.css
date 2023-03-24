@@ -1,15 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
 @media (min-width: 320px) and (max-width: 480px) { 
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color: #19191D;
-        font-family: 'Roboto', sans-serif;
-    }
 
     .alinhamentoUser{
         display: flex;
@@ -18,7 +19,6 @@
     .navbar{
         display: none;
     }
-
 
 
 
@@ -119,7 +119,7 @@
         margin-top: 1rem;
     }
 
-    .textoDataOcorrido, .textoImei{
+    .textoDataOcorrido, .textoOcorrido{
         color: #F2F2F2;
         font-weight: normal;
     }
@@ -134,21 +134,28 @@
         height: 5vh;
     }
 
-    .imei{
+    .ocorrido{
+        margin-left: 1.5rem;
         margin-top: 1rem;
-        margin-left: 2.5rem;
     }
 
-    .inputImei{
-        margin-left: 0rem;
-        border-radius: 8px;
-        background-color: #1F1F22;
-        margin-top: 0.5rem;
+
+    .selecaoOcorrido{
+        display: flex;
         border: none;
+        background-color: #1F1F22;
+        align-items: center;
+        text-decoration: none;
+        width: 38vw;
         color: #F2F2F2;
-        border-radius: 8px;
+        margin-top: 0.5rem;
         height: 5vh;
-        width: 35vw;
+        border-radius: 1vh;
+        margin-left: 0rem;
+    }
+    
+    .textoSelecionaOcorrido{
+        color: #F2F2F2;
     }
 
 
@@ -179,12 +186,24 @@
     .botaoEnviar{
         margin-top: 2rem;
         width: 20vw;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .botaoSolicitar{
         margin-top: 2rem;
         width: 80vw;
         margin-left: 3rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
 
@@ -197,16 +216,6 @@
 
 @media (min-width: 1024px) and (max-width: 1920px) { 
 
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body{
-        background-color: #19191D;
-        font-family: 'Roboto', sans-serif;
-    }
 
     .alinhamentoUser{
         display: flex;
@@ -277,7 +286,7 @@
         margin-top: 22vw;
         background-color: transparent;
         border: none;
-        margin-top: 11.2rem;
+        margin-top: 12.5rem;
     }
 
 
@@ -430,22 +439,35 @@
     .botaoEnviar{
         width: 10vw;
         margin-top: 1rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 2rem;
     }
 
     .botaoSolicitar{
         margin-top: 1rem;
         width: 35vw;
         margin-left: 3rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
 
 
     .img{
-        margin-left: 4rem;
+        margin-left: 10rem;
         margin-top: 10rem;
     }
     .imgIndenizacao{
-        width: 30vw;
+        width: 25vw;
         height: 60vh;
     }
 }

@@ -24,7 +24,7 @@
         </nav>
         <main>
 
-            <div class="alinhamentoTitulo">
+            <div class="alinhamentoTitulo" onclick="voltarIndenizacoes()">
                 <img src="../../img/imgSetaEsquerda.svg">
                 <h1 class="informacoesTitulo">Aceites</h2>
                 <img class="informacoesTitulo" src="../../../img/ethereum.png"/>
@@ -55,8 +55,8 @@
                 </div>
                
                 <div class="info-wrapper botoes">
-                    <button  onclick=confirmCreation() class="aceitar-button">Aceitar</button>
-                    <button  class="recusar-button">Recusar</button>
+                    <button  onclick="aceiteIndenizacao()" class="aceitar-button">Aceitar</button>
+                    <button onclick="recusaIndenizacao()"  class="recusar-button">Recusar</button>
                 </div>
             </div>
 
@@ -67,4 +67,5 @@
         </div>
     </div>
 </body>
+<script src="./aceitaIndenização1.js"></script>
 </html>

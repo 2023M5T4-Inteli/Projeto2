@@ -1,0 +1,252 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #19191D;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 320px) and (max-width: 480px) { 
+
+    .alinhamentoUser{
+        display: flex;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+
+
+
+
+
+    .indenizacao{
+        display: inline-flex; 
+        align-items: flex-start;
+    }
+
+    .imgSetaEsquerda{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 5vw;
+    }
+
+    .tituloIndenizacao{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        color: #F2F2F2;
+    }
+
+    .imgEthereum{
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+
+
+
+    .textoNovaIndenizacao{
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+
+
+
+
+
+    .cardSinistro{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 85vw;
+        border-radius: 1vh;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        height: 8vh;
+    }
+
+    .cardTituloSinistro{
+        color: #F2F2F2;
+        margin-left: 1rem;
+        font-size: 18px;
+    }
+
+    .cardTextoSinistro{
+        font-size: 14px;
+        color: #F2F2F2;
+        margin-left: 2rem;
+        width: 50vw;
+        text-align: left;
+    }
+
+
+    .imgIndenizacao{
+        display: none;
+    }
+
+    
+}
+
+
+
+@media (min-width: 1024px) and (max-width: 1920px) { 
+
+    .alinhamentoUser{
+        display: flex;
+    }
+    .navbar{
+        width: 15vw;
+        flex-direction: column;
+        background-color: #09090A;
+    }
+
+    .logo {
+        width: 10vw;
+        margin-top: 2rem;
+    }
+
+    .pesquisa{
+        width: 13vw;
+        margin-top: 3rem;
+        padding: 0.8rem;
+        display: flex;
+        border: none;
+        outline: none;
+        border-radius: 8rem;
+        background-color: #1F1F22;
+    }
+
+    .barraPesquisa{
+        background-color: #1F1F22;
+        border: none;
+        text-indent: 1.3rem;
+        color: #EFEFEF;
+        font-size: .8rem;
+        width: 10vw;
+    }
+
+    .opcoesNavbar{
+        margin-top: 1.5rem;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .sidebarInicio, .sidebarSolicitacoes, .sidebarIndenizacoes{
+        display: flex;
+        margin-bottom: 1.2rem;
+    }
+
+    .imgSidebar{
+        margin-left: 0rem;
+    }
+
+    .textoSidebar{
+        margin-left: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #EFEFEF;
+
+    }
+
+    .saida {
+        background-color: transparent;
+        border: none;
+        margin-top: 12rem;
+
+    }
+
+
+
+
+
+
+    .indenizacao{
+        display: inline-flex; 
+        align-items: flex-start;
+    }
+
+    .imgSetaEsquerda{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        width: 1vw;
+    }
+
+    .tituloIndenizacao{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        color: #F2F2F2;
+    }
+
+    .imgEthereum{
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+
+
+
+    .textoNovaIndenizacao{
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+
+
+
+
+
+    .cardSinistro{
+        display: flex;
+        border: none;
+        background-color: #1C1B20;
+        align-items: center;
+        text-decoration: none;
+        width: 40vw;
+        border-radius: 1vh;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        height: 8vh;
+    }
+
+    .cardTituloSinistro{
+        color: #F2F2F2;
+        margin-left: 1rem;
+        font-size: 18px;
+    }
+
+    .cardTextoSinistro{
+        font-size: 14px;
+        color: #F2F2F2;
+        margin-left: 2rem;
+        width: 50vw;
+        text-align: left;
+    }
+
+    .img{
+        margin-left: 10rem;
+        margin-top: 10rem;
+    }
+    .imgIndenizacao{
+        width: 25vw;
+        height: 60vh;
+    }
+
+
+}
+

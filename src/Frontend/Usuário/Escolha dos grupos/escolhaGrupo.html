@@ -14,103 +14,131 @@
     <title>Escolha do Grupo</title>
 </head>
 <body>
-    <section class="alinhamentoUser">
-        <div>
-            <img class="imgLogo" src="../../img/LogoCoover.svg">
-            <h4 class="textoInicial">Seguro Mútuo<img class="informacaoIcon" id="informacaoIconSeguro" src="../../img/simbolo-de-informacao.png"></h4>
-            <div class="imei">
-              <label class="inputTitulo">IMEI<img class="informacaoIcon" id="informacaoIconImei" src="../../img/simbolo-de-informacao.png"></label>
-              <input class="inputFormatacao" type="number" id="imei" name="imei" required placeholder="IMEI do celular">
+  <div class="alinhamentoUser">
+    <div>
+      <nav class="navbar">
+          <img class="logo" src="../../img/LogoCoover.svg">
+          <div class="pesquisa" >
+            <img src="../../img/search.png">
+            <input class="barraPesquisa" type="text" placeholder="Pesquisar...">
+          </div>
+          <ul class="opcoesNavbar">
+            <div class="sidebarInicio">
+              <img class="imgSidebar" src="../../img/sidebar-home.png">
+              <li><a href="./dashboardUser.html" class="textoSidebar">Página Inicial</a></li>
             </div>
-            <div id="table-container">
-              <table class="table">
-                  <thead>
-                      <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Nome grupo</th>
-                        <th scope="col">Tipo seguro</th>
-                        <th scope="col">Participantes</th>
-                      </tr>
-                  </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Butantã</td>
-                        <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>5/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Palmeiras</td>
-                        <td>Quebra<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>9/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Morumbi</td>
-                        <td>Roubo e Quebra<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>8/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Santo Amaro</td>
-                        <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>2/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Jardim Paulista</td>
-                        <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>6/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Panamby</td>
-                        <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>9/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Lapa</td>
-                        <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>3/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Perdizes</td>
-                        <td>Roubo<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>5/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Alto de Pinheiros</td>
-                        <td>Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>2/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Itam Bibi</td>
-                        <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>9/10</td>
-                      </tr>
-                      <tr>
-                        <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
-                        <td>Jardins</td>
-                        <td>Roubo<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
-                        <td>8/10</td>
-                      </tr>
-                    </tbody>
-              </table>
+            <div class="sidebarSolicitacoes">
+              <img class="imgSidebar" src="../../img/notifications.png">
+              <li><a href="../Solicitação Aprovada/solicitacaoAprovada.html" class="textoSidebar">Solicitações</a></li>
             </div>
-            <div class="alinharBotao">
-              <button class="botaoEntrarGrupo" id="entrarGrupo" type="submit">Entrar no grupo</button>
-              <button class="botaoSolicitarGrupo" id="solicitarGrupo" type="submit">Solicitar grupo</button>
+            <div class="sidebarIndenizacoes">
+              <img class="imgSidebar" src="../../img/inventory.png">
+              <li><a href="../Pedido de indenização/novaIndenizacao.html" class="textoSidebar">Indenizações</a></li>
             </div>
-        </div>
-        <div class="imgSmartContract" >
-            <img class="imgSmartContract2" src="../../img/imgSmartETH.svg">
-        </div>
-    </section>
+          </ul>
+          <button class="saida" id="saida">
+            <img src="../../img/logout.png">
+          </button>
+      </nav>
+    </div>
+    <div>
+      <a href="../Dashboard/dashboardUser.html"><img href class="imgSeta" src="../../img/imgSetaEsquerda.svg"></a>
+      <img class="imgLogo" src="../../img/LogoCoover.svg">
+      <h4 class="textoInicial">Seguro Mútuo<img class="informacaoIcon" id="informacaoIconSeguro" src="../../img/simbolo-de-informacao.png"></h4>
+      <div class="imei">
+        <label class="inputTitulo">IMEI<img class="informacaoIcon" id="informacaoIconImei" src="../../img/simbolo-de-informacao.png"></label>
+        <input class="inputFormatacao" type="number" id="imei" name="imei" required placeholder="IMEI do celular">
+      </div>
+      <div id="table-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Nome grupo</th>
+              <th scope="col">Tipo seguro</th>
+              <th scope="col">Participantes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Butantã</td>
+              <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>5/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Palmeiras</td>
+              <td>Quebra<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Morumbi</td>
+              <td>Roubo e Quebra<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>8/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Santo Amaro</td>
+              <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>2/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Jardim Paulista</td>
+              <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>6/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Panamby</td>
+              <td>Roubo<img class="informacaoIcon"  id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Lapa</td>
+              <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>3/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Perdizes</td>
+              <td>Roubo<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>5/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Alto de Pinheiros</td>
+              <td>Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>2/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Itam Bibi</td>
+              <td>Roubo e Quebra<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>9/10</td>
+            </tr>
+            <tr>
+              <th scope="row"> <input type="radio" id="grupo1" name="grupo1" value="grupo1"></th>
+              <td>Jardins</td>
+              <td>Roubo<img class="informacaoIcon" id="informacaoIcon" src="../../img/simbolo-de-informacao.png"></td>
+              <td>8/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alinharBotao">
+        <button class="botaoEntrarGrupo" id="entrarGrupo" type="submit">Entrar no grupo</button>
+        <button class="botaoSolicitarGrupo" id="solicitarGrupo" type="submit">Solicitar grupo</button>
+      </div>
+    </div>
+    <div class="imgSmartContract" >
+      <img class="imgSmartContract2" src="../../img/imgSmartETH.svg">
+    </div>
+  </div>
+        
 </body>
 <script src="./escolhaGrupo.js"></script>
 </html>

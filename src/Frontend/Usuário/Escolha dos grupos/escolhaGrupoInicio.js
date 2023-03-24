@@ -23,7 +23,7 @@ entrarGrupo.addEventListener('click', () => {
                 showConfirmButton: false,
                 timer: 3000
             })
-            window.location.href = '../Tela de Espera/esperaAprovacao.html';
+            window.location.href = '../Tela de Espera/esperaAprovacaoInicio.html';
         }
       })
 });
@@ -50,7 +50,7 @@ solicitarGrupo.addEventListener('click', () => {
                   showConfirmButton: false,
                   timer: 3000
               })
-              window.location.href = '../Tela de Espera/esperaAprovacao.html';
+              window.location.href = '../Tela de Espera/esperaAprovacaoInicio.html';
           }
       })
 });

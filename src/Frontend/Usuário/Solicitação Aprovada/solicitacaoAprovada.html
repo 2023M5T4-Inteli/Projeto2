@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="./solicitacaoAprovada.css">
     <title>Document</title>
 </head>
@@ -41,7 +42,7 @@
         </div>
         <div>
             <div class="alinhamentoTextoTitulo">
-                <img class="imgSeta" src="../../img/imgSetaEsquerda.svg">
+                <a href="../Dashboard/dashboardUser.html"><img  class="imgSeta" src="../../img/imgSetaEsquerda.svg"></a>
                 <h1 class="textoTitulo">Solicitação</h1>
                 <img class="imgEthereum" src="../../img/ethereum.png"> 
             </div>
@@ -50,30 +51,30 @@
                 <p class="texto">Abaixo encontra-se as solicitações aprovadas para a criação de um novo grupo.</p>
                 <p class="textoOBS">OBS: Selecione um por vez, para inserir as informações do seu dispositivo.</p>
             </div>
-            <div id="table-container">
+            <div id="table-container" class="tabela">
                 <table>
                     <thead class="titulosTabela">
-                        <th>Seguros</th>
-                        <th>Situação</th>
-                        <th>Data Criação</th>
-                        <th>Data Validade</th>
+                        <th class="seguros">Seguros</th>
+                        <th class="situacao">Situação</th>
+                        <th class="dataCriacao">Data Criação</th>
+                        <th class="dataValidade">Data Validade</th>
                     </thead>
                     <tbody class="informacoesTabela">
                         <tr>
-                            <td class="seguros-name">
+                            <td class="nomeSeguros">
                                 <p>Shopping Mart</p>
                                 <p>Grocery Shopping</p>
                             </td>
-                            <td><p class="situacao">Ativo</p></td>
+                            <td><p class="situacaoStatusPositivo">Ativo</p></td>
                             <td><p class="data-criacao">31 Outubro 2023</p></td>
                             <td><p class="data-validade">31 Outubro 2023</p></td>
                         </tr>
                         <tr>
-                            <td class="seguros-name">
+                            <td class="nomeSeguros">
                                 <p>Shopping Mart</p>
                                 <p>Grocery Shopping</p>
                             </td>
-                            <td><p class="situacao inativo">Inativo</p></td>
+                            <td><p class="situacaoStatusNegativo">Inativo</p></td>
                             <td><p class="data-criacao">31 Outubro 2023</p></td>
                             <td><p class="data-validade">31 Outubro 2023</p></td>
                         </tr>

@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Contratos de Seguros Mútuos</title>
-    <link rel="stylesheet" href="../../style/">
     <link rel="stylesheet" href="./dashboardAdm.css">
   </head>
   <body>
@@ -11,12 +10,12 @@
     
     <div class="body-rounded">
       <!-- Dashboard com botões -->
-      <div id="dashboard">
+      <div id="dashboard" src="">
         <p class="texto">Dashboard</p>
         <div class="dashboard-grid">
 
           <!-- Botão 1 -->
-          <button class="dashboard-botao">
+          <button class="dashboard-botao" id="seguroMutuo">
             <img class="dashboard-icone" src="../../img/wallet.png" />
             <div class="dashboard-titulo-subtitulo">
               <p class="dashboard-titulo">Seguros Mútuos</p>
@@ -26,7 +25,7 @@
           </button>
 
           <!-- Botão 2 -->
-          <button class="dashboard-botao">
+          <button class="dashboard-botao" id="usuario">
             <img class="dashboard-icone" src="../../img/chat-balloon.png" />
             <div class="dashboard-titulo-subtitulo">
               <div class="dashboard-titulo">Usuários</div>
@@ -36,7 +35,7 @@
           </button>
 
           <!-- Botão 4 -->
-          <button class="dashboard-botao">
+          <button class="dashboard-botao" id="indenizacoes">
             <img class="dashboard-icone" src="../../img/contract.png" />
             <div class="dashboard-titulo-subtitulo">
               <div class="dashboard-titulo">Aceite</div>
@@ -46,18 +45,18 @@
           </button>
 
           <!-- Botão 5 -->
-          <button class="dashboard-botao">
+          <button class="dashboard-botao" id="grupoSeguro">
             <img class="dashboard-icone" src="../../img/bell.png" />
             <div class="dashboard-titulo-subtitulo">
-              <div class="dashboard-titulo">Grupos - Seguro Mútuo</div>
-              <p class="dashboard-subtitulo">Criação de grupos</p>
+              <div class="dashboard-titulo">Criação de grupos</div>
+              <p class="dashboard-subtitulo">solicitações de grupos</p>
             </div>
             <span class="chevron-right"></span>
           </button>
           
         </div>
       </div>
-      <button class="sair">Sair</button>
+      <button class="sair" onclick="sairPlataforma()">Sair</button>
     
     </div>
 </body>

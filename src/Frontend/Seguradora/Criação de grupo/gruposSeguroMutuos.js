@@ -1,30 +1,35 @@
 function confirmCreation() {
 
     Swal.fire({
-        title: 'Deseja criar um novo grupo?',
+        title: 'Criar novo grupo?',
         text:   'Verifique se as informações para criação de um novo grupo mútuo estão corretas, uma vez feito, não poderá ser alterado.',
         showCancelButton: true,
         confirmButtonText: 'Criar Grupo',
-        cancelButtonText: 'Cancelar',
-        buttonsStyling: false,
-        customClass: {
-          container: 'container',
-          title: 'swal-title',
-          text: 'swal-text',
-          confirmButton: 'btn btn-primario',
-          cancelButton: 'btn btn-secundario'
-        }
+        cancelButtonText: 'Cancelar'
       }).then((result) => {
         if (result.isConfirmed) {
-          // Ação confirmada pelo usuário
-          // Coloque o código que deve ser executado em caso de confirmação aqui
-          console.log('confirmou')
-        } else if (result.isDenied) {
-            // Ação cancelada pelo usuário
-            // Coloque o código que deve ser executado em caso de cancelamento aqui
-            console.log('negou')
+          Swal.fire({
+            title:  'Concluído!',
+            text: 'Um novo grupo foi criado com sucesso!', 
+            icon : 'success'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = './visualizacaoGrupo.html';
+            }
+          })
         }
       });
-      
-
 }
+
+function voltarVisualizarSeguros(){
+    window.location.href = "./visualizacaoGrupo.html"
+}
+
+function voltarDashboard(){
+    window.location.href = "../Dashboard/dashboardAdm.html"
+}
+
+document.getElementById('criarGrupo').addEventListener('click', async () => {
+  window.location.href = './gruposSeguroMutuos.html';
+});
+

@@ -1,4 +1,4 @@
 
-document.getElementById('proximo').addEventListener('click', async () => {
-    window.location.href = 'aprovacaoAceita.html';
+document.getElementById('voltar').addEventListener('click', async () => {
+    window.location.href = '../Dashboard/dashboardUser.html';
 });

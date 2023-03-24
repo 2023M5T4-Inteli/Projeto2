@@ -17,10 +17,6 @@ body{
         display: flex;
     }
 
-    .navbar{
-        display: none;
-    }
-
     .imgLogo{
         width: 30vw;
         margin-left: 9rem;
@@ -32,12 +28,6 @@ body{
         color: #ffffff;
         margin-left: 8rem;
         margin-top: 2rem;
-    }
-
-    .imgSeta{
-        margin-top: 3rem;
-        margin-left: 3rem;
-        width: 3vw;
     }
 
     .imei{
@@ -195,70 +185,6 @@ body{
         display: flex;
     }
 
-    .navbar{
-        width: 15vw;
-        flex-direction: column;
-        background-color: #09090A;
-    }
-
-    .logo {
-        width: 10vw;
-        margin-top: 2rem;
-    }
-
-    .pesquisa{
-        width: 13vw;
-        margin-top: 3rem;
-        padding: 0.8rem;
-        display: flex;
-        border: none;
-        outline: none;
-        border-radius: 8rem;
-        background-color: #1F1F22;
-    }
-
-    .barraPesquisa{
-        background-color: #1F1F22;
-        border: none;
-        text-indent: 1.3rem;
-        color: #EFEFEF;
-        font-size: .8rem;
-        width: 10vw;
-    }
-
-    .opcoesNavbar{
-        margin-top: 1.5rem;
-        padding-top: 2rem;
-        padding-left: 0rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        list-style: none;
-    }
-
-    .sidebarInicio, .sidebarSolicitacoes, .sidebarIndenizacoes{
-        display: flex;
-        margin-bottom: 1.2rem;
-    }
-
-    .imgSidebar{
-        margin-left: 0rem;
-    }
-
-    .textoSidebar{
-        margin-left: 1rem;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #EFEFEF;
-
-    }
-
-    .saida {
-        background-color: transparent;
-        border: none;
-        margin-top: 10.5rem;
-    }
-
     .imgLogo{
         width: 12vw;
         margin-left: 10vw;
@@ -270,12 +196,6 @@ body{
         color: #ffffff;
         margin-left: 10vw;
         margin-top: 2.5vh;
-    }
-
-    .imgSeta{
-        margin-top: 3rem;
-        margin-left: 3rem;
-        width: 1vw;
     }
     .imei{
         display: grid;
@@ -418,11 +338,11 @@ body{
 
     .imgSmartContract{
         width: 50vw;
-        margin-left: 8vw;
-        margin-top: 10rem;
+        margin-left: 10vw;
+        margin-top: 5rem;
     }
 
     .imgSmartContract2{
-        width: 20vw;
+        width: 29.3vw;
     }
 }
