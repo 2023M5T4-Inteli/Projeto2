@@ -1,3 +1,5 @@
+
+// Função para exibir modal de verificação
 function confirmCreation() {
 
     Swal.fire({
@@ -11,7 +13,8 @@ function confirmCreation() {
           console.log('confirmou')
         }
     })}
-
+    
+// Função para exibir modal de alerta
 function alert(){
     
     Swal.fire({
