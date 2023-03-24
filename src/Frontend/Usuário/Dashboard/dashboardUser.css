@@ -11,9 +11,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) { 
 
-    .alinhamentoUser{
-        display: flex;
-    }
+    
 
     .titulo{
         color: #ffffff;
@@ -55,17 +53,19 @@
     }
 
     .cardTitulo{
-        font-size: 1rem;
+        font-size: 18px;
     }
 
     .cardTexto{
-        font-size: 0.6rem;
+        font-size: 12px;
     }
     
 
 
     .imgInicio{
-        display: none;
+        width: 60vw;
+        height: 39vh;
+        margin-left: 4.5rem;
     }
 
 }

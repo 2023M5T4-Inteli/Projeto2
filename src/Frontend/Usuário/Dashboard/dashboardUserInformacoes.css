@@ -16,6 +16,7 @@ body{
         display: flex;
     }
 
+
     .navbar{
         display: none;
     }
@@ -52,7 +53,6 @@ body{
     }
     
     .selecao{
-        display: flex;
         border: none;
         background-color: #1C1B20;
         align-items: center;
@@ -70,11 +70,9 @@ body{
 
 
 
-
-    .linha1, .linha2, .linha3, .linha4{
+    .maisInformacoes{
         display: flex;
     }
-    
 
     .tituloGrupo{
         color: #F2F2F2;
@@ -258,7 +256,7 @@ body{
         color: #F2F2F2; 
         font-size: 1rem;
         margin-left: 3rem;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
     }
     
     .selecao{
@@ -272,6 +270,7 @@ body{
         margin-left: 3rem;
         height: 5vh;
         border-radius: 1vh;
+        margin-bottom: 1rem;
     }
     
     .textoSeleciona{
@@ -281,29 +280,17 @@ body{
 
 
 
-    .linha1, .linha2, .linha3, .linha4{
-        display: flex;
+    .maisInformacoes{
+        display: grid;
     }
 
-    .tituloGrupo{
-        color: #F2F2F2;
-        margin-top: 1.5rem;
-        margin-left: 4rem;
-    } 
-
-    .tituloSaldo, .tituloIndenizacao, .tituloSaida, .tituloCriacao{
+    .tituloSaldo, .tituloIndenizacao, .tituloSaida, .tituloCriacao, .tituloParticipantes, .tituloEntrantes, .tituloSituacao, .tituloRenovacao{
         margin-left: 3rem;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         color: #F2F2F2;
     }
 
-    .tituloParticipantes, .tituloEntrantes, .tituloSituacao, .tituloRenovacao{
-        margin-left: 3rem;
-        margin-top: 1rem;
-        color: #F2F2F2;
-    }
-
-    .cardSaldo, .cardIndenizacao, .cardSaida, .cardCriacao{
+    .cardSaldo, .cardIndenizacao, .cardSaida, .cardCriacao, .cardSituacao, .cardEntrantes, .cardParticipantes,   .cardRenovacao{
         margin-left: 3rem;
         width: 15vw;
         display: flex;
@@ -313,19 +300,6 @@ body{
         text-decoration: none;
         height: 5vh;
         border-radius: 1vh;
-    }
-
-    .cardSituacao, .cardEntrantes, .cardParticipantes,   .cardRenovacao{
-        margin-left: 3rem;
-        width: 15vw;
-        display: flex;
-        border: none;
-        background-color: #252525;
-        align-items: center;
-        text-decoration: none;
-        height: 5vh;
-        border-radius: 1vh;
-
     }
 
     .cardSaldoTexto, .cardParticipantesTexto, .cardSituacaoTexto, .cardIndenizacaoTexto, .cardSaidaTexto, .cardCriacaoTexto, .cardEntrantesTexto, .cardParticipantesTexto, .cardRenovacaoTexto{
