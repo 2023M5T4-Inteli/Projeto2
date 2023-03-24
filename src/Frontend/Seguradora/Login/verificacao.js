@@ -1,15 +1,10 @@
 function confirmCreation() {
 
     Swal.fire({
-        text:   'login realizado com sucesso !',
+        title:   'Código Verificado',
+        text:  'O login foi realizado com sucesso! Você será redirecionado para a página inicial.',
         confirmButtonText: 'Continuar',
         buttonsStyling: false,
-        customClass: {
-          container: 'container',
-          title: 'swal-title',
-          text: 'swal-text',
-          confirmButton: 'btn btn-primario',
-        }
     }).then((result) => {
         if (result.isConfirmed) {
           window.location.href = "../Dashboard/dashboardADM.html";
@@ -24,12 +19,13 @@ function alert(){
         html: 'Verifique se digitou o e-mail corretamente. <br>Talvez o código esteja na sua caixa de spam.<br> <u>henri.harari@gmail.com</u> <br> ',
         confirmButtonText: 'Reenviar código',
         buttonsStyling: false,
-        customClass: {
-          container: 'container',
-          confirmButton: 'btn btn-primario',
-    
-        }
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Código reenviado!',
+          'Verifique sua caixa de entrada e spam.',
+          'question'
+        )
+      }
+})}
 
-    })
-
-}

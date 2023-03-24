@@ -1,30 +1,73 @@
-function confirmCreation() {
+function recusaIndenizacao() {
   Swal.fire({
-    title: 'Qual o motivo de aceitar o sinistro?',
-    text: 'Tipo de Recusa',
+    title: 'Recusa de Indenização',
+    text: 'Qual o motivo da recusa da indenização?', 
+    input: 'text',
+    inputAttributes: {
+      autocapitalize: 'off'
+    },
     showCancelButton: true,
     confirmButtonText: 'Enviar',
     cancelButtonText: 'Cancelar',
-    buttonsStyling: false,
-    customClass: {
-      container: 'container',
-      title: 'swal-title',
-      text: 'swal-text',
-      confirmButton: 'btn btn-primario',
-      cancelButton: 'btn btn-secundario'
-    }
+    showLoaderOnConfirm: true,
   }).then((result) => {
     if (result.isConfirmed) {
-      switch(result.value) {
-        case 'motivo1':
-          // código a ser executado caso o valor seja motivo1
-          break;
-        case 'motivo2':
-          // código a ser executado caso o valor seja motivo2
-          break;
-        default:
-          // código a ser executado caso o valor não seja nem motivo1 nem motivo2
-      }
+      Swal.fire({
+        title: 'Recusa de Indenização',
+        text: 'Recusa de indenização enviada com sucesso!',
+        icon: 'success',
+        confirmButtonText: 'Ok',
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = './aceiteIndenizacao.html';
+        }
+      })
     }
-  });
+  })
 }
+
+function aceiteIndenizacao() {
+  let timerInterval
+  Swal.fire({
+    title: 'Processando Indenização...',
+    html: 'O aceite de indenização será processado em <b></b> milisegundos.',
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: () => {
+      Swal.showLoading()
+      const b = Swal.getHtmlContainer().querySelector('b')
+      timerInterval = setInterval(() => {
+        b.textContent = Swal.getTimerLeft()
+      }, 100)
+    },
+    willClose: () => {
+      clearInterval(timerInterval)
+    }
+  }).then((result) => {
+    if (result.dismiss === Swal.DismissReason.timer) {
+
+      Swal.fire({
+        title:  'Concluído!',
+        text: 'A indenização foi realizada com sucesso!', 
+        icon : 'success'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = './aceiteIndenizacao.html';
+        }
+      })
+    }
+  })
+}
+
+document.getElementById('informacoesIndenizacao').addEventListener('click', async () => {
+  window.location.href = './indenizacaoInformacoes.html';
+});
+
+document.getElementById('voltarDashboard').addEventListener('click', async () => {
+  window.location.href = '../Dashboard/dashboardAdm.html';
+});
+
+function voltarIndenizacoes() {
+  window.location.href = './aceiteIndenizacao.html';
+}
+

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Mart</title>
-    <link rel="stylesheet" href="../../style/style.css">
+    <title>Coover - Participantes</title>
     <link rel="stylesheet" href="./segurosMutuosInformacao.css">
 </head>
 <body>
@@ -21,8 +20,8 @@
         <button class="logout">Logout</button>
     </nav>
     <main>
-        <div class="alinhamentoPagina">
-            <img class="voltar" src="../../img/imgSetaEsquerda.svg"/>
+        <div class="alinhamentoPagina" onclick="voltarSeguroVisualizacao()">
+            <img class="voltar" id="voltarVisualizacao" src="../../img/imgSetaEsquerda.svg"/>
             <h1>Nome Grupo</h2>
             <img src="../../img/ethereum.png"/>
         </div>
@@ -54,9 +53,10 @@
             </div>            
         </div>
 
-        <button class="button">Visualizar Participantes</button>
+        <button class="button" onclick="visualizarParticipantes()" >Visualizar Participantes</button>
 
     </main>
-    <img class="background-image" src="../../img/imgHome2.svg" alt="">
+    <img class="background-image" src="../../img/imgHome2.svg">
 </body>
+<script src="./segurosMutuos.js"></script>
 </html>

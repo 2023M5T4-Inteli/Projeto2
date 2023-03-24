@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Grupo - Seguro Mútuo</title>
-        <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="./segurosMutuosParticipantes.css">
     </head>
 <body>
@@ -21,7 +20,7 @@
         <button class="logout">Logout</button>
     </nav>
     <main>
-        <div class="alinhamentoPagina">
+        <div  onclick="voltarSeguroInformacoes()" class="alinhamentoPagina">
             <img class="voltar" src="../../img/imgSetaEsquerda.svg">
             <h1>Nome do Grupo</h2>
             <img src="../../img/ethereum.png"/>
@@ -30,31 +29,31 @@
         
         <h2>Participantes</h2>
         <div class="participantes alinhamentoTabela">
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
-            <div class="participante">
+            <div class="participante" onclick="visualizarUsuario()">
                 <p class="id">#7463782467829</p>
                 <p class="endereco">Shopping Maria</p>
             </div>
@@ -62,4 +61,5 @@
     </main>
     <img class="background-image" src="../../img/imgHome2.svg" alt="">
 </body>
+<script src="./segurosMutuos.js"></script>
 </html>
