@@ -12,16 +12,17 @@ body{
 
 @media (min-width: 320px) and (max-width: 480px) { 
 
-
     .alinhamentoUser{
         display: flex;
     }
+
     .navbar{
         display: none;
     }
 
 
-    
+
+
 
 
     .indenizacao{
@@ -49,96 +50,17 @@ body{
 
 
 
-    .tituloSinistro{
+    .textoNovaIndenizacao{
         color: #ffffff;
         font-size: 1.5rem;
-        margin-left: 2rem;
-        margin-top: 2.5rem;
-    }
-
-    .primeiroCard{
         margin-left: 2rem;
         margin-top: 2rem;
     }
 
-    .segundoCard{
-        margin-left: 2rem;
-        margin-top: 0.7rem;
-    }
-
-    .cardDashboard{
-        display: flex;
-        border: none;
-        background-color: #1C1B20;
-        align-items: center;
-        text-decoration: none;
-        width: 80vw;
-        border-radius: 1vh;
-        height: 10vh;
-    }
-
-    .imgBotaoUser{
-        height: 3rem;
-    }
-
-    .texto{
-        margin-left: 1rem;
-        width: 50vw;
-        text-align: left;
-        color: #F2F2F2;
-    }
-
-    .cardTitulo{
-        font-size: 20px;
-    }
-
-    .cardTexto{
-        font-size: 12px;
-    }
-
-
-
-   
-
-
-    .tituloWallet{
-        margin-left: 2rem;
-        margin-top: 1.5rem;
-        color: #F2F2F2;
-    }
-
-    .tituloWalletGrupo{
-        margin-left: 2rem;
-        margin-top: 1rem;
-        color: #F2F2F2;
-    }
-
-    .cardWallet, .cardWallet{
-        margin-left: 2rem;
-        width: 80vw;
-        display: flex;
-        border: none;
-        background-color: #1C1B20;
-        align-items: center;
-        text-decoration: none;
-        height: 5vh;
-        border-radius: 1vh;
-        margin-top: 0.5rem;
-    }
-
-    .cardWalletTexto{
-        color: #9D9D9D;
-        margin-left: 0.5rem;
-    }
 
 
 
 
-    .tituloAndamento{
-        margin-left: 2rem;
-        margin-top: 1.5rem;
-        color: #F2F2F2;
-    }
 
     .cardSinistro{
         display: flex;
@@ -146,10 +68,10 @@ body{
         background-color: #1C1B20;
         align-items: center;
         text-decoration: none;
-        width: 80vw;
+        width: 85vw;
         border-radius: 1vh;
         margin-left: 2rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         height: 8vh;
     }
 
@@ -160,12 +82,18 @@ body{
     }
 
     .cardTextoSinistro{
-        font-size: 12px;
+        font-size: 14px;
         color: #F2F2F2;
         margin-left: 2rem;
         width: 50vw;
         text-align: left;
     }
+
+
+    .imgIndenizacao{
+        display: none;
+    }
+
     
 }
 
@@ -245,8 +173,6 @@ body{
 
 
 
-    
-
 
     .indenizacao{
         display: inline-flex; 
@@ -273,95 +199,17 @@ body{
 
 
 
-    .tituloSinistro{
+    .textoNovaIndenizacao{
         color: #ffffff;
         font-size: 1.5rem;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
-
-    .primeiroCard{
         margin-left: 2rem;
         margin-top: 2rem;
     }
 
-    .segundoCard{
-        margin-left: 2rem;
-        margin-top: 0.7rem;
-    }
-
-    .cardDashboard{
-        display: flex;
-        border: none;
-        background-color: #1C1B20;
-        align-items: center;
-        text-decoration: none;
-        width: 40vw;
-        border-radius: 1vh;
-    }
-
-    .imgBotaoUser{
-        height: 3rem;
-    }
-
-    .texto{
-        margin-left: 2rem;
-        width: 50vw;
-        text-align: left;
-        color: #F2F2F2;
-    }
-
-    .cardTitulo{
-        font-size: 18px;
-    }
-
-    .cardTexto{
-        font-size: 12px;
-    }
-
-
-
-   
-
-
-    .tituloWallet{
-        margin-left: 2rem;
-        margin-top: 1.5rem;
-        color: #F2F2F2;
-    }
-
-    .tituloWalletGrupo{
-        margin-left: 2rem;
-        margin-top: 1rem;
-        color: #F2F2F2;
-    }
-
-    .cardWallet, .cardWallet{
-        margin-left: 2rem;
-        width: 40vw;
-        display: flex;
-        border: none;
-        background-color: #1C1B20;
-        align-items: center;
-        text-decoration: none;
-        height: 5vh;
-        border-radius: 1vh;
-        margin-top: 0.5rem;
-    }
-
-    .cardWalletTexto{
-        color: #9D9D9D;
-        margin-left: 0.5rem;
-    }
 
 
 
 
-    .tituloAndamento{
-        margin-left: 2rem;
-        margin-top: 1.5rem;
-        color: #F2F2F2;
-    }
 
     .cardSinistro{
         display: flex;
@@ -383,12 +231,22 @@ body{
     }
 
     .cardTextoSinistro{
-        font-size: 12px;
+        font-size: 14px;
         color: #F2F2F2;
         margin-left: 2rem;
         width: 50vw;
         text-align: left;
     }
+
+    .img{
+        margin-left: 10rem;
+        margin-top: 10rem;
+    }
+    .imgIndenizacao{
+        width: 25vw;
+        height: 60vh;
+    }
+
 
 }
 
