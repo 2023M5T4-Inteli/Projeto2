@@ -5,21 +5,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Indenização</title>
-        <link rel="stylesheet" href="../../style/style.css">
         <link rel="stylesheet" href="../Pedido de indenização/pedidoIndenizacao.css">
     </head>
 <body>
-    <div class="pagina">
-        <nav>
-            <div class="logo"></div>
-            <input class="pesquisa" type="text"  placeholder="Pesquisar..."> 
-            <ul>
-                <li><a href="" class="sidebarInicio">Dashboard</a></li>
-                <li><a href="" class="sidebarSolicitacoes">Revenue</a></li>
-                <li><a href="" class="sidebarIndenizacoes">Notifications</a></li>
-            </ul>
-            <button class="saida">Sair</button>
-        </nav>
+    <div class="alinhamentoUser">
+        <div>
+            <nav class="navbar">
+                <img class="logo" src="../../img/LogoCoover.svg">
+                <div class="pesquisa" >
+                    <img src="../../img/search.png">
+                    <input class="barraPesquisa" type="text" placeholder="Pesquisar...">
+                </div>
+                <ul class="opcoesNavbar">
+                    <div class="sidebarInicio">
+                        <img class="imgSidebar" src="../../img/sidebar-home.png">
+                        <li><a href="./dashboardUser.html" class="textoSidebar">Página Inicial</a></li>
+                    </div>
+                    <div class="sidebarSolicitacoes">
+                        <img class="imgSidebar" src="../../img/notifications.png">
+                        <li><a href="../Solicitação Aprovada/solicitacaoAprovada.html" class="textoSidebar">Solicitações</a></li>
+                    </div>
+                    <div class="sidebarIndenizacoes">
+                        <img class="imgSidebar" src="../../img/inventory.png">
+                        <li><a href="../Pedido de indenização/novaIndenizacao.html" class="textoSidebar">Indenizações</a></li>
+                    </div>
+                </ul>
+                <button class="saida" id="saida">
+                    <img src="../../img/logout.png">
+                </button>
+            </nav>
+        </div>
         <div>
             <div class="indenizacao">
                 <img class="imgSetaEsquerda" src="../../../img/imgSetaEsquerda.svg">
@@ -28,7 +43,7 @@
             </div>
             <div>
                 <h2 class="tituloSinistro">Sinistro</h2>
-                <div class="card1">
+                <div class="primeiroCard">
                     <button class="cardDashboard">
                         <div>
                             <img class="imgBotaoUser" src="../../../img/imgBotaoUser.svg">
@@ -42,7 +57,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="card2">
+                <div class="segundoCard">
                     <button class="cardDashboard">
                         <div>
                             <img class="imgBotaoUser" src="../../../img/imgBotaoUser.svg">
@@ -114,6 +129,7 @@
             </div>
         </div>
     </div>
+<script src="./pedidoIndenizacao.js"></script> 
 </body>
 </html>
 

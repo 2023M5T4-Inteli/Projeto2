@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="./aprovacaoAceita.css">
+    <link rel="stylesheet" href="./esperaAprovacaoInicio.css">
 
     <title>Escolha do Grupo</title>
 </head>
@@ -17,15 +17,14 @@
     <section class="alinhamentoUser">
         <div>
             <img class="imgLogo" src="../../img/LogoCoover.svg">
-            <h3 class="textoInicial">Sua solicitação foi aceita!</h3>
-            <h5 class="descricao">Clicando no botão abaixo a transação do valor do seguro será descontado da sua Wallet conectada no momento de cadastro.</h5>
-            <h5 class="descricao">O valor para o seguro e grupo selecionado é de: VALOR</h5>
-            <button onclick=confirmaTransacao() class="botaoConfirmar" id="confirmar" type="submit">Confirmar</button>
+            <h3 class="textoInicial">Sua solicitação foi encaminhada para aprovação!</h3>
+            <h5 class="descricao">Quando a Coover aprovar a sua entrada no grupo pedido, você irá receber uma notificação no e-mail cadastrado. Fique de olho!</h5>
+            <button class="botaoProximo" id="proximo">Próximo (fins educativos)</button>
         </div>
         <div class="imgSmartContract" >
             <img class="imgSmartContract2" src="../../img/imgSmartETH.svg">
         </div>
     </section>
 </body>
-<script src="./aprovacaoAceita.js"></script>
+<script src="./esperaAprovacaoInicio.js"></script>
 </html>

@@ -179,12 +179,24 @@ body{
     .botaoEnviar{
         margin-top: 2rem;
         width: 20vw;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .botaoSolicitar{
         margin-top: 2rem;
         width: 80vw;
         margin-left: 3rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
 
@@ -267,7 +279,7 @@ body{
         margin-top: 22vw;
         background-color: transparent;
         border: none;
-        margin-top: 11.2rem;
+        margin-top: 12.5rem;
     }
 
 
@@ -420,22 +432,35 @@ body{
     .botaoEnviar{
         width: 10vw;
         margin-top: 1rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-right: 2rem;
     }
 
     .botaoSolicitar{
         margin-top: 1rem;
         width: 35vw;
         margin-left: 3rem;
+        padding: 10px;
+        background-color: #00C171;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
 
 
     .img{
-        margin-left: 4rem;
+        margin-left: 10rem;
         margin-top: 10rem;
     }
     .imgIndenizacao{
-        width: 30vw;
+        width: 25vw;
         height: 60vh;
     }
 }

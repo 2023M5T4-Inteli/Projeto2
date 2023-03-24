@@ -274,28 +274,20 @@
     
     
     
-    main table thead th:first-of-type, main table tbody tr td:first-of-type {
-        text-align: left;
-    }
     
-    main table thead th:last-of-type, main table tbody tr td:last-child {
-        text-align: right;
-    }
+    
+  
 
-    #table-container {
+    .tabela {
         height: 30vh; 
         overflow-y: auto; 
         margin-left: 3vw; 
         width: 45vw; 
     }
 
-    .seguros-name {
-        font-size: .9rem;
-        line-height: .4rem;
-        color: #BCBCBC;
-    }
     
-    .seguros-name{
+    
+    .nomeSeguros{
         margin-top: 1rem;
         font-size: .9rem;
         font-weight: 600;
@@ -303,7 +295,7 @@
         color: #fff;
     }
     
-    .situacao {
+    .situacaoStatusPositivo {
         font-size: .9rem;
         font-weight: 600;
         border-radius: 40px;
@@ -319,7 +311,7 @@
         margin-top: 2rem;
     }
 
-    .inativo {
+    .situacaoStatusNegativo {
         color: #FF5E66 !important;
         border-color: #FF5E66 !important;
     }
@@ -366,5 +358,12 @@
         background-color: #555;
     }
 
+
+    
+
+
+
+
+    
 }
 

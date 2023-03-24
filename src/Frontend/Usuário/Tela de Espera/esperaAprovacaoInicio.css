@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -45,7 +46,7 @@ body{
         display: none;
     }
 
-    .botaoVoltar{
+    .botaoProximo{
         width: 55vw;
         height: 6vh;
         margin-left: 5rem;
@@ -101,19 +102,19 @@ body{
         width: 29.3vw;
     }
 
-    .botaoVoltar{
-        width: 20vw;
+    .botaoProximo{
+        width: 12vw;
         height: 10vh;
-        margin-left: 25vw;
+        margin-left: 2rem;
         border-radius: 8px;
         padding-left: 7px;
         border: none;
-        font-size: 20px;
+        font-size: 1rem;
         box-shadow: 0 0 0 0;
         border: 0 none;
         outline: 0;
         background-color: #06266A;
         color: #ffffff;
-        margin-top: 3vw;
+        margin-top: 8vw;
     }
 }
