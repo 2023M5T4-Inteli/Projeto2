@@ -13,5 +13,5 @@ document.getElementById('solicitacaoGrupo').addEventListener('click', async () =
 });
 
 document.getElementById('indenizacao').addEventListener('click', async () => {
-  window.location.href = '../Pedido de indenização/novaindenizacao.html';
+  window.location.href = '../Pedido de indenização/pedidoIndenizacao.html';
 });
