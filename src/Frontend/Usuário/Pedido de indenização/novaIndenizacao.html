@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <title>Nova Indenização</title>
     <link rel="stylesheet" href="./novaIndenizacao.css">
 </head>
@@ -46,9 +48,9 @@
                 <h4 class="gruposUser">Grupos</h4>
                 <select id="selecaoGrupo" class="selecaoGrupo" aria-label="Default select example">
                     <option selected>Selecione</option>
-                    <option class="textoSelecionaGrupo" value="Grupo 1">Grupo 1</option>
-                    <option class="textoSelecionaGrupo" value="Grupo 2">Grupo 2</option>
-                    <option class="textoSelecionaGrupo" value="Grupo 3">Grupo 3</option>
+                    <option class="textoSelecionaGrupo" value="Palmeiras">Palmeiras</option>
+                    <option class="textoSelecionaGrupo" value="Pinheiros">Pinheiros</option>
+                    <option class="textoSelecionaGrupo" value="Americana">Americana</option>
                 </select>
                 <div class="informacoesOcorrido">
                     <div class="dataOcorrido">
@@ -70,16 +72,15 @@
                     <form class="caixaArquivo" action="upload.php" method="post" enctype="multipart/form-data">
                         <h5 class="textoArquivo">Selecione Arquivo:</h5>
                         <input type="file" name="file" id="file" required placeholder="Selecione um arquivo">
-                        <button class="botaoEnviar" type="submit" value="Enviar">Enviar</button>
                     </form>   
                 </div>   
-                <button id="botaoSolicitar" class="botaoSolicitar">Solicitar Sinistro</button>
+                <button id="botaoSolicitar" class="botaoSolicitar" onclick="solicitarIndenizacao()">Solicitar Sinistro</button>
             </div>
         </div>  
         <div class="img">
             <img class="imgIndenizacao" src="../../img/bg-2.png">
         </div>          
     </div>  
-<script src="./novaIndenizacao.js"></script> 
 </body>
+<script src="./novaIndenizacao.js"></script> 
 </html>
