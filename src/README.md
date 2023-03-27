@@ -123,6 +123,9 @@ Essa descrição da tela se relaciona com a heurística de Nielsen da "Prevenç�
 A tela de cadastro da Coover tem como objetivo permitir que o usuário se inscreva na plataforma da seguradora. Nessa tela, o usuário tem que conectar-se com sua conta MetaMask para ter acesso à plataforma, onde poderá navegar facilmente pelo site. É uma ferramenta importante para para garantir uma experiência personalizada e segura ao navegar na plataforma.
 
 ![Tela Inicial Usuário](https://user-images.githubusercontent.com/99191536/227827769-a431462a-492a-4d10-bc0e-dd578a463550.svg)
+
+Após  conectar-se com a sua carteira Metamask o usário será direcionado para a tela de cadastro contendo: Nome completo, E-mail, Modelo do celular,  Valor do celular (Atual), IMEI . Todas essas informações são necessárias para catalogar cada celular e ter mais segurança
+
 ![Tela Inicial Usuário - Dados](https://user-images.githubusercontent.com/99191536/227829384-2bceb308-b9e6-4963-9578-cd8a5da7ab6a.svg)
 
 <h3>Visualização de grupos:</h3>
