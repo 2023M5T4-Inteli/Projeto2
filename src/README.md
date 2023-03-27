@@ -40,7 +40,7 @@ A tela de dashboard  pode ser relacionada com a heurística "Flexibilidade e efi
 
 <h3>Tela de seguros mútuos:</h3>
 
-A página de seguros mútutos, exibe uma lista de contratos de seguros divididos em três situações: Contratos ativos, indicando que o contrato já foi validado e está aprovado sendo adeuqado para uso, contratos em progresso, indicando que ainda está passando por processo de validação e contratos inativos, os quais já acabaram de serem operados. Na tela, colocamos uma funcionalidade de selecionar em somennte um status do contrato, para facilitar a visualização do usuário. A página também inclui o tipo de seguro e a data de criação e de validade do contrato  e como já citado anteriormente, status atual do contrato. Clicar em um contrato levará o usuário a uma página detalhada do contrato, onde poderá visualizar todos os detalhes e realizar ações relacionadas a ele.
+A página de seguros mútutos, exibe uma lista de contratos de seguros divididos em três situações: Contratos ativos, indicando que o contrato já foi validado e está aprovado sendo adeuqado para uso, contratos em progresso, indicando que ainda está passando por processo de validação e contratos inativos, os quais já acabaram de serem operados. Na tela, colocamos uma funcionalidade de selecionar em somente um status do contrato, para facilitar a visualização do usuário. A página também inclui o tipo de seguro e a data de criação e de validade do contrato  e como já citado anteriormente, status atual do contrato. Clicar em um contrato levará o usuário a uma página detalhada do contrato, onde poderá visualizar todos os detalhes e realizar ações relacionadas a ele.
 
 A tela descrita pode ser associada à heurística "Visibilidade do Status do Sistema" de Nielsen. Essa heurística se refere à necessidade de manter os usuários informados sobre o que está acontecendo dentro do sistema em questão. Na tela de seguros mútuos, os contratos estão claramente divididos em três categorias - contratos ativos, em progresso e inativos - e cada contrato exibe seu status atual. Isso fornece aos usuários informações claras sobre o status de cada contrato e os ajuda a entender o que está acontecendo dentro do sistema. Além disso, a possibilidade de clicar em um contrato para acessar uma página detalhada também ajuda os usuários a obter informações adicionais sobre cada contrato e realizar ações relacionadas a ele. Essas características da tela ajudam a garantir a visibilidade do status do sistema e podem contribuir para uma melhor experiência do usuário.
 
@@ -117,3 +117,27 @@ Essa descrição da tela se relaciona com a heurística de Nielsen da "Prevenç�
 ![Home 13 - Desk (1)](https://user-images.githubusercontent.com/99759369/227574077-704f5286-e993-496b-9c63-e7072234e82d.png)
 ![Home 13 - Desk (2)](https://user-images.githubusercontent.com/99759369/227574278-3b6da90b-8a0d-4e61-80e4-1ba96fcf0a70.png)
 
+<h2>Plataforma do usuário:</h2>
+<h3>Tela de cadastro:</h3>
+
+A tela de cadastro da Coover tem como objetivo permitir que o usuário se inscreva na plataforma da seguradora. Nessa tela, o usuário tem que conectar-se com sua conta MetaMask para ter acesso à plataforma, onde poderá navegar facilmente pelo site. É uma ferramenta importante para para garantir uma experiência personalizada e segura ao navegar na plataforma.
+
+![Tela Inicial Usuário](https://user-images.githubusercontent.com/99191536/227827769-a431462a-492a-4d10-bc0e-dd578a463550.svg)
+![Tela Inicial Usuário - Dados](https://user-images.githubusercontent.com/99191536/227829384-2bceb308-b9e6-4963-9578-cd8a5da7ab6a.svg)
+
+<h3>Visualização de grupos:</h3>
+
+A página de visualização de grupos, exibe uma lista de grupos mutuos, separado em 3 colunas : nome do grupo, indicando o nome do grupo, tipo de seguro, indicando qual tipo de seguro o grupo selecionado pertence, quantidade de usuários, mostrando quantas pessoas pertencem ao grupo. Também  é possível clicar no botão "i" para obter mais informações do grupo. Nesta página  após o usuário analisar qual grupo é melhor para suas necessidades tem a opção de entrar no grupo selecionado ou de criar um novo grupo.
+
+![Grupos - Desk](https://user-images.githubusercontent.com/99191536/227835063-0961adab-0bc9-41db-9e95-407816c365be.svg)
+
+Caso o usário escolha entrar em um novo grupo um switch alert será acionado na tela perguntando de realmente deseja entrar no grupo selecionado ou deseja cancelar a ação.
+![Grupos - Desk - Entrar](https://user-images.githubusercontent.com/99191536/227834853-7f8ab272-5f04-42ef-a152-8637be15e387.svg)
+
+Caso o usário escolha criar um novo grupo um switch alert será acionado na tela perguntando de realmente deseja criar um grupo ou deseja cancelar a ação, se o usário optar por criar o grupo é necessário que escolha um nome para o grupo.
+
+![Grupos - Desk - Criar](https://user-images.githubusercontent.com/99191536/227835605-b7973b22-bc70-4698-9eee-a3df214e5b36.svg)
+
+Se o usuário criou o grupo um switch alert será acionado informando que o grupo foi criado com sucesso e que será encaminhada para o gerenciamento de seguros.
+
+![Grupos - Desk - Entrar (1)](https://user-images.githubusercontent.com/99191536/227835860-b117d690-1c97-4e47-b8a4-597548054653.svg)
