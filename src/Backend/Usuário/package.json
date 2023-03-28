@@ -2,9 +2,9 @@
   "name": "coover",
   "version": "1.0.0",
   "description": "",
-  "main": "login.js",
+  "main": "malu_henri.js",
   "scripts": {
-    "dev": "nodemon login.js",
+    "dev": "nodemon malu_henri.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

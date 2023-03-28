@@ -1,16 +1,32 @@
-function calcularValor() {
-    // pega o valor digitado no input
-    var valor = parseFloat(document.getElementById("valorCelular").value);
-    console.log("Valor digitado: " + valor);
-  
-    // var valorParaGrupo = valor + (valor * 0.05);
-    // console.log("Valor com desconto: " + valorParaGrupo);
+function teste() {
 
-    // salva o valor com desconto no Local Storage como número
+    // Mandar para o banco de dados
+    alert('Inserindo dados pessoais...')
+    const nome = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const modelo = document.getElementById('modelo').value;
+    const valor = document.getElementById('valorCelular').value;
     localStorage.setItem("valor", valor);
 
-    // redireciona para a página de escolha do grupo
-    window.location.href = '../Escolha dos grupos/escolhaGrupoInicio.html';
+    console.log(nome,email,modelo,valor)
+  
+    fetch('http://localhost:3091/dadosPessoais', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+    },
+      body: JSON.stringify({ nome, email, modelo, valor })
+    })
+    .then((response) => {
+      if (response.ok) {
+        window.location.href = '../Escolha dos grupos/escolhaGrupoInicio.html';
+      } else {
+        throw new Error('Erro ao salvar os seus dados.');
+      }
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
 }
   
 
@@ -105,4 +121,8 @@ function calcularValor() {
       }
     });
   }
+
+
+
+
   
