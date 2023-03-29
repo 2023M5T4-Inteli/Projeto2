@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(express.static("../../Frontend/"));
 
-
 app.post('/login', (req, res) => {
     const email = req.body.email;
     console.log(email)
