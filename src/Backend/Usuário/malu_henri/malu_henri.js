@@ -6,18 +6,18 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
-app.use(express.static("../../Frontend/"));
+app.use(express.static("../../../Frontend/"));
 
-const db = new sqlite3.Database('../BancoDeDadosCoover.db');
+const db = new sqlite3.Database('../../BancoDeDadosCoover.db');
 
 app.post('/dadosPessoais', (req, res) => {
     const nome = req.body.nome;
     const email = req.body.email;
-    const modelo = req.body.modelo;
-    const valor = req.body.valor;
+    const modeloCelular = req.body.modelo;
+    const valorCelular = req.body.valor;
 
-    const sql = 'INSERT INTO CooverDadosUsuarios (nome, email, modelo, valor) VALUES (?, ?, ?, ?)';
-    db.run(sql, [nome, email, modelo, valor], function(err) {
+    const sql = 'INSERT INTO CooverDadosUsuarios (nome, email, modeloCelular, valorCelular) VALUES (?, ?, ?, ?)';
+    db.run(sql, [nome, email, modeloCelular, valorCelular], function(err) {
       if (err) {
         console.log(err.message);
         res.status(500).send('Erro ao inserir os dados.');
