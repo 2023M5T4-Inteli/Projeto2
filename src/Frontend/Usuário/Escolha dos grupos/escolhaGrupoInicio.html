@@ -19,7 +19,7 @@
             <img class="imgLogo" src="../../img/LogoCoover.svg">
             <h4 class="textoInicial">Seguro Mútuo<img class="informacaoIcon" id="informacaoIconSeguro" src="../../img/simbolo-de-informacao.png"></h4>
             <div class="imei">
-              <label class="inputTitulo">IMEI<img class="informacaoIcon" id="informacaoIconImei" src="../../img/simbolo-de-informacao.png"></label>
+              <label id="imei" class="inputTitulo">IMEI<img class="informacaoIcon" id="informacaoIconImei" src="../../img/simbolo-de-informacao.png"></label>
               <input class="inputFormatacao" type="number" id="imei" name="imei" required placeholder="IMEI do celular">
             </div>
             <div id="table-container">
@@ -103,7 +103,7 @@
               </table>
             </div>
             <div class="alinharBotao">
-              <button class="botaoEntrarGrupo" id="entrarGrupo" type="submit">Entrar no grupo</button>
+              <button class="botaoEntrarGrupo" onclick="escolhaGrupo()" id="entrarGrupo" type="submit">Entrar no grupo</button>
               <button class="botaoSolicitarGrupo" id="solicitarGrupo" type="submit">Solicitar grupo</button>
             </div>
         </div>

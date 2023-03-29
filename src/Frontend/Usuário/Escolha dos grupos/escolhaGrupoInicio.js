@@ -66,3 +66,36 @@ informacaoIconSeguro.addEventListener('click', () => {
 informacaoIconImei.addEventListener('click', () => {
   Swal.fire('IMEI significa "Identificação Internacional de Equipamento Móvel", e é um código numérico exclusivo atribuído a cada dispositivo móvel (como smartphones e tablets) que utiliza a tecnologia de rede celular. Descubra como encontrar o seu em: https://tecnoblog.net/responde/descobrir-imei-celular-roubado/')
 });
+
+
+
+function escolhaGrupo() {
+
+  // Mandar para o banco de dados
+  alert('Enviando solicitação para a Coover..')
+  const grupoEscolhido = document.getElementById('grupo1').value;
+  const imei = document.getElementById('imei').value;
+
+
+  console.log(grupoEscolhido, imei)
+
+  fetch('http://localhost:3092/escolhaGrupoInicio', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+  },
+    body: JSON.stringify({ grupoEscolhido, imei })
+  })
+  .then((response) => {
+    if (response.ok) {
+      window.location.href = '..Tela de Espera/esperaAprovacaoInicio.html';
+    } else {
+      throw new Error('Erro em enviar a solicitação.');
+    }
+  })
+  .catch((error) => {
+    alert(error.message);
+  });
+}
+
+

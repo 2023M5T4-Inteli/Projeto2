@@ -1,68 +1,36 @@
-
 const cors = require('cors');
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 app.use(express.static("../../Frontend/"));
+
 const db = new sqlite3.Database('../BancoDeDadosCoover.db');
+
 // Rota para obter a quantidade de membros do grupo
-app.get('/quantidade_membros', (req, res) => {
-  const sql = 'SELECT * FROM cooverDadosUsuario WHERE grupo = ?';
-  db.get(sql, [grupo], (err, row) => {
+app.post('/escolhaGrupoInicio', (req, res) => {
+  const grupo = req.query.grupoEscolhido;
+  const imei = req.query.imei;
+
+  const sql = 'INSERT INTO CooverGruposUsuarios (grupo, imei) VALUES (?,?)';
+
+  db.run(sql, [grupo, imei], function(err) {
     if (err) {
-      res.status(500).send(err.message);
       console.log(err.message);
+      res.status(500).send('Erro ao inserir os dados.');
     } else {
-      res.status(200).json({ quantidade: row.quantidade });
+      console.log(`Dados inseridos com sucesso. ID da linha: ${this.lastID}`);
+      res.status(200).send('Dados inseridos com sucesso.');
     }
   });
 });
-const PORT = 3081;
+
+const PORT = 3092;
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
 });
-// Adiciona um evento de clique no elemento com id "grupoSeguro"
-document.getElementById('grupoSeguro').addEventListener('click', async () => {
-  window.location.href = '../Criação de grupo/visualizacaoGrupo.html';
-});
 
-
-
-
-// const cors = require('cors');
-// const express = require('express');
-// const sqlite3 = require('sqlite3').verbose();
-// const app = express();
-// app.use(cors());
-// app.use(express.json());
-// app.use(express.static('public'));
-// app.use(express.static("../../Frontend/"));
-// const db = new sqlite3.Database('../BancoDeDadosCoover.db');
-// // Rota para obter a quantidade de membros do grupo
-// app.get('/quantidade_membros', (req, res) => {
-//   const grupo = req.query.grupo;
-//   const sql = 'SELECT * FROM cooverDadosUsuario WHERE grupo = ?';
-//   db.get(sql, [grupo], (err, row) => {
-//     if (err) {
-//       res.status(500).send(err.message);
-//       console.log(err.message);
-//     } else {
-//       res.status(200).json({ quantidade: row.quantidade });
-//     }
-//   });
-// });
-// // Rota para selecionar o grupo escolhido pelo usuário
-// app.post('/selection', (req, res) => {
-//   const { grupo } = req.body;
-//   // Armazena o grupo selecionado em uma variável
-//   const grupoSelecionado = grupo;
-//   // Envia a resposta para o cliente com o grupo selecionado
-//   res.send({ grupo: grupoSelecionado });
-// });
-// const PORT = 3092;
-// app.listen(PORT, () => {
-//   console.log(`Servidor rodando na porta ${PORT}`);
-// });
