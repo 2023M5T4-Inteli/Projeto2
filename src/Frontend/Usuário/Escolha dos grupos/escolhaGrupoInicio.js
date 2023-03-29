@@ -23,7 +23,37 @@ entrarGrupo.addEventListener('click', () => {
                 showConfirmButton: false,
                 timer: 3000
             })
+          // Mandar para o banco de dados
+          alert('Enviando solicitação para a Coover..')
+          const grupoEscolhido = document.getElementById('selecionarGrupo').value;
+          console.log(grupoEscolhido)
+          const imei = document.getElementById('imei').value;
+          console.log(imei)
+            // const hash = CryptoJS.SHA256(imei);
+            // console.log(hash)
+
+          console.log(grupoEscolhido, imei)
+
+          fetch('http://localhost:3092/escolhaGrupoInicio', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+          },
+            body: JSON.stringify({ grupoEscolhido, imei })
+          })
+          .then((response) => {
+            if (response.ok) {
+              window.location.href = '../Tela de Espera/esperaAprovacaoInicio.html';
+            } else {
+              throw new Error('Erro em enviar a solicitação.');
+            }
+          })
+          .catch((error) => {
+            alert(error.message);
+          });
+
             window.location.href = '../Tela de Espera/esperaAprovacaoInicio.html';
+
         }
       })
 });
@@ -68,34 +98,5 @@ informacaoIconImei.addEventListener('click', () => {
 });
 
 
-
-function escolhaGrupo() {
-
-  // Mandar para o banco de dados
-  alert('Enviando solicitação para a Coover..')
-  const grupoEscolhido = document.getElementById('grupo1').value;
-  const imei = document.getElementById('imei').value;
-
-
-  console.log(grupoEscolhido, imei)
-
-  fetch('http://localhost:3092/escolhaGrupoInicio', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-  },
-    body: JSON.stringify({ grupoEscolhido, imei })
-  })
-  .then((response) => {
-    if (response.ok) {
-      window.location.href = '..Tela de Espera/esperaAprovacaoInicio.html';
-    } else {
-      throw new Error('Erro em enviar a solicitação.');
-    }
-  })
-  .catch((error) => {
-    alert(error.message);
-  });
-}
 
 

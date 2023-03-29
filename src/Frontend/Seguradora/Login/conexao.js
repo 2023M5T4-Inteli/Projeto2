@@ -53,16 +53,7 @@ document.getElementById('conectar').addEventListener('click', async () => {
     }
 });
 
-// Função que gera um hash SHA-256 para o valor inserido pelo usuário
-function createHash() {
-    const inputValue = document.getElementById('inputValue').value;
-    const hash = CryptoJS.SHA256(inputValue);
-    const hashImeiResult = document.getElementById('hash');
-    hashImeiResult.textContent = `${hash}`;
-    const hashAparelho = document.getElementById('hashAparelho');
-    hashAparelho.textContent = `IMEI do aparelho : `;
-    hashImeiResult.style.background = "#5F5F5F";
-}
+
 
 // Quando o botão "Continuar" for clicado
 document.getElementById('continuar').addEventListener('click', async () => {
