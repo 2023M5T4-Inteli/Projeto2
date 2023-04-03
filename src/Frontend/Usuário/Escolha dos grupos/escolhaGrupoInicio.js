@@ -35,7 +35,7 @@ entrarGrupo.addEventListener('click', () => {
           console.log(grupoEscolhido, imei)
 
           fetch('http://localhost:3092/escolhaGrupoInicio', {
-            method: 'POST',
+            method: 'UPDATE',
             headers: {
               'Content-Type': 'application/json'
           },
