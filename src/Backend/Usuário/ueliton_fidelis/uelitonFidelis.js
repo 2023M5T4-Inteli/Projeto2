@@ -16,7 +16,7 @@ app.post('/escolhaGrupoInicio', (req, res) => {
   // const hashImei = req.body.hash;
   const imei = req.body.imei;
 
-  const sql = 'INSERT INTO CooverDadosUsuarios (grupo, imei) VALUES (?, ?)';
+  const sql = 'UPDATE CooverDadosUsuarios SET grupo = ? WHERE imei = ?';
 
   db.run(sql, [grupo, imei], function(err) {
     if (err) {
