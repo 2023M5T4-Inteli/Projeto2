@@ -2,6 +2,7 @@
   "dependencies": {
     "@sweetalert2/themes": "^5.0.15",
     "crypto-js": "^4.1.1",
-    "sha256": "^0.2.0"
+    "sha256": "^0.2.0",
+    "web3": "^1.9.0"
   }
 }
