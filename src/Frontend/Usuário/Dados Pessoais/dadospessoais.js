@@ -1,36 +1,9 @@
-function teste() {
-
-    // Mandar para o banco de dados
-    alert('Inserindo dados pessoais...')
-    const nome = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const modelo = document.getElementById('modelo').value;
-    const valor = document.getElementById('valorCelular').value;
-    localStorage.setItem("valor", valor);
-
-    console.log(nome,email,modelo,valor)
-  
-    fetch('http://localhost:3091/dadosPessoais', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-    },
-      body: JSON.stringify({ nome, email, modelo, valor })
-    })
-    .then((response) => {
-      if (response.ok) {
-        window.location.href = '../Escolha dos grupos/escolhaGrupoInicio.html';
-      } else {
-        throw new Error('Erro ao salvar os seus dados.');
-      }
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
-}
-  
+import web3 from 'web3';
 
   async function realizarTransacao() {
+
+    const enderecoContrato = '0xfe92C6E4b1F2046fFC088529c783797e808e587A';
+    const abiContrato = require('../../../Deploy/build/contracts/cooverContract.json').abi;
 
     // solicita ao usuário para conectar sua conta MetaMask
     await window.ethereum.enable();
@@ -120,8 +93,39 @@ function teste() {
             })
       }
     });
-  }
+}
 
+
+function teste() {
+
+  // Mandar para o banco de dados
+  alert('Inserindo dados pessoais...')
+  const nome = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const modelo = document.getElementById('modelo').value;
+  const valor = document.getElementById('valorCelular').value;
+  localStorage.setItem("valor", valor);
+
+  console.log(nome,email,modelo,valor)
+
+  fetch('http://localhost:3091/dadosPessoais', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+  },
+    body: JSON.stringify({ nome, email, modelo, valor })
+  })
+  .then((response) => {
+    if (response.ok) {
+      window.location.href = '../Escolha dos grupos/escolhaGrupoInicio.html';
+    } else {
+      throw new Error('Erro ao salvar os seus dados.');
+    }
+  })
+  .catch((error) => {
+    alert(error.message);
+  });
+}
 
 
 

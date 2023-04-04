@@ -1,4 +1,6 @@
 // Função para exibir modal de recusa de indenização
+onload = indenizacoes();
+
 function recusaIndenizacao() {
   Swal.fire({
     title: 'Recusa de Indenização',
@@ -79,3 +81,23 @@ function voltarIndenizacoes() {
   window.location.href = './aceiteIndenizacao.html';
 }
 
+function indenizacoes(){
+     fetch('http://localhost:3081/dados', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+    },
+    })
+    .then( async (response) => {
+      if (response.ok) {
+        alert('dado ok');
+        console.log(await response.json())
+      } else {
+        throw new Error('dado erro');
+      }
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
+  
+}

@@ -76,5 +76,5 @@ contract cooverContract{
     function aceitarIndenizacao(address contratantes) public {
         payable(contratantes).transfer(pedidos[contratantes]);
         pedidos[contratantes] = 0;
-}
+    }
 }

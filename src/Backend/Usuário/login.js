@@ -24,6 +24,46 @@ app.post('/login', (req, res) => {
       }
     });
 });
+app.get('/dados', (req, res) => {
+  const query = `SELECT * FROM CooverDadosUsuarios`; // Change the placeholder to '?'
+
+  db.get(query, (err, row) => {
+    if (err) {
+      res.status(500).send(err.message);
+      console.log(err.message);
+    } else if (row) {
+      return res.status(200).json({ mensagem: 'Usuário encontrado.', row });
+
+    } else {
+      res.status(404).json({ mensagem: 'Usuário não encontrado.' });
+    }
+  });
+});
+
+
+
+
+
+
+
+app.post('/indenizacao', (req, res) => {
+  console.log('Recebido');
+  const grupo = req.body.grupo;
+  const data = req.body.data;
+  const motivo = req.body.motivo;
+
+  const query = `INSERT INTO CooverDadosUsuarios (grupo1, data, motivo) VALUES (?, ?, ?);`; // Use placeholders instead of interpolating values directly into the string
+
+  db.run(query, [grupo, data, motivo], function(err) {
+    if (err) {
+      res.status(500).send(err.message);
+      console.log(err.message);
+    } else {
+      res.status(200).json({ mensagem: 'cadastrado' });
+    }
+  });
+});
+
 
 const db = new sqlite3.Database('../BancoDeDadosCoover.db');
 

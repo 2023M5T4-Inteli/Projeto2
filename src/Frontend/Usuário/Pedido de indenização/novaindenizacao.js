@@ -3,14 +3,30 @@ function solicitarIndenizacao(){
   // Obtém as informações digitadas pelo usuário
   var grupo = document.getElementById("selecaoGrupo").value;
   var data = document.querySelector(".inputDataOcorrido").value;
-  var ocorrido = document.getElementById("selecaoOcorrido").value;
-  var arquivo = document.getElementById("file").value;
+  var motivo = document.getElementById("selecaoOcorrido").value;
   
   // Salva as informações no localStorage
   localStorage.setItem("grupoSelecionado", grupo);
   localStorage.setItem("dataOcorrido", data);
-  localStorage.setItem("motivoOcorrido", ocorrido);
-  localStorage.setItem("arquivoProvas", arquivo);
+  localStorage.setItem("motivoOcorrido", motivo);
+
+  fetch('http://localhost:3081/indenizacao', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+    },
+      body: JSON.stringify({ grupo, data, motivo })
+    })
+    .then((response) => {
+      if (response.ok) {
+        alert('Indenização solicitada com sucesso!');
+      } else {
+        throw new Error('Erro ao solicitar indenização.');
+      }
+    })
+    .catch((error) => {
+      alert(error.message);
+    });
   
   // Exibe uma mensagem de processamento para o usuário
 let timerInterval;
@@ -41,11 +57,12 @@ let timerInterval;
       confirmButtonText: 'Ok'
       }).then((result) => {
         if (result.isConfirmed) {
-        window.location.href = "./pedidoIndenizacao.html";
+        // window.location.href = "./pedidoIndenizacao.html";
         }
       });
     }
     });
+
   }
   
   // A função acima é usada para permitir que o usuário solicite uma indenização. Primeiro, as informações são obtidas do formulário e salvas no localStorage. Em seguida, é exibida uma mensagem de processamento para o usuário usando o SweetAlert. Depois que a mensagem é fechada, uma mensagem de confirmação é exibida e o usuário é redirecionado para a página de pedido de indenização.
