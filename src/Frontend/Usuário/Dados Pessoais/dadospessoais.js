@@ -95,8 +95,7 @@ import web3 from 'web3';
     });
 }
 
-
-function teste() {
+function salvar() {
 
   // Mandar para o banco de dados
   alert('Inserindo dados pessoais...')
