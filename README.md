@@ -60,9 +60,10 @@ OBS: O diagrama de implantação UML está localizado na documentação do Smart
  - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V2_DocSmartContract.pdf">📄 T4_G2_V1_DocSmartContract.pdf</a><br>
  -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V1_DiárioDeBordoDeploy.pdf">📄T4_G2_V1_DiarioDeBordoDeploy.pdf</a><br>
 
-## 💻 Execução dos projetos
+## 💻 Integração
 
-Um guia para a execução desse projeto pode ser encontrado no conteúdo do documento "Manual de Instruções", dentro da pasta "documentos".
+ - <a href="https://youtu.be/dFudPaJOzhc">📷 Vídeo Smart Contract - Integração (Remix)</a><br>
+  - <a href="https://youtu.be/9S95Hp5-TSQ">📷 Vídeo Integração Smart Contract com frontend</a><br>
 
 
 ## 🗃 Histórico de lançamentos
