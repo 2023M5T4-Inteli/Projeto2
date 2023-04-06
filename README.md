@@ -71,7 +71,7 @@ OBS: O diagrama de implantação UML está localizado na documentação do Smart
 * 0.2.1 - 07/04/2023
     * Quinta entrega - Entrega Final
 * 0.2.0 - 24/03/2023
-    * Quarta entrega - 
+    * Quarta entrega - Frontend, Integração com a metamask e o Smart Contract 
 * 0.1.1 - 10/03/2023
     * Terceira entrega - Deploy do Smart contract, finalizar a criação das funções do contrato e integração inicial do contrato com o front-end
 * 0.1.0 - 24/02/2023
