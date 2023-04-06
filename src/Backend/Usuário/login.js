@@ -24,14 +24,18 @@ app.post('/login', (req, res) => {
       }
     });
 });
-app.get('/dados', (req, res) => {
-  const query = `SELECT * FROM CooverDadosUsuarios`; // Change the placeholder to '?'
 
-  db.get(query, (err, row) => {
+
+app.get('/dados', (req, res) => {
+  console.log("GET /dados")
+  const query = `SELECT * FROM CooverDadosUsuarios;`; // Change the placeholder to '?'
+
+  db.all(query, (err, row) => {
     if (err) {
       res.status(500).send(err.message);
       console.log(err.message);
     } else if (row) {
+      console.log(row);
       return res.status(200).json({ mensagem: 'Usuário encontrado.', row });
 
     } else {
@@ -40,26 +44,64 @@ app.get('/dados', (req, res) => {
   });
 });
 
-
-
-
-
-
-
-app.post('/indenizacao', (req, res) => {
-  console.log('Recebido');
+app.put('/dadosPessoais/:id', (req, res) => {
+  const id = req.params.id;
   const grupo = req.body.grupo;
   const data = req.body.data;
   const motivo = req.body.motivo;
 
-  const query = `INSERT INTO CooverDadosUsuarios (grupo1, data, motivo) VALUES (?, ?, ?);`; // Use placeholders instead of interpolating values directly into the string
+  const query = `UPDATE CooverDadosUsuarios SET grupo1 = ?, data = ?, motivo = ? WHERE id = ?;`; // Use placeholders instead of interpolating values directly into the string
 
-  db.run(query, [grupo, data, motivo], function(err) {
+  db.run(query, [grupo, data, motivo, id], function(err) {
     if (err) {
       res.status(500).send(err.message);
       console.log(err.message);
     } else {
       res.status(200).json({ mensagem: 'cadastrado' });
+    }
+  });
+});
+
+
+app.get('/dadosPessoais/:id', (req, res) => {
+
+  console.log('GET /dadosPessoais/:id');
+  
+  const id = req.params.id;
+
+  const query = `SELECT * from  CooverDadosUsuarios WHERE id=${id};`; // Use placeholders instead of interpolating values directly into the string
+
+  db.get(query, function(err, row) {
+    if (err) {
+      res.status(500).send(err.message);
+      console.log(err.message);
+    } else {
+      console.log(row);
+      return res.status(200).json({ data: row });
+    }
+  });
+});
+
+
+app.post('/dadosPessoais', (req, res) => {
+  const nome = req.body.nome;
+  const email = req.body.email;
+  const modeloCelular = req.body.modelo;
+  const valorCelular = req.body.valor;
+  const walletAddress = req.body.enderecoCarteira;
+  const imei = req.body.imeiCelular;
+  const grupo = req.body.grupo;
+
+  console.log(nome, email, modeloCelular, valorCelular, walletAddress, imei, grupo)
+
+  const sql = 'INSERT INTO CooverDadosUsuarios (nome, email, modeloCelular, valorCelular, imei, grupo, walletAddress) VALUES (?, ?, ?, ?, ?, ?, ?)';
+  db.run(sql, [nome, email, modeloCelular, valorCelular, imei, grupo, walletAddress], function(err, row) {
+    if (err) {
+      console.log(err.message);
+      res.status(500).send('Erro ao inserir os dados.');
+    } else {
+      console.log(`Dados inseridos com sucesso. ID da linha: ${this.lastID}`);
+      return res.status(200).send({id: this.lastID});
     }
   });
 });

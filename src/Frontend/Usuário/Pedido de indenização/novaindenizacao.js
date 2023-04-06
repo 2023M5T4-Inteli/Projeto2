@@ -9,9 +9,10 @@ function solicitarIndenizacao(){
   localStorage.setItem("grupoSelecionado", grupo);
   localStorage.setItem("dataOcorrido", data);
   localStorage.setItem("motivoOcorrido", motivo);
+  const idUsuario = sessionStorage.getItem("idUsuario");
 
-  fetch('http://localhost:3081/indenizacao', {
-      method: 'POST',
+  fetch(`http://localhost:3081/dadosPessoais/${idUsuario}`, {
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
     },

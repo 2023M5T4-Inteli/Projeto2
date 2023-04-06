@@ -22,7 +22,7 @@ sairGrupo.addEventListener('click', () => {
                 showConfirmButton: false,
                 timer: 3000
             })
-            console.log(nomeGrupo)
+         
         }
       })
 })
@@ -46,7 +46,7 @@ renovarGrupo.addEventListener('click', () => {
                 showConfirmButton: false,
                 timer: 3000
             })
-            console.log(nomeGrupo)
+        
         }
       })
 })

@@ -10,7 +10,6 @@ function confirmCreation() {
     }).then((result) => {
         if (result.isConfirmed) {
           window.location.href = "../Dashboard/dashboardADM.html";
-          console.log('confirmou')
         }
     })}
     

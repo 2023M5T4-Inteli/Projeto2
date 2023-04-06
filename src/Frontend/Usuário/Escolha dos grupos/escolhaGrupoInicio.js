@@ -26,13 +26,9 @@ entrarGrupo.addEventListener('click', () => {
           // Mandar para o banco de dados
           alert('Enviando solicitação para a Coover..')
           const grupoEscolhido = document.getElementById('selecionarGrupo').value;
-          console.log(grupoEscolhido)
+    
           const imei = document.getElementById('imei').value;
-          console.log(imei)
-            // const hash = CryptoJS.SHA256(imei);
-            // console.log(hash)
-
-          console.log(grupoEscolhido, imei)
+      
 
           fetch('http://localhost:3092/escolhaGrupoInicio', {
             method: 'UPDATE',

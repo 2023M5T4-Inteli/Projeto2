@@ -13,6 +13,5 @@ function confirmaTransacao() {
     }).then((result) => {
         if (result.isConfirmed) {
           window.location.href = "../Dashboard/dashboardUser.html";
-          console.log('confirmou')
         }
     })}

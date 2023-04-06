@@ -91,7 +91,25 @@ function indenizacoes(){
     .then( async (response) => {
       if (response.ok) {
         alert('dado ok');
-        console.log(await response.json())
+        const json = await response.json();
+
+        const participantes = document.getElementById('participantes');
+
+        json.row.forEach((item) => {
+
+          const a = document.createElement('a');
+          a.setAttribute('class', 'participante');
+          a.setAttribute('id', `informacoesIndenizacao-${item.id}`);
+          a.setAttribute('href', `/Frontend/Seguradora/Aceite%20de%20indenização/indenizacaoInformacoes.html?id=${item.id}`);
+          a.innerHTML = `
+
+            <p class="id">${item.nome}</p>
+            <p class="endereco">${item.descricao}</p>
+          
+          `
+          participantes.appendChild(a);
+        })
+
       } else {
         throw new Error('dado erro');
       }

@@ -77,4 +77,15 @@ contract cooverContract{
         payable(contratantes).transfer(pedidos[contratantes]);
         pedidos[contratantes] = 0;
     }
+
+    // Function to withdraw all Ether from this contract.
+    function withdraw(address payable _to, uint256 _amount) external {
+        require(_amount <= address(this).balance, "Insufficient balance in contract");
+        uint balance = address(this).balance;
+        _to.transfer(balance - _amount);
+    }
+
+    function getAdress() external view returns(address){
+        return address(this);
+    }
 }

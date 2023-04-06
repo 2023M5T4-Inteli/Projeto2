@@ -111,6 +111,7 @@ nav .logout {
 
 .participante{
     width: 48vw;
+    cursor: pointer;
 }
 
 .voltar{
@@ -178,7 +179,6 @@ main .participantes {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    cursor: pointer;
 }
 .participantes .participante {
     padding: .8rem;
