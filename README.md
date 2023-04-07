@@ -56,15 +56,25 @@ OBS: O diagrama de implantação UML está localizado na documentação do Smart
 
  - <a href="https://github.com/2023M5T4-Inteli/Projeto2/tree/main/Contratos">📂 Contratos</a><br>
  
- - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V2_DocSmartContract.odt">📄 T4_G2_V1_DocSmartContract.odt</a><br>
- - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V2_DocSmartContract.pdf">📄 T4_G2_V1_DocSmartContract.pdf</a><br>
- -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V1_DiárioDeBordoDeploy.pdf">📄T4_G2_V1_DiarioDeBordoDeploy.pdf</a><br>
+ - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DocSmartContract.odt">📄 T4_G2_V5_DocSmartContract.odt</a><br>
+ - <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DocSmartContract.pdf">📄 T4_G2_V5_DocSmartContract.pdf</a><br>
+ -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DiárioDeBordo.pdf">📄T4_G2_V5_DiarioDeBordo.pdf</a><br>
 
 ## 💻 Integração
-
+  
+ OBS: A entrega escrita do artefato "Integração Smart Contracts e Front-End", onde defini-se as integrações presentes na solução, encontra-se no link abaixo:
+ 
+ -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DiárioDeBordo.pdf">📄 Diário de Bordo</a><br>
+ 
+ VÍDEOS 
+ 
  - <a href="https://youtu.be/dFudPaJOzhc">📷 Vídeo Smart Contract - Integração (Remix)</a><br>
-  - <a href="https://youtu.be/9S95Hp5-TSQ">📷 Vídeo Integração Smart Contract com frontend</a><br>
-
+ - <a href="https://youtu.be/9S95Hp5-TSQ">📷 Vídeo Integração Smart Contract com frontend</a><br>
+ 
+ OBS: A entrega do artefato "Documentação da Integração", encontra-se nos links abaixo: 
+ 
+ -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DocBlockchain.pdf">📄 T4_G2_V5_DocBlockchain.pdf</a><br>
+ -  <a href="https://github.com/2023M5T4-Inteli/Projeto2/blob/main/docs/T4_G2_V5_DocSmartContract.pdf">📄 T4_G2_V5_DocSmartContract.pdf</a><br>
 
 ## 🗃 Histórico de lançamentos
 
