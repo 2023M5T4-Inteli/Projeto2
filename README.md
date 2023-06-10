@@ -91,3 +91,20 @@ OBS: O diagrama de implantação UML está localizado na documentação do Smart
 
 ## 📋 Licença/License
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2023M5T4-Inteli/Projeto2">CooverChain  <a> by </a> <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/InteliProjects/.github/blob/main/profile/README.md">Inteli, <a href="https://www.linkedin.com/in/erictach/">Eric Tachdjian</a>, <a href="https://www.linkedin.com/in/giovanna-furlan-torres-378316182/">Giovanna Furlan</a>, <a href="https://www.linkedin.com/in/henri-harari-717930242/">Henri Harari</a>,  <a href="https://www.linkedin.com/in/maria-lu%C3%ADsa-maia-14384a212/">Maria Luisa Maia</a>, <a href="https://www.linkedin.com/in/matheus-fidelis-680520232/">Matheus Fidelis</a>, <a href="https://www.linkedin.com/in/uelitonrocha/">Ueliton Rocha</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+ 
+ ## Referências
+ 
+ ANTERO, Kalyenne de Lima et al. Roteiro e storyboard. 1. ed. [S. l.]: Inter Saberes, 2021.
+214 p. v. 1. Acesso em: 15 fev. 2022.
+ 
+BANDEIRA, Rômulo Torres. O Diagrama de Soluções Digitais (DSD): e o planejamento de
+marketing digital da sua empresa. Linkedin, [S. l.], v. 1, n. 1, p. 1-1, 26 ago. 2019.
+Disponível em: https://www.linkedin.com/pulse/o-diagrama-de-soluções-digitais-dsdeplanejamento-da-rômulo/?originalSubdomain=pt. Acesso em: 11 fev. 2022.
+ 
+PACHÁ, Caio. Style guide: porque, quando, como e onde criar um. Brasil : UX Designer,
+[S. l.], v. 1, n. 1, p. 1-1, 28 jan. 2021. Disponível em: https://brasil.uxdesign.cc/styleguidepor-que-quando-como-e-onde-criar-um-f7b173006740. Acesso em: 12 fev. 2022.
+ 
+VENDRAMINI, Giovana Schnorr. User flow: o mapa do sucesso para o UX Design.
+Ateliware, [S. l.], p. 1-1, 1 jul. 2021. Disponível em:
+https://ateliware.com/blog/userflow#:~:text=O%20User%20Flow%2C%20ou%20Fluxo,as
+%20expectativas%20do%20seu %20cliente. Acesso em: 11 fev. 2022. 
